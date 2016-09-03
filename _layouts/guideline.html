@@ -8,12 +8,12 @@ layout: default
   <h2>{{category.name}}</h2>
   <div>
   {% for topic in category.items %}
-    <h3><a href="{{ topic.topic__links.self.href | prepend: site.baseurl }}">{{ topic.topic_name | escape }}</a></h3>
+    <h3><a href="{{ topic.topic__links.self.href | prepend: site.baseurl | prepend: site.github.url}}">{{ topic.topic_name | escape }}</a></h3>
     <p>{{ topic.topic_description}}</p>
     <ul>
     {% for reference in topic.references %}
       <li>
-      <a href="{{ reference.url | prepend: site.baseurl }}" target="specification">{{reference.name}}</a>
+      <a href="{{ reference.url | prepend: site.baseurl | prepend: site.github.url}}" target="specification">{{reference.name}}</a>
       </li>
     {% endfor %}
     </ul>

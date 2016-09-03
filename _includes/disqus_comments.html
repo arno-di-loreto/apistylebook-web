@@ -1,6 +1,6 @@
 {% if page.comments != false and jekyll.environment == "production" %}
-  {% if site.url %}
-    {% assign disqus_url = page.url | prepend: site.url %}
+  {% if site.github.url %}
+    {% assign disqus_url = page.url | prepend: site.github.url %}
   {% elsif site.github.url %}
     {% assign disqus_url = page.url | prepend: site.github.url %}
   {% endif %}
