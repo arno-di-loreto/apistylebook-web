@@ -10,7 +10,7 @@ menu: true
   {% for page in sorted_pages %}
     <li>
       <h2>
-        {{ page.data.type }} <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.guideline_company | escape }} - {{ page.guideline_title | escape }}</a>
+        {{ page.data.type }} <a class="post-link" href="{{ page.url | prepend: site.baseurl | prepend: site.github.url}}">{{ page.guideline_company | escape }} - {{ page.guideline_title | escape }}</a>
       </h2>
     </li>
   {% endfor %}

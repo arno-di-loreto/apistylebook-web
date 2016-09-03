@@ -10,7 +10,7 @@ menu: true
   <h2>{{category.name}}</h2>
   <div>
   {% for topic in category.items %}
-    <h3><a href="{{ topic.url | prepend: site.baseurl }}">{{ topic.topic_name | escape }}</a></h3>
+    <h3><a href="{{ topic.url | prepend: site.baseurl | prepend: site.github.url}}">{{ topic.topic_name | escape }}</a></h3>
     <p>{{ topic.topic_description}}</p>
   {% endfor %}
   </div>
