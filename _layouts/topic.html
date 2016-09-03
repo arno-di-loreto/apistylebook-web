@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<h1 class="page-heading">API Design Topic - {{ page.title }}</h1>
+<p>{{page.data._embedded.topic.description}}</p>
+{% assign items = (page.guidelines |  sort: "guideline_company") %}
+{% for item in items %}
+  <h2><a href="{{ site.baseurl }}/design/guidelines/{{item.guideline_id}}/">{{item.guideline_company}} - {{item.guideline_title}}</a></h2>
+  <ul>
+  {% for reference in item.references %}
+    <li><a target="document" href="{{reference.url}}">{{reference.name}}</a>
+    {% if reference.quote%}
+      : {{reference.quote}}
+    {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+{% endfor %}
+          
