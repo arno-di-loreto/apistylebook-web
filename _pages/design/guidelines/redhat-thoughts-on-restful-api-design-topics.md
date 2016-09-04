@@ -10,6 +10,7 @@ guideline_url: 'http://restful-api-design.readthedocs.io/en/latest/'
 guideline_company: Red Hat
 guideline_companyLogoUrl: /media/logos/redhat.png
 guideline_companyUrl: 'https://www.redhat.com/'
+guideline_screenshotUrl: /media/screenshots/redhat-thoughts-on-restful-api-design.png
 guideline_authors:
   - name: Geert Jansen
     twitter: 1geertj

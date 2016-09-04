@@ -10,6 +10,7 @@ guideline_url: 'https://github.com/cloudfoundry/cc-api-v3-style-guide'
 guideline_company: Cloud Foundry
 guideline_companyLogoUrl: /media/logos/cloudfoundry.png
 guideline_companyUrl: 'https://www.cloudfoundry.org/'
+guideline_screenshotUrl: /media/screenshots/cloud-foundy-cloud-controller-api-style-guide.png
 guideline_date: 2016-05-11T00:00:00.000Z
 guideline_reviewDate: 2016-08-18T00:00:00.000Z
 topics:

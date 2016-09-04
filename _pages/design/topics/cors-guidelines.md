@@ -15,6 +15,7 @@ guidelines:
     guideline_company: Australian Digital Transformation Office
     guideline_companyLogoUrl: /media/logos/ausdto.png
     guideline_companyUrl: 'https://www.dto.gov.au/'
+    guideline_screenshotUrl: /media/screenshots/ausdto-api-design-guide.png
     guideline_date: 2015-10-20T00:00:00.000Z
     guideline_reviewDate: 2016-08-18T00:00:00.000Z
     guideline__links:
@@ -32,6 +33,7 @@ guidelines:
     guideline_company: Microsoft
     guideline_companyLogoUrl: /media/logos/microsoft.png
     guideline_companyUrl: 'https://opensource.microsoft.com/'
+    guideline_screenshotUrl: /media/screenshots/microsoft-rest-api-guidelines.png
     guideline_date: 2016-07-19T00:00:00.000Z
     guideline_reviewDate: 2016-08-31T00:00:00.000Z
     guideline__links:
@@ -49,6 +51,7 @@ guidelines:
     guideline_company: White House
     guideline_companyLogoUrl: /media/logos/whitehouse.png
     guideline_companyUrl: 'https://www.whitehouse.gov/developers'
+    guideline_screenshotUrl: /media/screenshots/white-house-web-api-standards.png
     guideline_date: 2015-02-24T00:00:00.000Z
     guideline_reviewDate: 2016-08-18T00:00:00.000Z
     guideline__links:

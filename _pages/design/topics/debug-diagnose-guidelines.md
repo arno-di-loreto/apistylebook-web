@@ -15,6 +15,7 @@ guidelines:
     guideline_company: Heroku
     guideline_companyLogoUrl: /media/logos/heroku.png
     guideline_companyUrl: 'https://devcenter.heroku.com/articles/platform-api-reference'
+    guideline_screenshotUrl: /media/screenshots/heroku-http-api-design-guide.png
     guideline_date: 2016-07-05T00:00:00.000Z
     guideline_reviewDate: 2016-08-31T00:00:00.000Z
     guideline__links:

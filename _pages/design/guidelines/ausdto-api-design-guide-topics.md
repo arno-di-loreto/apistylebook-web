@@ -10,6 +10,7 @@ guideline_url: 'https://apiguide.readthedocs.io/en/latest/index.html'
 guideline_company: Australian Digital Transformation Office
 guideline_companyLogoUrl: /media/logos/ausdto.png
 guideline_companyUrl: 'https://www.dto.gov.au/'
+guideline_screenshotUrl: /media/screenshots/ausdto-api-design-guide.png
 guideline_date: 2015-10-20T00:00:00.000Z
 guideline_reviewDate: 2016-08-18T00:00:00.000Z
 topics:

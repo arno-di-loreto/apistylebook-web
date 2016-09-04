@@ -10,6 +10,7 @@ guideline_url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/rea
 guideline_company: Haufe
 guideline_companyLogoUrl: /media/logos/haufe.png
 guideline_companyUrl: 'http://dev.haufe.com/'
+guideline_screenshotUrl: /media/screenshots/haufe-api-styleguide.png
 guideline_date: 2015-01-15T00:00:00.000Z
 guideline_reviewDate: 2016-08-31T00:00:00.000Z
 topics:

@@ -10,6 +10,7 @@ guideline_url: 'https://github.com/paypal/api-standards/blob/master/api-style-gu
 guideline_company: PayPal
 guideline_companyLogoUrl: /media/logos/paypal.png
 guideline_companyUrl: 'https://developer.paypal.com/'
+guideline_screenshotUrl: /media/screenshots/paypal-api-style-guide.png
 guideline_date: 2016-08-11T00:00:00.000Z
 guideline_reviewDate: 2016-08-31T00:00:00.000Z
 topics:

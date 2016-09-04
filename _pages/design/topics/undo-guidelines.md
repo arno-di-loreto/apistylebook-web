@@ -15,6 +15,7 @@ guidelines:
     guideline_company: Cisco
     guideline_companyLogoUrl: /media/logos/cisco.png
     guideline_companyUrl: 'http://developer.cisco.com/'
+    guideline_screenshotUrl: /media/screenshots/cisco-api-design-guide.png
     guideline_date: 2015-08-21T00:00:00.000Z
     guideline_reviewDate: 2016-08-18T00:00:00.000Z
     guideline_attachedDocuments:

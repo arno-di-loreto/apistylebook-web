@@ -10,6 +10,7 @@ guideline_url: 'https://developer.atlassian.com/docs/atlassian-platform-common-c
 guideline_company: Atlassian
 guideline_companyLogoUrl: /media/logos/atlassian.png
 guideline_companyUrl: 'https://developer.atlassian.com/'
+guideline_screenshotUrl: /media/screenshots/atlassian-rest-api-design-guidelines-version-1.png
 guideline_date: 2016-01-22T00:00:00.000Z
 guideline_reviewDate: 2016-09-01T00:00:00.000Z
 topics:

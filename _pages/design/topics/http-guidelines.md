@@ -15,6 +15,7 @@ guidelines:
     guideline_company: Microsoft
     guideline_companyLogoUrl: /media/logos/microsoft.png
     guideline_companyUrl: 'https://opensource.microsoft.com/'
+    guideline_screenshotUrl: /media/screenshots/microsoft-rest-api-guidelines.png
     guideline_date: 2016-07-19T00:00:00.000Z
     guideline_reviewDate: 2016-08-31T00:00:00.000Z
     guideline__links:
@@ -32,6 +33,7 @@ guidelines:
     guideline_company: Zalando
     guideline_companyLogoUrl: /media/logos/zalando.png
     guideline_companyUrl: 'https://tech.zalando.de/'
+    guideline_screenshotUrl: /media/screenshots/zalando-restful-api-guidelines.png
     guideline_date: 2016-01-22T00:00:00.000Z
     guideline_reviewDate: 2016-08-28T00:00:00.000Z
     guideline__links:

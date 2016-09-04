@@ -15,6 +15,7 @@ guidelines:
     guideline_company: Cisco
     guideline_companyLogoUrl: /media/logos/cisco.png
     guideline_companyUrl: 'http://developer.cisco.com/'
+    guideline_screenshotUrl: /media/screenshots/cisco-api-design-guide.png
     guideline_date: 2015-08-21T00:00:00.000Z
     guideline_reviewDate: 2016-08-18T00:00:00.000Z
     guideline_attachedDocuments:
@@ -50,6 +51,7 @@ guidelines:
     guideline_company: Microsoft
     guideline_companyLogoUrl: /media/logos/microsoft.png
     guideline_companyUrl: 'https://opensource.microsoft.com/'
+    guideline_screenshotUrl: /media/screenshots/microsoft-rest-api-guidelines.png
     guideline_date: 2016-07-19T00:00:00.000Z
     guideline_reviewDate: 2016-08-31T00:00:00.000Z
     guideline__links:
@@ -69,6 +71,7 @@ guidelines:
     guideline_company: Red Hat
     guideline_companyLogoUrl: /media/logos/redhat.png
     guideline_companyUrl: 'https://www.redhat.com/'
+    guideline_screenshotUrl: /media/screenshots/redhat-thoughts-on-restful-api-design.png
     guideline_authors:
       - name: Geert Jansen
         twitter: 1geertj
@@ -89,6 +92,7 @@ guidelines:
     guideline_company: Zalando
     guideline_companyLogoUrl: /media/logos/zalando.png
     guideline_companyUrl: 'https://tech.zalando.de/'
+    guideline_screenshotUrl: /media/screenshots/zalando-restful-api-guidelines.png
     guideline_date: 2016-01-22T00:00:00.000Z
     guideline_reviewDate: 2016-08-28T00:00:00.000Z
     guideline__links:

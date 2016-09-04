@@ -10,6 +10,7 @@ guideline_url: 'https://github.com/WhiteHouse/api-standards'
 guideline_company: White House
 guideline_companyLogoUrl: /media/logos/whitehouse.png
 guideline_companyUrl: 'https://www.whitehouse.gov/developers'
+guideline_screenshotUrl: /media/screenshots/white-house-web-api-standards.png
 guideline_date: 2015-02-24T00:00:00.000Z
 guideline_reviewDate: 2016-08-18T00:00:00.000Z
 topics:
