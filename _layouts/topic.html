@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<h1 class="page-heading">API Design Topic - {{ page.title }}</h1>
-<p>{{page.data._embedded.topic.description}}</p>
+<h1 class="page-heading">FTW API Design Topic - {{ page.title }}</h1>
+<p>{{ page.topic_description}}</p>
 {% assign items = (page.guidelines |  sort: "guideline_company") %}
 {% for item in items %}
   <h2><a href="{{ item.guideline__links.self.href | prepend: site.baseurl | prepend: site.github.url}}">{{item.guideline_company}} - {{item.guideline_title}}</a></h2>
