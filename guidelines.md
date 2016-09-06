@@ -13,7 +13,9 @@ menu: true
             <div class="thumbnail">
                 <img src="{{ page.guideline_screenshotUrl | prepend: site.baseurl | prepend: site.github.url}}" alt="screenshot">
                 <div class="caption">
-                    <h3>{{ page.guideline_title | escape }}</h3>
+                    <div class="same-height">
+                        <h3>{{ page.guideline_title | escape }}</h3>
+                    </div>
                     <p>{{ page.guideline_company | escape }}</p>
                     <p><a href="{{ page.url | prepend: site.baseurl | prepend: site.github.url}}" class="btn btn-primary" role="button">Explore</a></p>
                 </div>
@@ -24,12 +26,12 @@ menu: true
 </div>
 <script language="javascript">
 $(window).ready(function() {
-    $(".thumbnail").height(Math.max.apply(null, $(".thumbnail").map(function() { return $(this).height(); })));
-    $(".caption").height(Math.max.apply(null, $(".caption").map(function() { return $(this).height(); }))); 
+    //$(".thumbnail").height(Math.max.apply(null, $(".thumbnail").map(function() { return $(this).height(); })));
+    $(".same-height").height(Math.max.apply(null, $(".same-height").map(function() { return $(this).height(); }))); 
 });
 $(window).resize(function() {
     console.log('resize!');
-    $(".thumbnail").height(Math.max.apply(null, $(".thumbnail").map(function() { return $(this).height(); })));
-    $(".caption").height(Math.max.apply(null, $(".caption").map(function() { return $(this).height(); })));
+    //$(".thumbnail").height(Math.max.apply(null, $(".thumbnail").map(function() { return $(this).height(); })));
+    $("same-height").height(Math.max.apply(null, $(".same-height").map(function() { return $(this).height(); })));
 });
 </script>
