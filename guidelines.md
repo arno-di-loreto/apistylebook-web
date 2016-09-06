@@ -25,7 +25,7 @@ menu: true
     </div>
 </div>
 <script language="javascript">
-$(document).ready(function() {
+$(window).on("load",function() {
     $(".thumbnail").height(Math.max.apply(null, $(".thumbnail").map(function() { return $(this).height(); })));
     $(".caption").height(Math.max.apply(null, $(".caption").map(function() { return $(this).height(); }))); 
 });
