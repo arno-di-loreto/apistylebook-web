@@ -4,6 +4,7 @@ title: Design Topics
 permalink: /design/topics/
 date: 2016-08-18 22:31:09 +0200
 menu: true
+anchors: true
 ---
 {% assign sorted_pages = (site.pages | where: "layout" , "topic" | sort: "sort" | group_by: "topic_category") %}
 {% for category in sorted_pages %}

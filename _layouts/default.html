@@ -3,21 +3,20 @@
 
   {% include head.html %}
 
-  <body data-spy="scroll" data-target="#toc">
+  <body>
 
     {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <div class="container">
+      {{ content }}
     </div>
 
     {% include footer.html %}
+    {% if page.anchors or layout.anchors %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.min.js"></script>
     <script language="javascript">
     anchors.add();
     </script>
+    {% endif %}
   </body>
 
 </html>
