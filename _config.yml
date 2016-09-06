@@ -15,11 +15,13 @@
 # in the templates via {{ site.myvariable }}.
 title: API Stylebook(s)
 description: > # this means to ignore newlines until "baseurl:"
-  A collection of resources for API Designers
+  Collections of resources for API Designers
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://apistylebook.com" # the base hostname & protocol for your site
 twitter_username: apihandyman
 github_username:  arno-di-loreto
+#github:
+#  url: ""
 
 # Build settings
 markdown: kramdown

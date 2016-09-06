@@ -26,12 +26,10 @@ menu: true
 </div>
 <script language="javascript">
 $(window).ready(function() {
-    //$(".thumbnail").height(Math.max.apply(null, $(".thumbnail").map(function() { return $(this).height(); })));
     $(".same-height").height(Math.max.apply(null, $(".same-height").map(function() { return $(this).height(); }))); 
 });
 $(window).resize(function() {
     console.log('resize!');
-    //$(".thumbnail").height(Math.max.apply(null, $(".thumbnail").map(function() { return $(this).height(); })));
     $("same-height").height(Math.max.apply(null, $(".same-height").map(function() { return $(this).height(); })));
 });
 </script>
