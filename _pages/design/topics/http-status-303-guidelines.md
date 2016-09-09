@@ -1,12 +1,13 @@
 ---
 layout: topic
-title: HTTP Status 303
+title: 303 See Other
 permalink: /design/topics/http-status-303
-sort: HTTP Status_HTTP Status 303
+sort: HTTP Status Redirection_303 See Other
 topic_id: http-status-303
-topic_category: HTTP Status
-topic_name: HTTP Status 303
-topic_description: When to use HTTP status 303
+topic_category: HTTP Status Redirection
+topic_name: 303 See Other
+topic_description: |
+  The response to the request can be found under another URI using a GET method. When received in response to a POST (or PUT/DELETE), the client should presume that the server has received the data and should issue a redirect with a separate GET message.
 guidelines:
   - guideline_id: cloud-foundy-cloud-controller-api-style-guide
     guideline_title: Cloud Controller API v3 Style Guide (Proposal)

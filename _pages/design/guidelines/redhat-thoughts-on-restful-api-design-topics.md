@@ -29,16 +29,6 @@ topics:
     references:
       - name: Asynchronous Requests
         url: 'http://restful-api-design.readthedocs.io/en/latest/methods.html#asynchronous-requests'
-  - topic_id: collection-filtering
-    topic_category: Collection Resources
-    topic_name: Filtering
-    topic_description: How to select some resources in a collection
-    topic__links:
-      self:
-        href: /design/topics/collection-filtering
-      topicGuidelines:
-        href: /design/topics/collection-filtering/guidelines
-    references: null
   - topic_id: collection-pagination
     topic_category: Collection Resources
     topic_name: Pagination
@@ -140,9 +130,10 @@ topics:
       - name: Link Headers
         url: 'http://restful-api-design.readthedocs.io/en/latest/methods.html#link-headers'
   - topic_id: http-status-405
-    topic_category: HTTP Status
-    topic_name: HTTP Status 405
-    topic_description: When to use HTTP status 405
+    topic_category: HTTP Status User Error
+    topic_name: 405 Method Not Allowed
+    topic_description: |
+      A request method is not supported for the requested resource; for example, a GET request on a form which requires data to be presented via POST, or a PUT request on a read-only resource.
     topic__links:
       self:
         href: /design/topics/http-status-405
@@ -154,7 +145,7 @@ topics:
   - topic_id: http-methods-delete
     topic_category: HTTP Methods
     topic_name: DELETE
-    topic_description: When to use HTTP method DELETE
+    topic_description: The DELETE method deletes the specified resource.
     topic__links:
       self:
         href: /design/topics/http-methods-delete
@@ -166,7 +157,8 @@ topics:
   - topic_id: http-methods-get
     topic_category: HTTP Methods
     topic_name: GET
-    topic_description: When to use HTTP method GET
+    topic_description: |
+      The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.
     topic__links:
       self:
         href: /design/topics/http-methods-get
@@ -178,7 +170,8 @@ topics:
   - topic_id: http-methods-head
     topic_category: HTTP Methods
     topic_name: HEAD
-    topic_description: When to use HTTP method HEAD
+    topic_description: |
+      The HEAD method asks for a response identical to that of a GET request, but without the response body. This is useful for retrieving meta-information written in response headers, without having to transport the entire content.
     topic__links:
       self:
         href: /design/topics/http-methods-head
@@ -190,7 +183,8 @@ topics:
   - topic_id: http-methods-options
     topic_category: HTTP Methods
     topic_name: OPTIONS
-    topic_description: When to use HTTP method OPTION
+    topic_description: |
+      The OPTIONS method returns the HTTP methods that the server supports for the specified URL. This can be used to check the functionality of a web server by requesting '*' instead of a specific resource.
     topic__links:
       self:
         href: /design/topics/http-methods-options
@@ -202,7 +196,8 @@ topics:
   - topic_id: http-methods-patch
     topic_category: HTTP Methods
     topic_name: PATCH
-    topic_description: When to use HTTP method PATCH
+    topic_description: |
+      The PATCH method applies partial modifications to a resource.
     topic__links:
       self:
         href: /design/topics/http-methods-patch
@@ -214,7 +209,8 @@ topics:
   - topic_id: http-methods-post
     topic_category: HTTP Methods
     topic_name: POST
-    topic_description: When to use HTTP method POST
+    topic_description: |
+      The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.
     topic__links:
       self:
         href: /design/topics/http-methods-post
@@ -226,7 +222,8 @@ topics:
   - topic_id: http-methods-put
     topic_category: HTTP Methods
     topic_name: PUT
-    topic_description: When to use HTTP method PUT
+    topic_description: |
+      The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.
     topic__links:
       self:
         href: /design/topics/http-methods-put

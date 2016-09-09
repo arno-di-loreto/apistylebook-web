@@ -95,9 +95,9 @@ topics:
       - name: API Payload format encoding
         url: 'https://apiguide.readthedocs.io/en/latest/build_and_publish/use_RESTful_urls.html#api-payload-format-encoding'
   - topic_id: http-status-200
-    topic_category: HTTP Status
-    topic_name: HTTP Status 200
-    topic_description: When to use HTTP status 200
+    topic_category: HTTP Status Success
+    topic_name: 200 OK
+    topic_description: 'Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.'
     topic__links:
       self:
         href: /design/topics/http-status-200
@@ -117,9 +117,9 @@ topics:
       - name: HEAD /magazines/1234
         url: 'https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#head--magazines-1234'
   - topic_id: http-status-201
-    topic_category: HTTP Status
-    topic_name: HTTP Status 201
-    topic_description: When to use HTTP status 201
+    topic_category: HTTP Status Success
+    topic_name: 201 Created
+    topic_description: 'The request has been fulfilled, resulting in the creation of a new resource.'
     topic__links:
       self:
         href: /design/topics/http-status-201
@@ -131,9 +131,9 @@ topics:
       - name: PUT /magazines/1234
         url: 'https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#put--magazines-1234'
   - topic_id: http-status-404
-    topic_category: HTTP Status
-    topic_name: HTTP Status 404
-    topic_description: When to use HTTP status 404
+    topic_category: HTTP Status User Error
+    topic_name: 404 Not Found
+    topic_description: The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
     topic__links:
       self:
         href: /design/topics/http-status-404
@@ -143,9 +143,10 @@ topics:
       - name: GET /magazines
         url: 'https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#get--magazines'
   - topic_id: http-status-405
-    topic_category: HTTP Status
-    topic_name: HTTP Status 405
-    topic_description: When to use HTTP status 405
+    topic_category: HTTP Status User Error
+    topic_name: 405 Method Not Allowed
+    topic_description: |
+      A request method is not supported for the requested resource; for example, a GET request on a form which requires data to be presented via POST, or a PUT request on a read-only resource.
     topic__links:
       self:
         href: /design/topics/http-status-405
@@ -169,7 +170,7 @@ topics:
   - topic_id: http-methods-delete
     topic_category: HTTP Methods
     topic_name: DELETE
-    topic_description: When to use HTTP method DELETE
+    topic_description: The DELETE method deletes the specified resource.
     topic__links:
       self:
         href: /design/topics/http-methods-delete
@@ -183,7 +184,8 @@ topics:
   - topic_id: http-methods-get
     topic_category: HTTP Methods
     topic_name: GET
-    topic_description: When to use HTTP method GET
+    topic_description: |
+      The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.
     topic__links:
       self:
         href: /design/topics/http-methods-get
@@ -195,7 +197,8 @@ topics:
   - topic_id: http-methods-head
     topic_category: HTTP Methods
     topic_name: HEAD
-    topic_description: When to use HTTP method HEAD
+    topic_description: |
+      The HEAD method asks for a response identical to that of a GET request, but without the response body. This is useful for retrieving meta-information written in response headers, without having to transport the entire content.
     topic__links:
       self:
         href: /design/topics/http-methods-head
@@ -209,7 +212,8 @@ topics:
   - topic_id: http-methods-post
     topic_category: HTTP Methods
     topic_name: POST
-    topic_description: When to use HTTP method POST
+    topic_description: |
+      The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.
     topic__links:
       self:
         href: /design/topics/http-methods-post
@@ -221,7 +225,8 @@ topics:
   - topic_id: http-methods-put
     topic_category: HTTP Methods
     topic_name: PUT
-    topic_description: When to use HTTP method PUT
+    topic_description: |
+      The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.
     topic__links:
       self:
         href: /design/topics/http-methods-put

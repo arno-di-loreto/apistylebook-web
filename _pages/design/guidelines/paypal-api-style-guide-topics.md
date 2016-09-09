@@ -93,9 +93,9 @@ topics:
       - name: Read-only resources
         url: 'https://github.com/paypal/api-standards/blob/master/api-style-guide.md#read-only-resources'
   - topic_id: http-status-200
-    topic_category: HTTP Status
-    topic_name: HTTP Status 200
-    topic_description: When to use HTTP status 200
+    topic_category: HTTP Status Success
+    topic_name: 200 OK
+    topic_description: 'Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.'
     topic__links:
       self:
         href: /design/topics/http-status-200
@@ -107,9 +107,9 @@ topics:
       - name: HTTP Status (Read Single Resource)
         url: 'https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status-1'
   - topic_id: http-status-204
-    topic_category: HTTP Status
-    topic_name: HTTP Status 204
-    topic_description: When to use HTTP status 204
+    topic_category: HTTP Status Success
+    topic_name: 204 No Content
+    topic_description: The server successfully processed the request and is not returning any content.
     topic__links:
       self:
         href: /design/topics/http-status-204
@@ -123,9 +123,10 @@ topics:
       - name: Delete Single Resource
         url: 'https://github.com/paypal/api-standards/blob/master/api-style-guide.md#delete-single-resource'
   - topic_id: http-status-400
-    topic_category: HTTP Status
-    topic_name: HTTP Status 400
-    topic_description: When to use HTTP status 400
+    topic_category: HTTP Status User Error
+    topic_name: 400 Bad Request
+    topic_description: |
+      The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, too large size, invalid request message framing, or deceptive request routing).
     topic__links:
       self:
         href: /design/topics/http-status-400
@@ -135,9 +136,9 @@ topics:
       - name: HTTP Status (Collections)
         url: 'https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status'
   - topic_id: http-status-404
-    topic_category: HTTP Status
-    topic_name: HTTP Status 404
-    topic_description: When to use HTTP status 404
+    topic_category: HTTP Status User Error
+    topic_name: 404 Not Found
+    topic_description: The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
     topic__links:
       self:
         href: /design/topics/http-status-404
@@ -153,9 +154,9 @@ topics:
       - name: Delete Single Resource
         url: 'https://github.com/paypal/api-standards/blob/master/api-style-guide.md#delete-single-resource'
   - topic_id: http-status-422
-    topic_category: HTTP Status
-    topic_name: HTTP Status 422
-    topic_description: When to use HTTP status 422
+    topic_category: HTTP Status User Error
+    topic_name: 422 Unprocessable Entity
+    topic_description: The request was well-formed but was unable to be followed due to semantic errors.
     topic__links:
       self:
         href: /design/topics/http-status-422
@@ -165,7 +166,7 @@ topics:
       - name: Update Single Resource
         url: 'https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-single-resource'
   - topic_id: http-status
-    topic_category: HTTP Status
+    topic_category: HTTP Protocol
     topic_name: HTTP Statuses
     topic_description: General information about HTTP statuses usage
     topic__links:
@@ -181,7 +182,7 @@ topics:
   - topic_id: http-methods-delete
     topic_category: HTTP Methods
     topic_name: DELETE
-    topic_description: When to use HTTP method DELETE
+    topic_description: The DELETE method deletes the specified resource.
     topic__links:
       self:
         href: /design/topics/http-methods-delete
@@ -195,7 +196,8 @@ topics:
   - topic_id: http-methods-get
     topic_category: HTTP Methods
     topic_name: GET
-    topic_description: When to use HTTP method GET
+    topic_description: |
+      The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.
     topic__links:
       self:
         href: /design/topics/http-methods-get
@@ -209,7 +211,8 @@ topics:
   - topic_id: http-methods-patch
     topic_category: HTTP Methods
     topic_name: PATCH
-    topic_description: When to use HTTP method PATCH
+    topic_description: |
+      The PATCH method applies partial modifications to a resource.
     topic__links:
       self:
         href: /design/topics/http-methods-patch
@@ -223,7 +226,8 @@ topics:
   - topic_id: http-methods-post
     topic_category: HTTP Methods
     topic_name: POST
-    topic_description: When to use HTTP method POST
+    topic_description: |
+      The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.
     topic__links:
       self:
         href: /design/topics/http-methods-post
@@ -237,7 +241,8 @@ topics:
   - topic_id: http-methods-put
     topic_category: HTTP Methods
     topic_name: PUT
-    topic_description: When to use HTTP method PUT
+    topic_description: |
+      The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.
     topic__links:
       self:
         href: /design/topics/http-methods-put

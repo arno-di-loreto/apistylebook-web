@@ -1,12 +1,13 @@
 ---
 layout: topic
-title: HTTP Status 401
+title: 401 Unauthorized
 permalink: /design/topics/http-status-401
-sort: HTTP Status_HTTP Status 401
+sort: HTTP Status User Error_401 Unauthorized
 topic_id: http-status-401
-topic_category: HTTP Status
-topic_name: HTTP Status 401
-topic_description: When to use HTTP status 401
+topic_category: HTTP Status User Error
+topic_name: 401 Unauthorized
+topic_description: |
+  Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource. 
 guidelines:
   - guideline_id: atlassian-rest-api-design-guidelines-version-1
     guideline_title: Atlassian REST API Design Guidelines version 1

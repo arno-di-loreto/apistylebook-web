@@ -1,12 +1,12 @@
 ---
 layout: topic
-title: HTTP Status 422
+title: 422 Unprocessable Entity
 permalink: /design/topics/http-status-422
-sort: HTTP Status_HTTP Status 422
+sort: HTTP Status User Error_422 Unprocessable Entity
 topic_id: http-status-422
-topic_category: HTTP Status
-topic_name: HTTP Status 422
-topic_description: When to use HTTP status 422
+topic_category: HTTP Status User Error
+topic_name: 422 Unprocessable Entity
+topic_description: The request was well-formed but was unable to be followed due to semantic errors.
 guidelines:
   - guideline_id: cloud-foundy-cloud-controller-api-style-guide
     guideline_title: Cloud Controller API v3 Style Guide (Proposal)

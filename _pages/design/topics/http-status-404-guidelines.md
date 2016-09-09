@@ -1,12 +1,12 @@
 ---
 layout: topic
-title: HTTP Status 404
+title: 404 Not Found
 permalink: /design/topics/http-status-404
-sort: HTTP Status_HTTP Status 404
+sort: HTTP Status User Error_404 Not Found
 topic_id: http-status-404
-topic_category: HTTP Status
-topic_name: HTTP Status 404
-topic_description: When to use HTTP status 404
+topic_category: HTTP Status User Error
+topic_name: 404 Not Found
+topic_description: The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
 guidelines:
   - guideline_id: atlassian-rest-api-design-guidelines-version-1
     guideline_title: Atlassian REST API Design Guidelines version 1

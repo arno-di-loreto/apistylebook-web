@@ -40,33 +40,15 @@ guidelines:
     guideline_screenshotUrl: /media/screenshots/cisco-api-design-guide.png
     guideline_date: 2015-08-21T00:00:00.000Z
     guideline_reviewDate: 2016-08-18T00:00:00.000Z
-    guideline_attachedDocuments:
-      - name: REST API Design Principles
-        description: A summary of common REST API design constraints and conventions
-        url: 'https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md'
-        type: github
-        referenced:
-          - name: Preface
-            url: 'https://github.com/CiscoDevNet/api-design-guide#1-preface'
-      - name: Tracking ID flow
-        description: A sequence diagram explaning
-        url: 'https://github.com/CiscoDevNet/api-design-guide/blob/master/trackingid-flow.png'
-        type: github
-        referenced:
-          - name: TrackingID Header
-            description: A sequence diagram explaning the use of the tracking ID
-            url: 'https://github.com/CiscoDevNet/api-design-guide#352-trackingid-header'
-    guideline_remarks:
-      - 'broken links due to typo error in https://github.com/CiscoDevNet/api-design-guide#36-http-verbs'
     guideline__links:
       self:
         href: /design/guidelines/cisco-api-design-guide
       guidelineTopics:
         href: /design/guidelines/cisco-api-design-guide/topics
     references:
-      - name: null
+      - name: 3.6.3 GET
         quote: 'If a service supports the fields parameter, then a value of @reference, @narrow, or @wide SHOULD...'
-        url: null
+        url: 'https://github.com/CiscoDevNet/api-design-guide#363-get'
   - guideline_id: cloud-foundy-cloud-controller-api-style-guide
     guideline_title: Cloud Controller API v3 Style Guide (Proposal)
     guideline_type: github
@@ -85,24 +67,6 @@ guidelines:
     references:
       - name: Includind Related Resources
         url: 'https://github.com/cloudfoundry/cc-api-v3-style-guide#including-related-resources'
-  - guideline_id: haufe-api-styleguide
-    guideline_title: Haufe API style guide
-    guideline_type: github
-    guideline_url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/readme.md'
-    guideline_company: Haufe
-    guideline_companyLogoUrl: /media/logos/haufe.png
-    guideline_companyUrl: 'http://dev.haufe.com/'
-    guideline_screenshotUrl: /media/screenshots/haufe-api-styleguide.png
-    guideline_date: 2015-01-15T00:00:00.000Z
-    guideline_reviewDate: 2016-08-31T00:00:00.000Z
-    guideline__links:
-      self:
-        href: /design/guidelines/haufe-api-styleguide
-      guidelineTopics:
-        href: /design/guidelines/haufe-api-styleguide/topics
-    references:
-      name: Dereference Relationships
-      description: How to load a resource and its linked resources in one call
   - guideline_id: zalando-restful-api-guidelines
     guideline_title: RESTFul API Guidelines
     guideline_type: website

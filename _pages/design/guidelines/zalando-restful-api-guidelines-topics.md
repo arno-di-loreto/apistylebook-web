@@ -276,9 +276,9 @@ topics:
       - name: Add a Warning Header to Responses
         url: 'http://zalando.github.io/restful-api-guidelines/deprecation/Deprecation.html#should-add-a-warning-header-to-responses'
   - topic_id: http-status-200
-    topic_category: HTTP Status
-    topic_name: HTTP Status 200
-    topic_description: When to use HTTP status 200
+    topic_category: HTTP Status Success
+    topic_name: 200 OK
+    topic_description: 'Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.'
     topic__links:
       self:
         href: /design/topics/http-status-200
@@ -288,9 +288,9 @@ topics:
       - name: Success Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#success-codes'
   - topic_id: http-status-201
-    topic_category: HTTP Status
-    topic_name: HTTP Status 201
-    topic_description: When to use HTTP status 201
+    topic_category: HTTP Status Success
+    topic_name: 201 Created
+    topic_description: 'The request has been fulfilled, resulting in the creation of a new resource.'
     topic__links:
       self:
         href: /design/topics/http-status-201
@@ -300,9 +300,10 @@ topics:
       - name: Success Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#success-codes'
   - topic_id: http-status-202
-    topic_category: HTTP Status
-    topic_name: HTTP Status 202
-    topic_description: When to use HTTP status 202
+    topic_category: HTTP Status Success
+    topic_name: 202 Accepted
+    topic_description: |
+      The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.
     topic__links:
       self:
         href: /design/topics/http-status-202
@@ -312,9 +313,9 @@ topics:
       - name: Success Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#success-codes'
   - topic_id: http-status-204
-    topic_category: HTTP Status
-    topic_name: HTTP Status 204
-    topic_description: When to use HTTP status 204
+    topic_category: HTTP Status Success
+    topic_name: 204 No Content
+    topic_description: The server successfully processed the request and is not returning any content.
     topic__links:
       self:
         href: /design/topics/http-status-204
@@ -324,9 +325,9 @@ topics:
       - name: Success Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#success-codes'
   - topic_id: http-status-301
-    topic_category: HTTP Status
-    topic_name: HTTP Status 301
-    topic_description: When to use HTTP status 301
+    topic_category: HTTP Status Redirection
+    topic_name: 301 Moved Permanently
+    topic_description: This and all future requests should be directed to the given URI.
     topic__links:
       self:
         href: /design/topics/http-status-301
@@ -336,9 +337,10 @@ topics:
       - name: Redirection Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#redirection-codes'
   - topic_id: http-status-302
-    topic_category: HTTP Status
-    topic_name: HTTP Status 302
-    topic_description: When to use HTTP status 302
+    topic_category: HTTP Status Redirection
+    topic_name: 302 Found
+    topic_description: |
+      Common way of performing URL redirection. An HTTP response with this status code will additionally provide a URL in the location header field. The user agent (e.g. a web browser) is invited by a response with this code to make a second, otherwise identical, request to the new URL specified in the location field. 
     topic__links:
       self:
         href: /design/topics/http-status-302
@@ -348,9 +350,10 @@ topics:
       name: HTTP Status 302
       description: When to use HTTP status 302
   - topic_id: http-status-303
-    topic_category: HTTP Status
-    topic_name: HTTP Status 303
-    topic_description: When to use HTTP status 303
+    topic_category: HTTP Status Redirection
+    topic_name: 303 See Other
+    topic_description: |
+      The response to the request can be found under another URI using a GET method. When received in response to a POST (or PUT/DELETE), the client should presume that the server has received the data and should issue a redirect with a separate GET message.
     topic__links:
       self:
         href: /design/topics/http-status-303
@@ -360,9 +363,10 @@ topics:
       - name: Redirection Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#redirection-codes'
   - topic_id: http-status-304
-    topic_category: HTTP Status
-    topic_name: HTTP Status 304
-    topic_description: When to use HTTP status 304
+    topic_category: HTTP Status Redirection
+    topic_name: 304 Not Modified
+    topic_description: |
+      Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.
     topic__links:
       self:
         href: /design/topics/http-status-304
@@ -372,9 +376,10 @@ topics:
       - name: Redirection Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#redirection-codes'
   - topic_id: http-status-400
-    topic_category: HTTP Status
-    topic_name: HTTP Status 400
-    topic_description: When to use HTTP status 400
+    topic_category: HTTP Status User Error
+    topic_name: 400 Bad Request
+    topic_description: |
+      The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, too large size, invalid request message framing, or deceptive request routing).
     topic__links:
       self:
         href: /design/topics/http-status-400
@@ -384,9 +389,10 @@ topics:
       - name: Client Side Error Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes'
   - topic_id: http-status-401
-    topic_category: HTTP Status
-    topic_name: HTTP Status 401
-    topic_description: When to use HTTP status 401
+    topic_category: HTTP Status User Error
+    topic_name: 401 Unauthorized
+    topic_description: |
+      Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource. 
     topic__links:
       self:
         href: /design/topics/http-status-401
@@ -396,9 +402,9 @@ topics:
       - name: Client Side Error Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes'
   - topic_id: http-status-403
-    topic_category: HTTP Status
-    topic_name: HTTP Status 403
-    topic_description: When to use HTTP status 403
+    topic_category: HTTP Status User Error
+    topic_name: 403 Forbidden
+    topic_description: 'The request was a valid request, but the server is refusing to respond to it. The user might be logged in but does not have the necessary permissions for the resource.'
     topic__links:
       self:
         href: /design/topics/http-status-403
@@ -408,9 +414,9 @@ topics:
       - name: Client Side Error Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes'
   - topic_id: http-status-404
-    topic_category: HTTP Status
-    topic_name: HTTP Status 404
-    topic_description: When to use HTTP status 404
+    topic_category: HTTP Status User Error
+    topic_name: 404 Not Found
+    topic_description: The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
     topic__links:
       self:
         href: /design/topics/http-status-404
@@ -420,9 +426,10 @@ topics:
       - name: Client Side Error Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes'
   - topic_id: http-status-405
-    topic_category: HTTP Status
-    topic_name: HTTP Status 405
-    topic_description: When to use HTTP status 405
+    topic_category: HTTP Status User Error
+    topic_name: 405 Method Not Allowed
+    topic_description: |
+      A request method is not supported for the requested resource; for example, a GET request on a form which requires data to be presented via POST, or a PUT request on a read-only resource.
     topic__links:
       self:
         href: /design/topics/http-status-405
@@ -432,9 +439,9 @@ topics:
       - name: Client Side Error Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes'
   - topic_id: http-status-406
-    topic_category: HTTP Status
-    topic_name: HTTP Status 406
-    topic_description: When to use HTTP status 406
+    topic_category: HTTP Status User Error
+    topic_name: 406 Not Acceptable
+    topic_description: The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.
     topic__links:
       self:
         href: /design/topics/http-status-406
@@ -444,9 +451,10 @@ topics:
       - name: Client Side Error Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes'
   - topic_id: http-status-408
-    topic_category: HTTP Status
-    topic_name: HTTP Status 408
-    topic_description: When to use HTTP status 408
+    topic_category: HTTP Status User Error
+    topic_name: 408 Request Timeout
+    topic_description: |
+      The server timed out waiting for the request. According to HTTP specifications: The client did not produce a request within the time that the server was prepared to wait. The client MAY repeat the request without modifications at any later time.
     topic__links:
       self:
         href: /design/topics/http-status-408
@@ -456,9 +464,10 @@ topics:
       - name: Client Side Error Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes'
   - topic_id: http-status-409
-    topic_category: HTTP Status
-    topic_name: HTTP Status 409
-    topic_description: When to use HTTP status 409
+    topic_category: HTTP Status User Error
+    topic_name: 409 Conflict
+    topic_description: |
+      Indicates that the request could not be processed because of conflict in the request, such as an edit conflict between multiple simultaneous updates.
     topic__links:
       self:
         href: /design/topics/http-status-409
@@ -468,9 +477,9 @@ topics:
       - name: Client Side Error Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes'
   - topic_id: http-status-412
-    topic_category: HTTP Status
-    topic_name: HTTP Status 412
-    topic_description: When to use HTTP status 412
+    topic_category: HTTP Status User Error
+    topic_name: 412 Precondition Failed
+    topic_description: The server does not meet one of the preconditions that the requester put on the request.
     topic__links:
       self:
         href: /design/topics/http-status-412
@@ -480,9 +489,9 @@ topics:
       - name: Client Side Error Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes'
   - topic_id: http-status-415
-    topic_category: HTTP Status
-    topic_name: HTTP Status 415
-    topic_description: When to use HTTP status 415
+    topic_category: HTTP Status User Error
+    topic_name: 415 Unsupported Media Type
+    topic_description: 'The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format.'
     topic__links:
       self:
         href: /design/topics/http-status-415
@@ -492,9 +501,9 @@ topics:
       - name: Client Side Error Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes'
   - topic_id: http-status-423
-    topic_category: HTTP Status
-    topic_name: HTTP Status 423
-    topic_description: When to use HTTP status 423
+    topic_category: HTTP Status User Error
+    topic_name: 423 Locked
+    topic_description: The resource that is being accessed is locked.
     topic__links:
       self:
         href: /design/topics/http-status-423
@@ -504,9 +513,13 @@ topics:
       - name: Client Side Error Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes'
   - topic_id: http-status-428
-    topic_category: HTTP Status
-    topic_name: HTTP Status 428
-    topic_description: When to use HTTP status 428
+    topic_category: HTTP Status User Error
+    topic_name: 428 Precondition Required
+    topic_description: |
+      The origin server requires the request to be conditional. 
+      Intended to prevent the *lost update* problem, where a client GETs a resource's state, modifies it, 
+      and PUTs it back to the server, when meanwhile a third party has modified the state on the server, 
+      leading to a conflict.
     topic__links:
       self:
         href: /design/topics/http-status-428
@@ -516,9 +529,9 @@ topics:
       - name: Client Side Error Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes'
   - topic_id: http-status-429
-    topic_category: HTTP Status
-    topic_name: HTTP Status 429
-    topic_description: When to use HTTP status 429
+    topic_category: HTTP Status User Error
+    topic_name: 429 Too Many Requests
+    topic_description: The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes.
     topic__links:
       self:
         href: /design/topics/http-status-429
@@ -530,9 +543,9 @@ topics:
       - name: Use 429 with Headers for Rate Limits
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#must-use-429-with-headers-for-rate-limits'
   - topic_id: http-status-500
-    topic_category: HTTP Status
-    topic_name: HTTP Status 500
-    topic_description: When to use HTTP status 500
+    topic_category: HTTP Status Server Error
+    topic_name: 500 Internal Server Error
+    topic_description: 'A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.'
     topic__links:
       self:
         href: /design/topics/http-status-500
@@ -542,9 +555,9 @@ topics:
       - name: Server Side Error Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#server-side-error-codes'
   - topic_id: http-status-501
-    topic_category: HTTP Status
-    topic_name: HTTP Status 501
-    topic_description: When to use HTTP status 501
+    topic_category: HTTP Status Server Error
+    topic_name: 501 Not Implemented
+    topic_description: 'The server either does not recognize the request method, or it lacks the ability to fulfill the request. Usually this implies future availability (e.g., a new feature of a web-service API).'
     topic__links:
       self:
         href: /design/topics/http-status-501
@@ -554,9 +567,9 @@ topics:
       - name: Server Side Error Codes
         url: 'http://zalando.github.io/restful-api-guidelines/http/Http.html#server-side-error-codes'
   - topic_id: http-status-503
-    topic_category: HTTP Status
-    topic_name: HTTP Status 503
-    topic_description: When to use HTTP status 503
+    topic_category: HTTP Status Server Error
+    topic_name: 503 Service Unavailable
+    topic_description: 'The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.'
     topic__links:
       self:
         href: /design/topics/http-status-503
@@ -580,7 +593,7 @@ topics:
       - name: Use Problem JSON
         url: 'http://zalando.github.io/restful-api-guidelines/common-data-objects/CommonDataObjects.html#must-use-problem-json'
   - topic_id: http-status
-    topic_category: HTTP Status
+    topic_category: HTTP Protocol
     topic_name: HTTP Statuses
     topic_description: General information about HTTP statuses usage
     topic__links:
@@ -594,7 +607,7 @@ topics:
   - topic_id: http-methods-delete
     topic_category: HTTP Methods
     topic_name: DELETE
-    topic_description: When to use HTTP method DELETE
+    topic_description: The DELETE method deletes the specified resource.
     topic__links:
       self:
         href: /design/topics/http-methods-delete
@@ -606,7 +619,8 @@ topics:
   - topic_id: http-methods-get
     topic_category: HTTP Methods
     topic_name: GET
-    topic_description: When to use HTTP method GET
+    topic_description: |
+      The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.
     topic__links:
       self:
         href: /design/topics/http-methods-get
@@ -618,7 +632,8 @@ topics:
   - topic_id: http-methods-head
     topic_category: HTTP Methods
     topic_name: HEAD
-    topic_description: When to use HTTP method HEAD
+    topic_description: |
+      The HEAD method asks for a response identical to that of a GET request, but without the response body. This is useful for retrieving meta-information written in response headers, without having to transport the entire content.
     topic__links:
       self:
         href: /design/topics/http-methods-head
@@ -630,7 +645,8 @@ topics:
   - topic_id: http-methods-options
     topic_category: HTTP Methods
     topic_name: OPTIONS
-    topic_description: When to use HTTP method OPTION
+    topic_description: |
+      The OPTIONS method returns the HTTP methods that the server supports for the specified URL. This can be used to check the functionality of a web server by requesting '*' instead of a specific resource.
     topic__links:
       self:
         href: /design/topics/http-methods-options
@@ -642,7 +658,8 @@ topics:
   - topic_id: http-methods-patch
     topic_category: HTTP Methods
     topic_name: PATCH
-    topic_description: When to use HTTP method PATCH
+    topic_description: |
+      The PATCH method applies partial modifications to a resource.
     topic__links:
       self:
         href: /design/topics/http-methods-patch
@@ -654,7 +671,8 @@ topics:
   - topic_id: http-methods-post
     topic_category: HTTP Methods
     topic_name: POST
-    topic_description: When to use HTTP method POST
+    topic_description: |
+      The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.
     topic__links:
       self:
         href: /design/topics/http-methods-post
@@ -666,7 +684,8 @@ topics:
   - topic_id: http-methods-put
     topic_category: HTTP Methods
     topic_name: PUT
-    topic_description: When to use HTTP method PUT
+    topic_description: |
+      The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.
     topic__links:
       self:
         href: /design/topics/http-methods-put

@@ -1,12 +1,13 @@
 ---
 layout: topic
-title: HTTP Status 408
+title: 408 Request Timeout
 permalink: /design/topics/http-status-408
-sort: HTTP Status_HTTP Status 408
+sort: HTTP Status User Error_408 Request Timeout
 topic_id: http-status-408
-topic_category: HTTP Status
-topic_name: HTTP Status 408
-topic_description: When to use HTTP status 408
+topic_category: HTTP Status User Error
+topic_name: 408 Request Timeout
+topic_description: |
+  The server timed out waiting for the request. According to HTTP specifications: The client did not produce a request within the time that the server was prepared to wait. The client MAY repeat the request without modifications at any later time.
 guidelines:
   - guideline_id: haufe-api-styleguide
     guideline_title: Haufe API style guide

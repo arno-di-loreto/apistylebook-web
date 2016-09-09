@@ -106,9 +106,9 @@ topics:
         url: 'https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Caching'
         quote: 'ETag, If-None-Match'
   - topic_id: http-status-200
-    topic_category: HTTP Status
-    topic_name: HTTP Status 200
-    topic_description: When to use HTTP status 200
+    topic_category: HTTP Status Success
+    topic_name: 200 OK
+    topic_description: 'Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.'
     topic__links:
       self:
         href: /design/topics/http-status-200
@@ -118,9 +118,9 @@ topics:
       - name: 'Appendix A: Response Codes'
         url: 'https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes'
   - topic_id: http-status-201
-    topic_category: HTTP Status
-    topic_name: HTTP Status 201
-    topic_description: When to use HTTP status 201
+    topic_category: HTTP Status Success
+    topic_name: 201 Created
+    topic_description: 'The request has been fulfilled, resulting in the creation of a new resource.'
     topic__links:
       self:
         href: /design/topics/http-status-201
@@ -130,9 +130,10 @@ topics:
       - name: 'Appendix A: Response Codes'
         url: 'https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes'
   - topic_id: http-status-202
-    topic_category: HTTP Status
-    topic_name: HTTP Status 202
-    topic_description: When to use HTTP status 202
+    topic_category: HTTP Status Success
+    topic_name: 202 Accepted
+    topic_description: |
+      The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.
     topic__links:
       self:
         href: /design/topics/http-status-202
@@ -142,9 +143,9 @@ topics:
       - name: 'Appendix A: Response Codes'
         url: 'https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes'
   - topic_id: http-status-204
-    topic_category: HTTP Status
-    topic_name: HTTP Status 204
-    topic_description: When to use HTTP status 204
+    topic_category: HTTP Status Success
+    topic_name: 204 No Content
+    topic_description: The server successfully processed the request and is not returning any content.
     topic__links:
       self:
         href: /design/topics/http-status-204
@@ -154,9 +155,9 @@ topics:
       - name: 'Appendix A: Response Codes'
         url: 'https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes'
   - topic_id: http-status-301
-    topic_category: HTTP Status
-    topic_name: HTTP Status 301
-    topic_description: When to use HTTP status 301
+    topic_category: HTTP Status Redirection
+    topic_name: 301 Moved Permanently
+    topic_description: This and all future requests should be directed to the given URI.
     topic__links:
       self:
         href: /design/topics/http-status-301
@@ -166,9 +167,10 @@ topics:
       - name: 'Appendix A: Response Codes'
         url: 'https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes'
   - topic_id: http-status-304
-    topic_category: HTTP Status
-    topic_name: HTTP Status 304
-    topic_description: When to use HTTP status 304
+    topic_category: HTTP Status Redirection
+    topic_name: 304 Not Modified
+    topic_description: |
+      Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.
     topic__links:
       self:
         href: /design/topics/http-status-304
@@ -178,9 +180,10 @@ topics:
       - name: 'Appendix A: Response Codes'
         url: 'https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes'
   - topic_id: http-status-401
-    topic_category: HTTP Status
-    topic_name: HTTP Status 401
-    topic_description: When to use HTTP status 401
+    topic_category: HTTP Status User Error
+    topic_name: 401 Unauthorized
+    topic_description: |
+      Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource. 
     topic__links:
       self:
         href: /design/topics/http-status-401
@@ -190,9 +193,9 @@ topics:
       - name: 'Appendix A: Response Codes'
         url: 'https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes'
   - topic_id: http-status-404
-    topic_category: HTTP Status
-    topic_name: HTTP Status 404
-    topic_description: When to use HTTP status 404
+    topic_category: HTTP Status User Error
+    topic_name: 404 Not Found
+    topic_description: The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
     topic__links:
       self:
         href: /design/topics/http-status-404
@@ -202,9 +205,9 @@ topics:
       - name: 'Appendix A: Response Codes'
         url: 'https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes'
   - topic_id: http-status-412
-    topic_category: HTTP Status
-    topic_name: HTTP Status 412
-    topic_description: When to use HTTP status 412
+    topic_category: HTTP Status User Error
+    topic_name: 412 Precondition Failed
+    topic_description: The server does not meet one of the preconditions that the requester put on the request.
     topic__links:
       self:
         href: /design/topics/http-status-412
@@ -216,7 +219,7 @@ topics:
       - name: 'Appendix A: Response Codes'
         url: 'https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes'
   - topic_id: http-status
-    topic_category: HTTP Status
+    topic_category: HTTP Protocol
     topic_name: HTTP Statuses
     topic_description: General information about HTTP statuses usage
     topic__links:
@@ -230,7 +233,7 @@ topics:
   - topic_id: http-methods-delete
     topic_category: HTTP Methods
     topic_name: DELETE
-    topic_description: When to use HTTP method DELETE
+    topic_description: The DELETE method deletes the specified resource.
     topic__links:
       self:
         href: /design/topics/http-methods-delete
@@ -242,7 +245,8 @@ topics:
   - topic_id: http-methods-put
     topic_category: HTTP Methods
     topic_name: PUT
-    topic_description: When to use HTTP method PUT
+    topic_description: |
+      The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.
     topic__links:
       self:
         href: /design/topics/http-methods-put

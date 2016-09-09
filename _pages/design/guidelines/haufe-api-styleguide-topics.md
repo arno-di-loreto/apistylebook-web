@@ -221,9 +221,9 @@ topics:
       - name: ETag
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/caching/caching.md#etag'
   - topic_id: http-status-200
-    topic_category: HTTP Status
-    topic_name: HTTP Status 200
-    topic_description: When to use HTTP status 200
+    topic_category: HTTP Status Success
+    topic_name: 200 OK
+    topic_description: 'Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.'
     topic__links:
       self:
         href: /design/topics/http-status-200
@@ -237,9 +237,9 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-201
-    topic_category: HTTP Status
-    topic_name: HTTP Status 201
-    topic_description: When to use HTTP status 201
+    topic_category: HTTP Status Success
+    topic_name: 201 Created
+    topic_description: 'The request has been fulfilled, resulting in the creation of a new resource.'
     topic__links:
       self:
         href: /design/topics/http-status-201
@@ -249,9 +249,9 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-204
-    topic_category: HTTP Status
-    topic_name: HTTP Status 204
-    topic_description: When to use HTTP status 204
+    topic_category: HTTP Status Success
+    topic_name: 204 No Content
+    topic_description: The server successfully processed the request and is not returning any content.
     topic__links:
       self:
         href: /design/topics/http-status-204
@@ -267,9 +267,10 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-304
-    topic_category: HTTP Status
-    topic_name: HTTP Status 304
-    topic_description: When to use HTTP status 304
+    topic_category: HTTP Status Redirection
+    topic_name: 304 Not Modified
+    topic_description: |
+      Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.
     topic__links:
       self:
         href: /design/topics/http-status-304
@@ -279,9 +280,10 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-400
-    topic_category: HTTP Status
-    topic_name: HTTP Status 400
-    topic_description: When to use HTTP status 400
+    topic_category: HTTP Status User Error
+    topic_name: 400 Bad Request
+    topic_description: |
+      The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, too large size, invalid request message framing, or deceptive request routing).
     topic__links:
       self:
         href: /design/topics/http-status-400
@@ -297,9 +299,10 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-401
-    topic_category: HTTP Status
-    topic_name: HTTP Status 401
-    topic_description: When to use HTTP status 401
+    topic_category: HTTP Status User Error
+    topic_name: 401 Unauthorized
+    topic_description: |
+      Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource. 
     topic__links:
       self:
         href: /design/topics/http-status-401
@@ -309,9 +312,9 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-403
-    topic_category: HTTP Status
-    topic_name: HTTP Status 403
-    topic_description: When to use HTTP status 403
+    topic_category: HTTP Status User Error
+    topic_name: 403 Forbidden
+    topic_description: 'The request was a valid request, but the server is refusing to respond to it. The user might be logged in but does not have the necessary permissions for the resource.'
     topic__links:
       self:
         href: /design/topics/http-status-403
@@ -321,9 +324,9 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-404
-    topic_category: HTTP Status
-    topic_name: HTTP Status 404
-    topic_description: When to use HTTP status 404
+    topic_category: HTTP Status User Error
+    topic_name: 404 Not Found
+    topic_description: The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
     topic__links:
       self:
         href: /design/topics/http-status-404
@@ -340,9 +343,10 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-405
-    topic_category: HTTP Status
-    topic_name: HTTP Status 405
-    topic_description: When to use HTTP status 405
+    topic_category: HTTP Status User Error
+    topic_name: 405 Method Not Allowed
+    topic_description: |
+      A request method is not supported for the requested resource; for example, a GET request on a form which requires data to be presented via POST, or a PUT request on a read-only resource.
     topic__links:
       self:
         href: /design/topics/http-status-405
@@ -352,9 +356,9 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-406
-    topic_category: HTTP Status
-    topic_name: HTTP Status 406
-    topic_description: When to use HTTP status 406
+    topic_category: HTTP Status User Error
+    topic_name: 406 Not Acceptable
+    topic_description: The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.
     topic__links:
       self:
         href: /design/topics/http-status-406
@@ -364,9 +368,10 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-408
-    topic_category: HTTP Status
-    topic_name: HTTP Status 408
-    topic_description: When to use HTTP status 408
+    topic_category: HTTP Status User Error
+    topic_name: 408 Request Timeout
+    topic_description: |
+      The server timed out waiting for the request. According to HTTP specifications: The client did not produce a request within the time that the server was prepared to wait. The client MAY repeat the request without modifications at any later time.
     topic__links:
       self:
         href: /design/topics/http-status-408
@@ -376,9 +381,10 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-409
-    topic_category: HTTP Status
-    topic_name: HTTP Status 409
-    topic_description: When to use HTTP status 409
+    topic_category: HTTP Status User Error
+    topic_name: 409 Conflict
+    topic_description: |
+      Indicates that the request could not be processed because of conflict in the request, such as an edit conflict between multiple simultaneous updates.
     topic__links:
       self:
         href: /design/topics/http-status-409
@@ -387,10 +393,23 @@ topics:
     references:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
+  - topic_id: http-status-410
+    topic_category: HTTP Status User Error
+    topic_name: 410 Gone
+    topic_description: |
+      Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a *404 Not Found* may be used instead.
+    topic__links:
+      self:
+        href: /design/topics/http-status-410
+      topicGuidelines:
+        href: /design/topics/http-status-410/guidelines
+    references:
+      - name: HTTP Status Codes
+        url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-411
-    topic_category: HTTP Status
-    topic_name: HTTP Status 411
-    topic_description: When to use HTTP status 411
+    topic_category: HTTP Status User Error
+    topic_name: 411 Length Required
+    topic_description: 'The request did not specify the length of its content, which is required by the requested resource.'
     topic__links:
       self:
         href: /design/topics/http-status-411
@@ -400,9 +419,9 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-412
-    topic_category: HTTP Status
-    topic_name: HTTP Status 412
-    topic_description: When to use HTTP status 412
+    topic_category: HTTP Status User Error
+    topic_name: 412 Precondition Failed
+    topic_description: The server does not meet one of the preconditions that the requester put on the request.
     topic__links:
       self:
         href: /design/topics/http-status-412
@@ -412,9 +431,9 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-415
-    topic_category: HTTP Status
-    topic_name: HTTP Status 415
-    topic_description: When to use HTTP status 415
+    topic_category: HTTP Status User Error
+    topic_name: 415 Unsupported Media Type
+    topic_description: 'The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format.'
     topic__links:
       self:
         href: /design/topics/http-status-415
@@ -424,9 +443,9 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-422
-    topic_category: HTTP Status
-    topic_name: HTTP Status 422
-    topic_description: When to use HTTP status 422
+    topic_category: HTTP Status User Error
+    topic_name: 422 Unprocessable Entity
+    topic_description: The request was well-formed but was unable to be followed due to semantic errors.
     topic__links:
       self:
         href: /design/topics/http-status-422
@@ -440,9 +459,9 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-500
-    topic_category: HTTP Status
-    topic_name: HTTP Status 500
-    topic_description: When to use HTTP status 500
+    topic_category: HTTP Status Server Error
+    topic_name: 500 Internal Server Error
+    topic_description: 'A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.'
     topic__links:
       self:
         href: /design/topics/http-status-500
@@ -452,9 +471,9 @@ topics:
       - name: HTTP Status Codes
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md'
   - topic_id: http-status-501
-    topic_category: HTTP Status
-    topic_name: HTTP Status 501
-    topic_description: When to use HTTP status 501
+    topic_category: HTTP Status Server Error
+    topic_name: 501 Not Implemented
+    topic_description: 'The server either does not recognize the request method, or it lacks the ability to fulfill the request. Usually this implies future availability (e.g., a new feature of a web-service API).'
     topic__links:
       self:
         href: /design/topics/http-status-501
@@ -476,7 +495,7 @@ topics:
       - name: Error handling
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/error-handling/error-handling.md'
   - topic_id: http-status
-    topic_category: HTTP Status
+    topic_category: HTTP Protocol
     topic_name: HTTP Statuses
     topic_description: General information about HTTP statuses usage
     topic__links:
@@ -492,7 +511,7 @@ topics:
   - topic_id: http-methods-delete
     topic_category: HTTP Methods
     topic_name: DELETE
-    topic_description: When to use HTTP method DELETE
+    topic_description: The DELETE method deletes the specified resource.
     topic__links:
       self:
         href: /design/topics/http-methods-delete
@@ -504,7 +523,8 @@ topics:
   - topic_id: http-methods-get
     topic_category: HTTP Methods
     topic_name: GET
-    topic_description: When to use HTTP method GET
+    topic_description: |
+      The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.
     topic__links:
       self:
         href: /design/topics/http-methods-get
@@ -520,7 +540,8 @@ topics:
   - topic_id: http-methods-patch
     topic_category: HTTP Methods
     topic_name: PATCH
-    topic_description: When to use HTTP method PATCH
+    topic_description: |
+      The PATCH method applies partial modifications to a resource.
     topic__links:
       self:
         href: /design/topics/http-methods-patch
@@ -534,7 +555,8 @@ topics:
   - topic_id: http-methods-post
     topic_category: HTTP Methods
     topic_name: POST
-    topic_description: When to use HTTP method POST
+    topic_description: |
+      The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.
     topic__links:
       self:
         href: /design/topics/http-methods-post
@@ -550,7 +572,8 @@ topics:
   - topic_id: http-methods-put
     topic_category: HTTP Methods
     topic_name: PUT
-    topic_description: When to use HTTP method PUT
+    topic_description: |
+      The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.
     topic__links:
       self:
         href: /design/topics/http-methods-put
@@ -703,18 +726,6 @@ topics:
     references:
       - name: Update Single Resource
         url: 'https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#update-single-resource'
-  - topic_id: resource-retrieve-dereference
-    topic_category: Resources
-    topic_name: Dereference Relationships
-    topic_description: How to load a resource and its linked resources in one call
-    topic__links:
-      self:
-        href: /design/topics/resource-retrieve-dereference
-      topicGuidelines:
-        href: /design/topics/resource-retrieve-dereference/guidelines
-    references:
-      name: Dereference Relationships
-      description: How to load a resource and its linked resources in one call
   - topic_id: resource-retrieve-partial
     topic_category: Resources
     topic_name: Retrieve resource partially

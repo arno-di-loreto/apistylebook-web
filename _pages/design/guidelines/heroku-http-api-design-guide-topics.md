@@ -129,9 +129,9 @@ topics:
       - name: Divide Large Responses Across Requests with Ranges
         description: 'https://geemus.gitbooks.io/http-api-design/content/en/foundations/divide-large-responses-across-requests-with-ranges.html'
   - topic_id: http-status-200
-    topic_category: HTTP Status
-    topic_name: HTTP Status 200
-    topic_description: When to use HTTP status 200
+    topic_category: HTTP Status Success
+    topic_name: 200 OK
+    topic_description: 'Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.'
     topic__links:
       self:
         href: /design/topics/http-status-200
@@ -141,9 +141,9 @@ topics:
       - name: Return appropriate status codes
         url: 'https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html'
   - topic_id: http-status-201
-    topic_category: HTTP Status
-    topic_name: HTTP Status 201
-    topic_description: When to use HTTP status 201
+    topic_category: HTTP Status Success
+    topic_name: 201 Created
+    topic_description: 'The request has been fulfilled, resulting in the creation of a new resource.'
     topic__links:
       self:
         href: /design/topics/http-status-201
@@ -153,9 +153,10 @@ topics:
       - name: Return appropriate status codes
         url: 'https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html'
   - topic_id: http-status-202
-    topic_category: HTTP Status
-    topic_name: HTTP Status 202
-    topic_description: When to use HTTP status 202
+    topic_category: HTTP Status Success
+    topic_name: 202 Accepted
+    topic_description: |
+      The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.
     topic__links:
       self:
         href: /design/topics/http-status-202
@@ -165,9 +166,10 @@ topics:
       - name: Return appropriate status codes
         url: 'https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html'
   - topic_id: http-status-206
-    topic_category: HTTP Status
-    topic_name: HTTP Status 206
-    topic_description: When to use HTTP status 206
+    topic_category: HTTP Status Success
+    topic_name: 206 Partial Content
+    topic_description: |
+      The server is delivering only part of the resource (byte serving) due to a range header sent by the client. The range header is used by HTTP clients to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams.
     topic__links:
       self:
         href: /design/topics/http-status-206
@@ -177,9 +179,10 @@ topics:
       - name: Return appropriate status codes
         url: 'https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html'
   - topic_id: http-status-401
-    topic_category: HTTP Status
-    topic_name: HTTP Status 401
-    topic_description: When to use HTTP status 401
+    topic_category: HTTP Status User Error
+    topic_name: 401 Unauthorized
+    topic_description: |
+      Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource. 
     topic__links:
       self:
         href: /design/topics/http-status-401
@@ -189,9 +192,9 @@ topics:
       - name: Return appropriate status codes
         url: 'https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html'
   - topic_id: http-status-403
-    topic_category: HTTP Status
-    topic_name: HTTP Status 403
-    topic_description: When to use HTTP status 403
+    topic_category: HTTP Status User Error
+    topic_name: 403 Forbidden
+    topic_description: 'The request was a valid request, but the server is refusing to respond to it. The user might be logged in but does not have the necessary permissions for the resource.'
     topic__links:
       self:
         href: /design/topics/http-status-403
@@ -203,9 +206,9 @@ topics:
       - name: Return appropriate status codes
         url: 'https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html'
   - topic_id: http-status-422
-    topic_category: HTTP Status
-    topic_name: HTTP Status 422
-    topic_description: When to use HTTP status 422
+    topic_category: HTTP Status User Error
+    topic_name: 422 Unprocessable Entity
+    topic_description: The request was well-formed but was unable to be followed due to semantic errors.
     topic__links:
       self:
         href: /design/topics/http-status-422
@@ -215,9 +218,9 @@ topics:
       - name: Return appropriate status codes
         url: 'https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html'
   - topic_id: http-status-429
-    topic_category: HTTP Status
-    topic_name: HTTP Status 429
-    topic_description: When to use HTTP status 429
+    topic_category: HTTP Status User Error
+    topic_name: 429 Too Many Requests
+    topic_description: The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes.
     topic__links:
       self:
         href: /design/topics/http-status-429
@@ -227,9 +230,9 @@ topics:
       - name: Return appropriate status codes
         url: 'https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html'
   - topic_id: http-status-500
-    topic_category: HTTP Status
-    topic_name: HTTP Status 500
-    topic_description: When to use HTTP status 500
+    topic_category: HTTP Status Server Error
+    topic_name: 500 Internal Server Error
+    topic_description: 'A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.'
     topic__links:
       self:
         href: /design/topics/http-status-500
@@ -251,7 +254,7 @@ topics:
       - name: Generate structured errors
         url: 'https://geemus.gitbooks.io/http-api-design/content/en/responses/generate-structured-errors.html'
   - topic_id: http-status
-    topic_category: HTTP Status
+    topic_category: HTTP Protocol
     topic_name: HTTP Statuses
     topic_description: General information about HTTP statuses usage
     topic__links:

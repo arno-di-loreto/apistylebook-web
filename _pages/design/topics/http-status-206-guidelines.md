@@ -1,12 +1,13 @@
 ---
 layout: topic
-title: HTTP Status 206
+title: 206 Partial Content
 permalink: /design/topics/http-status-206
-sort: HTTP Status_HTTP Status 206
+sort: HTTP Status Success_206 Partial Content
 topic_id: http-status-206
-topic_category: HTTP Status
-topic_name: HTTP Status 206
-topic_description: When to use HTTP status 206
+topic_category: HTTP Status Success
+topic_name: 206 Partial Content
+topic_description: |
+  The server is delivering only part of the resource (byte serving) due to a range header sent by the client. The range header is used by HTTP clients to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams.
 guidelines:
   - guideline_id: heroku-http-api-design-guide
     guideline_title: HTTP API Design Guide

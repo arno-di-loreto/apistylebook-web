@@ -65,9 +65,9 @@ topics:
         quote: URL v. header
         url: 'https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls'
   - topic_id: http-status-200
-    topic_category: HTTP Status
-    topic_name: HTTP Status 200
-    topic_description: When to use HTTP status 200
+    topic_category: HTTP Status Success
+    topic_name: 200 OK
+    topic_description: 'Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.'
     topic__links:
       self:
         href: /design/topics/http-status-200
@@ -77,9 +77,10 @@ topics:
       - name: Error handling
         url: 'https://github.com/WhiteHouse/api-standards/blob/master/README.md#error-handling'
   - topic_id: http-status-400
-    topic_category: HTTP Status
-    topic_name: HTTP Status 400
-    topic_description: When to use HTTP status 400
+    topic_category: HTTP Status User Error
+    topic_name: 400 Bad Request
+    topic_description: |
+      The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, too large size, invalid request message framing, or deceptive request routing).
     topic__links:
       self:
         href: /design/topics/http-status-400
@@ -89,9 +90,9 @@ topics:
       - name: Error handling
         url: 'https://github.com/WhiteHouse/api-standards/blob/master/README.md#error-handling'
   - topic_id: http-status-500
-    topic_category: HTTP Status
-    topic_name: HTTP Status 500
-    topic_description: When to use HTTP status 500
+    topic_category: HTTP Status Server Error
+    topic_name: 500 Internal Server Error
+    topic_description: 'A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.'
     topic__links:
       self:
         href: /design/topics/http-status-500
@@ -113,7 +114,7 @@ topics:
       - name: Error handling
         url: 'https://github.com/WhiteHouse/api-standards/blob/master/README.md#error-handling'
   - topic_id: http-status
-    topic_category: HTTP Status
+    topic_category: HTTP Protocol
     topic_name: HTTP Statuses
     topic_description: General information about HTTP statuses usage
     topic__links:
@@ -127,7 +128,7 @@ topics:
   - topic_id: http-methods-delete
     topic_category: HTTP Methods
     topic_name: DELETE
-    topic_description: When to use HTTP method DELETE
+    topic_description: The DELETE method deletes the specified resource.
     topic__links:
       self:
         href: /design/topics/http-methods-delete
@@ -139,7 +140,8 @@ topics:
   - topic_id: http-methods-get
     topic_category: HTTP Methods
     topic_name: GET
-    topic_description: When to use HTTP method GET
+    topic_description: |
+      The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.
     topic__links:
       self:
         href: /design/topics/http-methods-get
@@ -151,7 +153,8 @@ topics:
   - topic_id: http-methods-post
     topic_category: HTTP Methods
     topic_name: POST
-    topic_description: When to use HTTP method POST
+    topic_description: |
+      The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.
     topic__links:
       self:
         href: /design/topics/http-methods-post
@@ -163,7 +166,8 @@ topics:
   - topic_id: http-methods-put
     topic_category: HTTP Methods
     topic_name: PUT
-    topic_description: When to use HTTP method PUT
+    topic_description: |
+      The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.
     topic__links:
       self:
         href: /design/topics/http-methods-put

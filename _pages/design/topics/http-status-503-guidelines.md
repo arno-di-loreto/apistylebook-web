@@ -1,12 +1,12 @@
 ---
 layout: topic
-title: HTTP Status 503
+title: 503 Service Unavailable
 permalink: /design/topics/http-status-503
-sort: HTTP Status_HTTP Status 503
+sort: HTTP Status Server Error_503 Service Unavailable
 topic_id: http-status-503
-topic_category: HTTP Status
-topic_name: HTTP Status 503
-topic_description: When to use HTTP status 503
+topic_category: HTTP Status Server Error
+topic_name: 503 Service Unavailable
+topic_description: 'The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.'
 guidelines:
   - guideline_id: cloud-foundy-cloud-controller-api-style-guide
     guideline_title: Cloud Controller API v3 Style Guide (Proposal)

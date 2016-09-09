@@ -1,12 +1,16 @@
 ---
 layout: topic
-title: HTTP Status 428
+title: 428 Precondition Required
 permalink: /design/topics/http-status-428
-sort: HTTP Status_HTTP Status 428
+sort: HTTP Status User Error_428 Precondition Required
 topic_id: http-status-428
-topic_category: HTTP Status
-topic_name: HTTP Status 428
-topic_description: When to use HTTP status 428
+topic_category: HTTP Status User Error
+topic_name: 428 Precondition Required
+topic_description: |
+  The origin server requires the request to be conditional. 
+  Intended to prevent the *lost update* problem, where a client GETs a resource's state, modifies it, 
+  and PUTs it back to the server, when meanwhile a third party has modified the state on the server, 
+  leading to a conflict.
 guidelines:
   - guideline_id: zalando-restful-api-guidelines
     guideline_title: RESTFul API Guidelines

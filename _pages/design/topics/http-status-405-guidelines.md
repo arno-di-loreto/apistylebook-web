@@ -1,12 +1,13 @@
 ---
 layout: topic
-title: HTTP Status 405
+title: 405 Method Not Allowed
 permalink: /design/topics/http-status-405
-sort: HTTP Status_HTTP Status 405
+sort: HTTP Status User Error_405 Method Not Allowed
 topic_id: http-status-405
-topic_category: HTTP Status
-topic_name: HTTP Status 405
-topic_description: When to use HTTP status 405
+topic_category: HTTP Status User Error
+topic_name: 405 Method Not Allowed
+topic_description: |
+  A request method is not supported for the requested resource; for example, a GET request on a form which requires data to be presented via POST, or a PUT request on a read-only resource.
 guidelines:
   - guideline_id: ausdto-api-design-guide
     guideline_title: API Design Guide

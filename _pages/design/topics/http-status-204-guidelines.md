@@ -1,12 +1,12 @@
 ---
 layout: topic
-title: HTTP Status 204
+title: 204 No Content
 permalink: /design/topics/http-status-204
-sort: HTTP Status_HTTP Status 204
+sort: HTTP Status Success_204 No Content
 topic_id: http-status-204
-topic_category: HTTP Status
-topic_name: HTTP Status 204
-topic_description: When to use HTTP status 204
+topic_category: HTTP Status Success
+topic_name: 204 No Content
+topic_description: The server successfully processed the request and is not returning any content.
 guidelines:
   - guideline_id: atlassian-rest-api-design-guidelines-version-1
     guideline_title: Atlassian REST API Design Guidelines version 1

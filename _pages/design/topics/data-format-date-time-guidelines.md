@@ -18,24 +18,6 @@ guidelines:
     guideline_screenshotUrl: /media/screenshots/cisco-api-design-guide.png
     guideline_date: 2015-08-21T00:00:00.000Z
     guideline_reviewDate: 2016-08-18T00:00:00.000Z
-    guideline_attachedDocuments:
-      - name: REST API Design Principles
-        description: A summary of common REST API design constraints and conventions
-        url: 'https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md'
-        type: github
-        referenced:
-          - name: Preface
-            url: 'https://github.com/CiscoDevNet/api-design-guide#1-preface'
-      - name: Tracking ID flow
-        description: A sequence diagram explaning
-        url: 'https://github.com/CiscoDevNet/api-design-guide/blob/master/trackingid-flow.png'
-        type: github
-        referenced:
-          - name: TrackingID Header
-            description: A sequence diagram explaning the use of the tracking ID
-            url: 'https://github.com/CiscoDevNet/api-design-guide#352-trackingid-header'
-    guideline_remarks:
-      - 'broken links due to typo error in https://github.com/CiscoDevNet/api-design-guide#36-http-verbs'
     guideline__links:
       self:
         href: /design/guidelines/cisco-api-design-guide
@@ -43,8 +25,8 @@ guidelines:
         href: /design/guidelines/cisco-api-design-guide/topics
     references:
       - name: 3.3 Representations
-        quote: RFC-3339
         url: 'https://github.com/CiscoDevNet/api-design-guide#33-representations'
+        quote: 3.3.8 Date and time fields MUST be represented as strings and formatted according to RFC-3339
   - guideline_id: haufe-api-styleguide
     guideline_title: Haufe API style guide
     guideline_type: github

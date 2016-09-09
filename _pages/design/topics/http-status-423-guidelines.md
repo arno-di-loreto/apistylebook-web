@@ -1,12 +1,12 @@
 ---
 layout: topic
-title: HTTP Status 423
+title: 423 Locked
 permalink: /design/topics/http-status-423
-sort: HTTP Status_HTTP Status 423
+sort: HTTP Status User Error_423 Locked
 topic_id: http-status-423
-topic_category: HTTP Status
-topic_name: HTTP Status 423
-topic_description: When to use HTTP status 423
+topic_category: HTTP Status User Error
+topic_name: 423 Locked
+topic_description: The resource that is being accessed is locked.
 guidelines:
   - guideline_id: zalando-restful-api-guidelines
     guideline_title: RESTFul API Guidelines

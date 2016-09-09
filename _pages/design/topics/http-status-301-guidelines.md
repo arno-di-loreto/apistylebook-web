@@ -1,12 +1,12 @@
 ---
 layout: topic
-title: HTTP Status 301
+title: 301 Moved Permanently
 permalink: /design/topics/http-status-301
-sort: HTTP Status_HTTP Status 301
+sort: HTTP Status Redirection_301 Moved Permanently
 topic_id: http-status-301
-topic_category: HTTP Status
-topic_name: HTTP Status 301
-topic_description: When to use HTTP status 301
+topic_category: HTTP Status Redirection
+topic_name: 301 Moved Permanently
+topic_description: This and all future requests should be directed to the given URI.
 guidelines:
   - guideline_id: atlassian-rest-api-design-guidelines-version-1
     guideline_title: Atlassian REST API Design Guidelines version 1

@@ -6,7 +6,8 @@ sort: HTTP Methods_POST
 topic_id: http-methods-post
 topic_category: HTTP Methods
 topic_name: POST
-topic_description: When to use HTTP method POST
+topic_description: |
+  The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.
 guidelines:
   - guideline_id: ausdto-api-design-guide
     guideline_title: API Design Guide
@@ -36,24 +37,6 @@ guidelines:
     guideline_screenshotUrl: /media/screenshots/cisco-api-design-guide.png
     guideline_date: 2015-08-21T00:00:00.000Z
     guideline_reviewDate: 2016-08-18T00:00:00.000Z
-    guideline_attachedDocuments:
-      - name: REST API Design Principles
-        description: A summary of common REST API design constraints and conventions
-        url: 'https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md'
-        type: github
-        referenced:
-          - name: Preface
-            url: 'https://github.com/CiscoDevNet/api-design-guide#1-preface'
-      - name: Tracking ID flow
-        description: A sequence diagram explaning
-        url: 'https://github.com/CiscoDevNet/api-design-guide/blob/master/trackingid-flow.png'
-        type: github
-        referenced:
-          - name: TrackingID Header
-            description: A sequence diagram explaning the use of the tracking ID
-            url: 'https://github.com/CiscoDevNet/api-design-guide#352-trackingid-header'
-    guideline_remarks:
-      - 'broken links due to typo error in https://github.com/CiscoDevNet/api-design-guide#36-http-verbs'
     guideline__links:
       self:
         href: /design/guidelines/cisco-api-design-guide

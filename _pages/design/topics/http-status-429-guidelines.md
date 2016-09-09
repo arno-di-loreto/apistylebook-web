@@ -1,12 +1,12 @@
 ---
 layout: topic
-title: HTTP Status 429
+title: 429 Too Many Requests
 permalink: /design/topics/http-status-429
-sort: HTTP Status_HTTP Status 429
+sort: HTTP Status User Error_429 Too Many Requests
 topic_id: http-status-429
-topic_category: HTTP Status
-topic_name: HTTP Status 429
-topic_description: When to use HTTP status 429
+topic_category: HTTP Status User Error
+topic_name: 429 Too Many Requests
+topic_description: The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes.
 guidelines:
   - guideline_id: heroku-http-api-design-guide
     guideline_title: HTTP API Design Guide

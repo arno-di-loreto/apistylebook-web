@@ -1,12 +1,12 @@
 ---
 layout: topic
-title: HTTP Status 412
+title: 412 Precondition Failed
 permalink: /design/topics/http-status-412
-sort: HTTP Status_HTTP Status 412
+sort: HTTP Status User Error_412 Precondition Failed
 topic_id: http-status-412
-topic_category: HTTP Status
-topic_name: HTTP Status 412
-topic_description: When to use HTTP status 412
+topic_category: HTTP Status User Error
+topic_name: 412 Precondition Failed
+topic_description: The server does not meet one of the preconditions that the requester put on the request.
 guidelines:
   - guideline_id: atlassian-rest-api-design-guidelines-version-1
     guideline_title: Atlassian REST API Design Guidelines version 1

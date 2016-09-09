@@ -1,12 +1,13 @@
 ---
 layout: topic
-title: 411 Length Required
-permalink: /design/topics/http-status-411
-sort: HTTP Status User Error_411 Length Required
-topic_id: http-status-411
+title: 410 Gone
+permalink: /design/topics/http-status-410
+sort: HTTP Status User Error_410 Gone
+topic_id: http-status-410
 topic_category: HTTP Status User Error
-topic_name: 411 Length Required
-topic_description: 'The request did not specify the length of its content, which is required by the requested resource.'
+topic_name: 410 Gone
+topic_description: |
+  Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a *404 Not Found* may be used instead.
 guidelines:
   - guideline_id: haufe-api-styleguide
     guideline_title: Haufe API style guide

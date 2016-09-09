@@ -1,12 +1,13 @@
 ---
 layout: topic
-title: HTTP Status 409
+title: 409 Conflict
 permalink: /design/topics/http-status-409
-sort: HTTP Status_HTTP Status 409
+sort: HTTP Status User Error_409 Conflict
 topic_id: http-status-409
-topic_category: HTTP Status
-topic_name: HTTP Status 409
-topic_description: When to use HTTP status 409
+topic_category: HTTP Status User Error
+topic_name: 409 Conflict
+topic_description: |
+  Indicates that the request could not be processed because of conflict in the request, such as an edit conflict between multiple simultaneous updates.
 guidelines:
   - guideline_id: haufe-api-styleguide
     guideline_title: Haufe API style guide

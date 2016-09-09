@@ -1,12 +1,13 @@
 ---
 layout: topic
-title: HTTP Status 400
+title: 400 Bad Request
 permalink: /design/topics/http-status-400
-sort: HTTP Status_HTTP Status 400
+sort: HTTP Status User Error_400 Bad Request
 topic_id: http-status-400
-topic_category: HTTP Status
-topic_name: HTTP Status 400
-topic_description: When to use HTTP status 400
+topic_category: HTTP Status User Error
+topic_name: 400 Bad Request
+topic_description: |
+  The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, too large size, invalid request message framing, or deceptive request routing).
 guidelines:
   - guideline_id: cloud-foundy-cloud-controller-api-style-guide
     guideline_title: Cloud Controller API v3 Style Guide (Proposal)

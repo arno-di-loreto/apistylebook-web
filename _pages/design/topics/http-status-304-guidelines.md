@@ -1,12 +1,13 @@
 ---
 layout: topic
-title: HTTP Status 304
+title: 304 Not Modified
 permalink: /design/topics/http-status-304
-sort: HTTP Status_HTTP Status 304
+sort: HTTP Status Redirection_304 Not Modified
 topic_id: http-status-304
-topic_category: HTTP Status
-topic_name: HTTP Status 304
-topic_description: When to use HTTP status 304
+topic_category: HTTP Status Redirection
+topic_name: 304 Not Modified
+topic_description: |
+  Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.
 guidelines:
   - guideline_id: atlassian-rest-api-design-guidelines-version-1
     guideline_title: Atlassian REST API Design Guidelines version 1

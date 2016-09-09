@@ -1,12 +1,12 @@
 ---
 layout: topic
-title: HTTP Status 415
+title: 415 Unsupported Media Type
 permalink: /design/topics/http-status-415
-sort: HTTP Status_HTTP Status 415
+sort: HTTP Status User Error_415 Unsupported Media Type
 topic_id: http-status-415
-topic_category: HTTP Status
-topic_name: HTTP Status 415
-topic_description: When to use HTTP status 415
+topic_category: HTTP Status User Error
+topic_name: 415 Unsupported Media Type
+topic_description: 'The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format.'
 guidelines:
   - guideline_id: haufe-api-styleguide
     guideline_title: Haufe API style guide

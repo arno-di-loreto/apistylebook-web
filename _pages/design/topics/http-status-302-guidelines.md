@@ -1,12 +1,13 @@
 ---
 layout: topic
-title: HTTP Status 302
+title: 302 Found
 permalink: /design/topics/http-status-302
-sort: HTTP Status_HTTP Status 302
+sort: HTTP Status Redirection_302 Found
 topic_id: http-status-302
-topic_category: HTTP Status
-topic_name: HTTP Status 302
-topic_description: When to use HTTP status 302
+topic_category: HTTP Status Redirection
+topic_name: 302 Found
+topic_description: |
+  Common way of performing URL redirection. An HTTP response with this status code will additionally provide a URL in the location header field. The user agent (e.g. a web browser) is invited by a response with this code to make a second, otherwise identical, request to the new URL specified in the location field. 
 guidelines:
   - guideline_id: cloud-foundy-cloud-controller-api-style-guide
     guideline_title: Cloud Controller API v3 Style Guide (Proposal)

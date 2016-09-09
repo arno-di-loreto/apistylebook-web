@@ -1,12 +1,12 @@
 ---
 layout: topic
-title: HTTP Status 403
+title: 403 Forbidden
 permalink: /design/topics/http-status-403
-sort: HTTP Status_HTTP Status 403
+sort: HTTP Status User Error_403 Forbidden
 topic_id: http-status-403
-topic_category: HTTP Status
-topic_name: HTTP Status 403
-topic_description: When to use HTTP status 403
+topic_category: HTTP Status User Error
+topic_name: 403 Forbidden
+topic_description: 'The request was a valid request, but the server is refusing to respond to it. The user might be logged in but does not have the necessary permissions for the resource.'
 guidelines:
   - guideline_id: cloud-foundy-cloud-controller-api-style-guide
     guideline_title: Cloud Controller API v3 Style Guide (Proposal)

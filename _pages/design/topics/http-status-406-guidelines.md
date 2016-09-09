@@ -1,12 +1,12 @@
 ---
 layout: topic
-title: HTTP Status 406
+title: 406 Not Acceptable
 permalink: /design/topics/http-status-406
-sort: HTTP Status_HTTP Status 406
+sort: HTTP Status User Error_406 Not Acceptable
 topic_id: http-status-406
-topic_category: HTTP Status
-topic_name: HTTP Status 406
-topic_description: When to use HTTP status 406
+topic_category: HTTP Status User Error
+topic_name: 406 Not Acceptable
+topic_description: The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.
 guidelines:
   - guideline_id: haufe-api-styleguide
     guideline_title: Haufe API style guide

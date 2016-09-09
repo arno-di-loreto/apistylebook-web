@@ -1,12 +1,12 @@
 ---
 layout: topic
-title: HTTP Status 500
+title: 500 Internal Server Error
 permalink: /design/topics/http-status-500
-sort: HTTP Status_HTTP Status 500
+sort: HTTP Status Server Error_500 Internal Server Error
 topic_id: http-status-500
-topic_category: HTTP Status
-topic_name: HTTP Status 500
-topic_description: When to use HTTP status 500
+topic_category: HTTP Status Server Error
+topic_name: 500 Internal Server Error
+topic_description: 'A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.'
 guidelines:
   - guideline_id: cloud-foundy-cloud-controller-api-style-guide
     guideline_title: Cloud Controller API v3 Style Guide (Proposal)

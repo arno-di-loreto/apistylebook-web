@@ -1,12 +1,12 @@
 ---
 layout: topic
-title: HTTP Status 501
+title: 501 Not Implemented
 permalink: /design/topics/http-status-501
-sort: HTTP Status_HTTP Status 501
+sort: HTTP Status Server Error_501 Not Implemented
 topic_id: http-status-501
-topic_category: HTTP Status
-topic_name: HTTP Status 501
-topic_description: When to use HTTP status 501
+topic_category: HTTP Status Server Error
+topic_name: 501 Not Implemented
+topic_description: 'The server either does not recognize the request method, or it lacks the ability to fulfill the request. Usually this implies future availability (e.g., a new feature of a web-service API).'
 guidelines:
   - guideline_id: haufe-api-styleguide
     guideline_title: Haufe API style guide

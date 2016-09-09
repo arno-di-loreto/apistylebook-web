@@ -1,12 +1,12 @@
 ---
 layout: topic
-title: HTTP Status 200
+title: 200 OK
 permalink: /design/topics/http-status-200
-sort: HTTP Status_HTTP Status 200
+sort: HTTP Status Success_200 OK
 topic_id: http-status-200
-topic_category: HTTP Status
-topic_name: HTTP Status 200
-topic_description: When to use HTTP status 200
+topic_category: HTTP Status Success
+topic_name: 200 OK
+topic_description: 'Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.'
 guidelines:
   - guideline_id: atlassian-rest-api-design-guidelines-version-1
     guideline_title: Atlassian REST API Design Guidelines version 1

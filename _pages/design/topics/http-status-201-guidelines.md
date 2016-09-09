@@ -1,12 +1,12 @@
 ---
 layout: topic
-title: HTTP Status 201
+title: 201 Created
 permalink: /design/topics/http-status-201
-sort: HTTP Status_HTTP Status 201
+sort: HTTP Status Success_201 Created
 topic_id: http-status-201
-topic_category: HTTP Status
-topic_name: HTTP Status 201
-topic_description: When to use HTTP status 201
+topic_category: HTTP Status Success
+topic_name: 201 Created
+topic_description: 'The request has been fulfilled, resulting in the creation of a new resource.'
 guidelines:
   - guideline_id: atlassian-rest-api-design-guidelines-version-1
     guideline_title: Atlassian REST API Design Guidelines version 1

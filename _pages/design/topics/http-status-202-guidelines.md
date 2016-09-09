@@ -1,12 +1,13 @@
 ---
 layout: topic
-title: HTTP Status 202
+title: 202 Accepted
 permalink: /design/topics/http-status-202
-sort: HTTP Status_HTTP Status 202
+sort: HTTP Status Success_202 Accepted
 topic_id: http-status-202
-topic_category: HTTP Status
-topic_name: HTTP Status 202
-topic_description: When to use HTTP status 202
+topic_category: HTTP Status Success
+topic_name: 202 Accepted
+topic_description: |
+  The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.
 guidelines:
   - guideline_id: atlassian-rest-api-design-guidelines-version-1
     guideline_title: Atlassian REST API Design Guidelines version 1

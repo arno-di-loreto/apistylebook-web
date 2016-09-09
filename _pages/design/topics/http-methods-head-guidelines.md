@@ -6,7 +6,8 @@ sort: HTTP Methods_HEAD
 topic_id: http-methods-head
 topic_category: HTTP Methods
 topic_name: HEAD
-topic_description: When to use HTTP method HEAD
+topic_description: |
+  The HEAD method asks for a response identical to that of a GET request, but without the response body. This is useful for retrieving meta-information written in response headers, without having to transport the entire content.
 guidelines:
   - guideline_id: ausdto-api-design-guide
     guideline_title: API Design Guide
@@ -38,24 +39,6 @@ guidelines:
     guideline_screenshotUrl: /media/screenshots/cisco-api-design-guide.png
     guideline_date: 2015-08-21T00:00:00.000Z
     guideline_reviewDate: 2016-08-18T00:00:00.000Z
-    guideline_attachedDocuments:
-      - name: REST API Design Principles
-        description: A summary of common REST API design constraints and conventions
-        url: 'https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md'
-        type: github
-        referenced:
-          - name: Preface
-            url: 'https://github.com/CiscoDevNet/api-design-guide#1-preface'
-      - name: Tracking ID flow
-        description: A sequence diagram explaning
-        url: 'https://github.com/CiscoDevNet/api-design-guide/blob/master/trackingid-flow.png'
-        type: github
-        referenced:
-          - name: TrackingID Header
-            description: A sequence diagram explaning the use of the tracking ID
-            url: 'https://github.com/CiscoDevNet/api-design-guide#352-trackingid-header'
-    guideline_remarks:
-      - 'broken links due to typo error in https://github.com/CiscoDevNet/api-design-guide#36-http-verbs'
     guideline__links:
       self:
         href: /design/guidelines/cisco-api-design-guide

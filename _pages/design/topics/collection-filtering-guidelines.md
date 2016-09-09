@@ -18,24 +18,6 @@ guidelines:
     guideline_screenshotUrl: /media/screenshots/cisco-api-design-guide.png
     guideline_date: 2015-08-21T00:00:00.000Z
     guideline_reviewDate: 2016-08-18T00:00:00.000Z
-    guideline_attachedDocuments:
-      - name: REST API Design Principles
-        description: A summary of common REST API design constraints and conventions
-        url: 'https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md'
-        type: github
-        referenced:
-          - name: Preface
-            url: 'https://github.com/CiscoDevNet/api-design-guide#1-preface'
-      - name: Tracking ID flow
-        description: A sequence diagram explaning
-        url: 'https://github.com/CiscoDevNet/api-design-guide/blob/master/trackingid-flow.png'
-        type: github
-        referenced:
-          - name: TrackingID Header
-            description: A sequence diagram explaning the use of the tracking ID
-            url: 'https://github.com/CiscoDevNet/api-design-guide#352-trackingid-header'
-    guideline_remarks:
-      - 'broken links due to typo error in https://github.com/CiscoDevNet/api-design-guide#36-http-verbs'
     guideline__links:
       self:
         href: /design/guidelines/cisco-api-design-guide
@@ -122,25 +104,6 @@ guidelines:
         url: 'https://github.com/paypal/api-standards/blob/master/api-style-guide.md#time-selection'
       - name: Complex Operation - Search
         url: 'https://github.com/paypal/api-standards/blob/master/api-style-guide.md#complex-operation---search'
-  - guideline_id: redhat-thoughts-on-restful-api-design
-    guideline_title: Thoughts on RESTful API Design
-    guideline_type: website
-    guideline_url: 'http://restful-api-design.readthedocs.io/en/latest/'
-    guideline_company: Red Hat
-    guideline_companyLogoUrl: /media/logos/redhat.png
-    guideline_companyUrl: 'https://www.redhat.com/'
-    guideline_screenshotUrl: /media/screenshots/redhat-thoughts-on-restful-api-design.png
-    guideline_authors:
-      - name: Geert Jansen
-        twitter: 1geertj
-    guideline_date: 2012-11-15T00:00:00.000Z
-    guideline_reviewDate: 2016-08-18T00:00:00.000Z
-    guideline__links:
-      self:
-        href: /design/guidelines/redhat-thoughts-on-restful-api-design
-      guidelineTopics:
-        href: /design/guidelines/redhat-thoughts-on-restful-api-design/topics
-    references: null
   - guideline_id: white-house-web-api-standards
     guideline_title: White House Web API Standards
     guideline_type: github

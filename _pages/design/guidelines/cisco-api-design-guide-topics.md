@@ -13,24 +13,6 @@ guideline_companyUrl: 'http://developer.cisco.com/'
 guideline_screenshotUrl: /media/screenshots/cisco-api-design-guide.png
 guideline_date: 2015-08-21T00:00:00.000Z
 guideline_reviewDate: 2016-08-18T00:00:00.000Z
-guideline_attachedDocuments:
-  - name: REST API Design Principles
-    description: A summary of common REST API design constraints and conventions
-    url: 'https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md'
-    type: github
-    referenced:
-      - name: Preface
-        url: 'https://github.com/CiscoDevNet/api-design-guide#1-preface'
-  - name: Tracking ID flow
-    description: A sequence diagram explaning
-    url: 'https://github.com/CiscoDevNet/api-design-guide/blob/master/trackingid-flow.png'
-    type: github
-    referenced:
-      - name: TrackingID Header
-        description: A sequence diagram explaning the use of the tracking ID
-        url: 'https://github.com/CiscoDevNet/api-design-guide#352-trackingid-header'
-guideline_remarks:
-  - 'broken links due to typo error in https://github.com/CiscoDevNet/api-design-guide#36-http-verbs'
 topics:
   - topic_id: security
     topic_category: Security
@@ -147,7 +129,8 @@ topics:
   - topic_id: http-methods-get
     topic_category: HTTP Methods
     topic_name: GET
-    topic_description: When to use HTTP method GET
+    topic_description: |
+      The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.
     topic__links:
       self:
         href: /design/topics/http-methods-get
@@ -159,7 +142,8 @@ topics:
   - topic_id: http-methods-post
     topic_category: HTTP Methods
     topic_name: POST
-    topic_description: When to use HTTP method POST
+    topic_description: |
+      The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.
     topic__links:
       self:
         href: /design/topics/http-methods-post
@@ -171,7 +155,8 @@ topics:
   - topic_id: http-methods-put
     topic_category: HTTP Methods
     topic_name: PUT
-    topic_description: When to use HTTP method PUT
+    topic_description: |
+      The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.
     topic__links:
       self:
         href: /design/topics/http-methods-put
@@ -183,7 +168,7 @@ topics:
   - topic_id: http-methods-delete
     topic_category: HTTP Methods
     topic_name: DELETE
-    topic_description: When to use HTTP method DELETE
+    topic_description: The DELETE method deletes the specified resource.
     topic__links:
       self:
         href: /design/topics/http-methods-delete
@@ -195,7 +180,8 @@ topics:
   - topic_id: http-methods-patch
     topic_category: HTTP Methods
     topic_name: PATCH
-    topic_description: When to use HTTP method PATCH
+    topic_description: |
+      The PATCH method applies partial modifications to a resource.
     topic__links:
       self:
         href: /design/topics/http-methods-patch
@@ -207,7 +193,8 @@ topics:
   - topic_id: http-methods-head
     topic_category: HTTP Methods
     topic_name: HEAD
-    topic_description: When to use HTTP method HEAD
+    topic_description: |
+      The HEAD method asks for a response identical to that of a GET request, but without the response body. This is useful for retrieving meta-information written in response headers, without having to transport the entire content.
     topic__links:
       self:
         href: /design/topics/http-methods-head
@@ -219,7 +206,8 @@ topics:
   - topic_id: http-methods-options
     topic_category: HTTP Methods
     topic_name: OPTIONS
-    topic_description: When to use HTTP method OPTION
+    topic_description: |
+      The OPTIONS method returns the HTTP methods that the server supports for the specified URL. This can be used to check the functionality of a web server by requesting '*' instead of a specific resource.
     topic__links:
       self:
         href: /design/topics/http-methods-options
@@ -241,7 +229,7 @@ topics:
       - name: 3.7 Alternative Forms
         url: 'https://github.com/CiscoDevNet/api-design-guide#37-alternative-forms'
   - topic_id: http-status
-    topic_category: HTTP Status
+    topic_category: HTTP Protocol
     topic_name: HTTP Statuses
     topic_description: General information about HTTP statuses usage
     topic__links:
@@ -357,9 +345,9 @@ topics:
       topicGuidelines:
         href: /design/topics/resource-retrieve-dereference/guidelines
     references:
-      - name: null
+      - name: 3.6.3 GET
         quote: 'If a service supports the fields parameter, then a value of @reference, @narrow, or @wide SHOULD...'
-        url: null
+        url: 'https://github.com/CiscoDevNet/api-design-guide#363-get'
   - topic_id: resource-creation
     topic_category: Resources
     topic_name: Create resource
@@ -548,8 +536,8 @@ topics:
         href: /design/topics/data-format-date-time/guidelines
     references:
       - name: 3.3 Representations
-        quote: RFC-3339
         url: 'https://github.com/CiscoDevNet/api-design-guide#33-representations'
+        quote: 3.3.8 Date and time fields MUST be represented as strings and formatted according to RFC-3339
   - topic_id: data-format-null
     topic_category: Data
     topic_name: Null data
@@ -572,8 +560,9 @@ topics:
       topicGuidelines:
         href: /design/topics/undo/guidelines
     references:
-      - name: '*3.6.4.3 *The POST verb MAY be used to reverse the soft-delete of a resource, using an undelete parameter'
+      - name: 3.6 HTTP Verbs
         url: 'https://github.com/CiscoDevNet/api-design-guide#36-http-verbs'
+        quote: '*3.6.4.3 *The POST verb MAY be used to reverse the soft-delete of a resource, using an undelete parameter'
   - topic_id: versioning
     topic_category: API Lifecycle
     topic_name: Versionning
