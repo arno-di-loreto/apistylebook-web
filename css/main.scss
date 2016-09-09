@@ -5,7 +5,7 @@
 
 /* main background */
 .full {
-    background: url('/images/blueprints-textures.png') no-repeat center center fixed;
+    background: url('{{ "/images/blueprints-textures.png" | prepend: site.baseurl | prepend: site.github.url }}') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
