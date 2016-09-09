@@ -1,6 +1,6 @@
 <header>
   <!-- Static navbar -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-fixed-top full">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -17,7 +17,9 @@
           {% if my_page.menu %}
             <li 
               {% if my_page.url == page.url%}
-              class="active"
+              class="nav-item active"
+              {% else %}
+              class="nav-item"
               {% endif %}
             >
               <a class="page-link" href="{{ my_page.url | prepend: site.baseurl | prepend: site.github.url }}">{{ my_page.title | escape }}</a>

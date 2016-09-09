@@ -3,26 +3,23 @@
 
   {% include head.html %}
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
 
     {% include header.html %}
-    <div class="container">
+    <div class="container main-container">
       {{ content }}
     </div>
 
     {% include footer.html %}
     {% if page.anchors or layout.anchors %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.min.js"></script>
+    <script src="{{ "/js/anchor.min.js" | prepend: site.baseurl | prepend: site.github.url }}" ></script>
     <script language="javascript"> 
       anchors.options = {
-        /*visible: 'always',*/
-        placement: 'left'
+        placement: 'right'
       };
-      anchors.add();
+      anchors.add('.anchored');
     </script>
     {% endif %}
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
   </body>
 
 </html>

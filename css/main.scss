@@ -3,6 +3,15 @@
 ---
 @charset "utf-8";
 
+/* main background */
+.full {
+    background: url('/images/blueprints-textures.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -24,15 +33,80 @@ body {
   background-color: #f5f5f5;
 }
 
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
+.main-container {
+  width: 100%;
+  padding: 0px;
+}
 
-.container {
+.body-container {
   width: auto;
   max-width: 1024px;
-  padding: 0 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .container .text-muted {
   margin: 20px 0;
+}
+
+/* TOC */
+.affix {
+  top: 60px;
+}
+
+.nav>.active:focus>a, nav[data-toggle=toc] .nav>.active:hover>a, nav[data-toggle=toc] .nav>.active>a {
+    color: #124266;
+    border-left: 2px solid #124266;
+}
+
+/* Company logos size */
+.company-logo {
+  max-width: 100%;
+  height: auto;
+  padding: 10px
+}
+
+/* links */
+a {
+  color: #124266
+}
+
+/* navbar */
+.navbar {
+
+  a {
+    color: white
+  }
+
+  a.page-link:hover {
+    color: #124266
+  }
+}
+
+/* categories */
+.panel-heading {
+  @extend .full;
+  h2 {
+    color: white
+  }
+}
+
+/* headers */
+.full-jumbotron .jumbotron {
+  background-color:inherit;
+  width: 100%;
+  color: white;
+}
+
+h1 .small {
+  color: white;
+}
+
+.full-jumbotron {
+  @extend .full;
+  width:100%;
+  height:100%;
+  max-width:100%;
+  padding: 0px;
+  background-position:center;
+  background-size:cover;
 }

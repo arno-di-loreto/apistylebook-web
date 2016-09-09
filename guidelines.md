@@ -1,11 +1,24 @@
 ---
-layout: page
+layout: default
 title: Design Guidelines
 permalink: /design/guidelines/
 date: 2016-08-18 22:31:09 +0200
 menu: true
 ---
-<div class="container">
+
+<div class="container main-container full-jumbotron">
+    <div class="jumbotron">
+        <h1>{{ page.title | escape }}</h1>
+        <p>
+        Some companies share their API Design Guidelines with the community. Each one of theses documents has been analyzed to list covered topics.
+        </p>
+        <p>
+        If you know some publicly available API guidelines which are not here don't hesitate to ping us on Twitter.
+        </p>
+    </div>
+</div>
+
+<div class="container body-container">
     <div class="row">
         {% assign sorted_pages = (site.pages | where: "layout" , "guideline" | sort: 'sort') %}
         {% for page in sorted_pages %}
