@@ -5,7 +5,6 @@ permalink: /design/guidelines/
 date: 2016-08-18 22:31:09 +0200
 menu: true
 ---
-
 <div class="container main-container full-jumbotron">
     <div class="jumbotron">
         <h1>{{ page.title | escape }}</h1>
@@ -42,7 +41,6 @@ $(window).ready(function() {
     $(".same-height").height(Math.max.apply(null, $(".same-height").map(function() { return $(this).height(); }))); 
 });
 $(window).resize(function() {
-    console.log('resize!');
     $("same-height").height(Math.max.apply(null, $(".same-height").map(function() { return $(this).height(); })));
 });
 </script>
