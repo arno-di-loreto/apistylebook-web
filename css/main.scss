@@ -110,3 +110,35 @@ h1 .small {
   background-position:center;
   background-size:cover;
 }
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 400px;
+  margin-bottom: 0px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  position: absolute;
+  top: 30%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  // @extend .full;
+  height: 400px;
+  // background-color: #777;
+}
+.carousel-inner > .item > img {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+}
