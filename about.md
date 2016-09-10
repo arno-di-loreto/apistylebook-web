@@ -20,3 +20,6 @@ API Stylebook is maintained by [Arnaud Lauret](https://www.linkedin.com/in/arnau
 <a href="https://twitter.com/apihandyman"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
 <a href="https://www.linkedin.com/in/arnaudlauret/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
 <a href="http://apihandyman.io/"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+
+# Social Networks
+Follow the API Stylebook on Twitter <a href="https://twitter.com/apistylebook"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
