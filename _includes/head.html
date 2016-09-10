@@ -4,7 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">  
+  
+  <link rel="apple-touch-icon" href="{{ "/images/favicons/favicon.png" | prepend: site.baseurl | prepend: site.github.url }}">
+  <link rel="shortcut icon" href="{{ "/images/favicons/favicon.ico" | prepend: site.baseurl | prepend: site.github.url }}" type="image/x-icon">
+  <link rel="icon" type="image/png" href="{{ "/images/favicons/favicon.png" | prepend: site.baseurl | prepend: site.github.url }}">
+  
   <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl | prepend: site.github.url }}">
   <link rel="stylesheet" href="{{ "/css/bootstrap-toc.min.css" | prepend: site.baseurl | prepend: site.github.url }}">
   <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | prepend: site.baseurl | prepend: site.github.url }}">
