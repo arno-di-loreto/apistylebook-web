@@ -15,10 +15,10 @@ All these questions may not be answered easily. Some will reinvent a square whee
 
 But some people already have been through this, some people already have shared all this. What we need is to find this information easily.  
 
-The API Stylebook aims to help API Designers to solve API design matters and build their API design guidelines by providing quick and easy access to selected and categorized resources.  
+The [API Stylebook]({{ site.baseurl | prepend: site.github.url}}/) aims to help API Designers to solve API design matters and build their API design guidelines by providing quick and easy access to selected and categorized resources.  
 
-The *API Stylebook* name has been inspired by the *AP Stylebook* which is a writing style guide for journalists published by the Associated Press.
+The *[API Stylebook]({{ site.baseurl | prepend: site.github.url}}/)* name has been inspired by the *AP Stylebook* which is a writing style guide for journalists published by the Associated Press.
 
-In this first version the API Stylebook provides direct links to specific topics within publicly available API Design Guidelines. Instead of reinventing the wheel or searching google for hours, API Designers quickly can find solutions and inspiration from these existing guidelines.
+In this first version the [API Stylebook]({{ site.baseurl | prepend: site.github.url}}/) provides direct links to specific topics within publicly available API Design Guidelines. Instead of reinventing the wheel or searching google for hours, API Designers quickly can find solutions and inspiration from these existing guidelines.
 
 Stay tuned for updates, follow the API Stylebook on <a href="https://twitter.com/apistylebook">Twitter <i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a>
