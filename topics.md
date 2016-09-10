@@ -4,16 +4,15 @@ title: Design Topics
 permalink: /design/topics/
 date: 2016-08-18 22:31:09 +0200
 menu: true
+sort: 2
 anchors: true
 toc: true
 ---
 <div class="container main-container full-jumbotron">
   <div id="page-title" class="jumbotron">
       <h1>{{ page.title | escape }}</h1>
-      <p>
-      All topics covered by analyzed Design Guidelines are referenced here.
-      Each topic page provide links to its references within the guidelines. 
-      </p>
+      <p>All topics covered by analyzed Design Guidelines are listed here.</p>
+      <p>Each topic page lists all references to a specific topic throughout all analyzed guidelines.</p>
   </div>
 </div>
 <div class="container body-container">

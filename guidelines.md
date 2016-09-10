@@ -4,16 +4,13 @@ title: Design Guidelines
 permalink: /design/guidelines/
 date: 2016-08-18 22:31:09 +0200
 menu: true
+sort: 1
 ---
 <div class="container main-container full-jumbotron">
     <div class="jumbotron">
         <h1>{{ page.title | escape }}</h1>
-        <p>
-        Some companies share their API Design Guidelines with the community. Each one of theses documents has been analyzed to list covered topics.
-        </p>
-        <p>
-        If you know some publicly available API guidelines which are not here don't hesitate to ping us on Twitter.
-        </p>
+        <p>Some companies and government agencies share their API Design Guidelines with the community.</p>
+        <p>Each document has been analyzed to list covered topics and their references within the document.</p>
     </div>
 </div>
 
@@ -29,7 +26,7 @@ menu: true
                         <h3>{{ page.guideline_title | escape }}</h3>
                     </div>
                     <p>{{ page.guideline_company | escape }}</p>
-                    <p><a href="{{ page.url | prepend: site.baseurl | prepend: site.github.url}}" class="btn btn-primary" role="button">Explore</a></p>
+                    <p><a href="{{ page.url | prepend: site.baseurl | prepend: site.github.url}}" class="btn btn-default" role="button">Explore</a></p>
                 </div>
             </div>
         </div>

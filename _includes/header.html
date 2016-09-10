@@ -13,8 +13,8 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          {% for my_page in site.pages%}
-          {% if my_page.menu %}
+          {% assign menu_pages = (site.pages | where: 'menu', 'true' | sort: 'sort') %}
+          {% for my_page in menu_pages %}
             <li 
               {% if my_page.url == page.url%}
               class="nav-item active"
@@ -24,7 +24,6 @@
             >
               <a class="page-link" href="{{ my_page.url | prepend: site.baseurl | prepend: site.github.url }}">{{ my_page.title | escape }}</a>
             </li>
-          {% endif %}
           {% endfor %}
         </ul>
       </div><!--/.nav-collapse -->

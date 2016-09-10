@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: API Stylebook(s)
+title: API Stylebook
 description: > # this means to ignore newlines until "baseurl:"
   Collections of resources for API Designers
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://apistylebook.com" # the base hostname & protocol for your site
-twitter_username: apihandyman
+twitter_username: apistylebook
 github_username:  arno-di-loreto
 #github:
 #  url: ""

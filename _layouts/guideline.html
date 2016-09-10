@@ -4,7 +4,8 @@ anchors: true
 ---
 <div class="container main-container full-jumbotron">
     <div class="jumbotron">
-      <h1>{{ page.title }}<br><small>{{page.guideline_company}}</small></h1>
+        <h1>{{ page.title | escape }}</h1>
+        <p>{{page.guideline_company}}</p>
     </div>
 </div>
 <div class="container body-container">
