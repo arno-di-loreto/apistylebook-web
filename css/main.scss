@@ -50,6 +50,16 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+.blog-container {
+  width: auto;
+  max-width: 750px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 1.5;
+  font-size: medium;
+}
+
 .container .text-muted {
   margin: 20px 0;
 }
