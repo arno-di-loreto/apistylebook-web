@@ -6,7 +6,7 @@ categories: Update
 permalink: /blog/the-api-stylebook
 ---
 
-Designing and providing APIs, even a single one, is not an easy task. Beyond purely functionnal matters, e.g. what does an API, there are many other non functionnal requirements to take care of: What is a resource? What is a collection? How to name them? How to handle errors? How to deal with pagination? How to handle asynchronous operations? Which case use to name properties? How to handle versionning? How to ...  
+Designing and providing APIs, even a single one, is not an easy task. Beyond purely functionnal matters, e.g. what does an API, there are many other non functionnal requirements to take care of: What is a resource? What is a collection? How to name them? How to handle errors? How to deal with pagination? How to handle asynchronous operations? Which case use to name properties? How to handle versioning? How to ...  
 
 To ensure consistency, to ensure maintainability, and above all to ensure good developer experience, these questions must be answered and these answers must be applied consistently.  
 
