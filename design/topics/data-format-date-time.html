@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Date and Time</title>
+  <meta name="description" content="Collections of resources for API Designers">  
+  
+  <link rel="apple-touch-icon" href="/images/favicons/favicon.png">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon.png">
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-toc.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/design/topics/data-format-date-time">
+  <link rel="alternate" type="application/rss+xml" title="API Stylebook" href="/feed.xml">
+  <script src="/js/jquery.min.js" ></script>
+  <script src="/js/bootstrap.min.js" ></script>
+  <script src="/js/bootstrap-toc.min.js" ></script>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83952820-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+</head>
+
+
+  <body  class="full" data-spy="scroll" data-target="#toc">
+
+    <header>
+  <!-- Static navbar -->
+  <nav class="navbar navbar-fixed-top full">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </button>
+        <a class="navbar-brand" href="/">API Stylebook</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/design/guidelines/">Design Guidelines</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/design/topics/">Design Topics</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/blog/">Blog</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/about/">About</a>
+            </li>
+          
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+</header>
+    <div class="container main-container">
+      <div class="container main-container full-jumbotron">
+  <div class="jumbotron">
+    <h1>Date and Time</h1>
+    <p><p>How to deal with date and time data</p>
+</p>
+  </div>
+</div>
+
+<div class="container body-container">
+    
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/cisco-api-design-guide">Cisco - API Design Guide</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="https://github.com/CiscoDevNet/api-design-guide#33-representations">3.3 Representations</a>
+              
+                <blockquote>
+                3.3.8 Date and time fields MUST be represented as strings and formatted according to RFC-3339
+                </blockquote>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/haufe-api-styleguide">Haufe - Haufe API style guide</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="https://github.com/Haufe-Lexware/api-style-guide/blob/master/type-formatting/type-formatting.md#dates-and-times">Dates and Times</a>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/heroku-http-api-design-guide">Heroku - HTTP API Design Guide</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="https://geemus.gitbooks.io/http-api-design/content/en/responses/provide-standard-timestamps.html">Provide standard timestamps</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://geemus.gitbooks.io/http-api-design/content/en/responses/use-utc-times-formatted-in-iso8601.html">Use UTC times formatted in ISO8601</a>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/microsoft-rest-api-guidelines">Microsoft - Microsoft REST API Guidelines</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#112-guidelines-for-dates-and-times">Guidelines for dates and times</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#113-json-serialization-of-dates-and-times">JSON serialization of dates and times</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#114-durations">Durations</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#115-intervals">Intervals</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#116-repeating-intervals">Repeating intervals</a>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/zalando-restful-api-guidelines">Zalando - RESTFul API Guidelines</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#should-date-property-values-should-conform-to-rfc-3399">Date property values should conform to RFC 3399</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#could-time-durations-and-intervals-could-conform-to-iso-8601">Time durations and intervals could conform to ISO 8601</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://zalando.github.io/restful-api-guidelines/data-formats/DataFormats.html#must-use-standard-date-and-time-formats">Use Standard Date and Time Formats</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://zalando.github.io/restful-api-guidelines/data-formats/DataFormats.html#http-headers">HTTP headers</a>
+              
+                <blockquote>
+                Use the HTTP date format defined in RFC 7231
+                </blockquote>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+</div>
+    </div>
+
+    <footer class="footer">
+  <div class="col-sm-12 social">
+    <a href="/">API Stylebook</a> - Collections of resources for API Designers
+
+    <a href="https://twitter.com/apistylebook"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a>
+  </div>
+</footer>
+    
+    <script src="/js/anchor.min.js" ></script>
+    <script language="javascript"> 
+      anchors.options = {
+        placement: 'right'
+      };
+      anchors.add('.anchored');
+    </script>
+    
+    
+  </body>
+
+</html>

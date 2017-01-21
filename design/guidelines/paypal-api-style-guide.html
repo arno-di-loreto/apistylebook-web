@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>API Style Guide</title>
+  <meta name="description" content="Collections of resources for API Designers">  
+  
+  <link rel="apple-touch-icon" href="/images/favicons/favicon.png">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon.png">
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-toc.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/design/guidelines/paypal-api-style-guide">
+  <link rel="alternate" type="application/rss+xml" title="API Stylebook" href="/feed.xml">
+  <script src="/js/jquery.min.js" ></script>
+  <script src="/js/bootstrap.min.js" ></script>
+  <script src="/js/bootstrap-toc.min.js" ></script>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83952820-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+</head>
+
+
+  <body  class="full" data-spy="scroll" data-target="#toc">
+
+    <header>
+  <!-- Static navbar -->
+  <nav class="navbar navbar-fixed-top full">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </button>
+        <a class="navbar-brand" href="/">API Stylebook</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/design/guidelines/">Design Guidelines</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/design/topics/">Design Topics</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/blog/">Blog</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/about/">About</a>
+            </li>
+          
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+</header>
+    <div class="container main-container">
+      <div class="container main-container full-jumbotron">
+    <div class="jumbotron">
+        <h1>API Style Guide</h1>
+        <p>PayPal</p>
+    </div>
+</div>
+<div class="container body-container">
+  <div class="col-sm-3">
+    <div class="row" id="company-logo">
+      <a href="https://developer.paypal.com/" target="company"><img class="company-logo" src="/media/logos/paypal.png"></a>
+    </div>
+    <div class="row">
+      <nav id="toc" data-toggle="toc" class="affix"></nav>
+    </div>
+  </div>
+  <div class="col-sm-9">
+    <div class="row">
+      
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">API Lifecycle</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/versioning">Versionning</a></h3>
+            <p><p>How to handle API versionning</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#version" target="specification">Version</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Collection Resources</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection-pagination">Pagination</a></h3>
+            <p><p>How to retrieve a range of resources in a collection</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#paging" target="specification">Paging</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#paging-1" target="specification">Paging (Complex Operation - Search)</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection-retrieve">Retrieve a collection</a></h3>
+            <p><p>How to get a collection or resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources" target="specification">Collection Resources</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection-sorting">Sorting a collection</a></h3>
+            <p><p>How to sort a collection of resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#sorting" target="specification">Sorting</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection">Collection</a></h3>
+            <p><p>What is a collection (set) of resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources" target="specification">Collection Resources</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#sub-resource-collection" target="specification">Sub-Resource Collection</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection-filtering">Filtering</a></h3>
+            <p><p>How to select some resources in a collection</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#time-selection" target="specification">Time Selection</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#complex-operation---search" target="specification">Complex Operation - Search</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">HTTP Methods</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-get">GET</a></h3>
+            <p><p>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources" target="specification">Collection Resources</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status-1" target="specification">HTTP Status (Read Single Resource)</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-patch">PATCH</a></h3>
+            <p><p>The PATCH method applies partial modifications to a resource.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources" target="specification">Collection Resources</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-partial-single-resource" target="specification">Update Partial Single Resource</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods">HTTP methods</a></h3>
+            <p><p>General information about HTTP methods usage</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources" target="specification">Collection Resources</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-put">PUT</a></h3>
+            <p><p>The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources" target="specification">Collection Resources</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-single-resource" target="specification">Update Single Resource</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-delete">DELETE</a></h3>
+            <p><p>The DELETE method deletes the specified resource.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources" target="specification">Collection Resources</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#delete-single-resource" target="specification">Delete Single Resource</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-post">POST</a></h3>
+            <p><p>The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources" target="specification">Collection Resources</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#create-new-resource" target="specification">Create New Resource</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">HTTP Protocol</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status">HTTP Statuses</a></h3>
+            <p><p>General information about HTTP statuses usage</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status" target="specification">HTTP Status (Collections)</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status-1" target="specification">HTTP Status (Read Single Resource)</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-caching">Caching</a></h3>
+            <p><p>How to use and provide relevant caching informations</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#read-only-resources" target="specification">Read-only resources</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">HTTP Status Success</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-200">200 OK</a></h3>
+            <p><p>Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status" target="specification">HTTP Status (Collections)</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status-1" target="specification">HTTP Status (Read Single Resource)</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-204">204 No Content</a></h3>
+            <p><p>The server successfully processed the request and is not returning any content.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-single-resource" target="specification">Update Single Resource</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-partial-single-resource" target="specification">Update Partial Single Resource</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#delete-single-resource" target="specification">Delete Single Resource</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">HTTP Status User Error</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-404">404 Not Found</a></h3>
+            <p><p>The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status" target="specification">HTTP Status (Collections)</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status-1" target="specification">HTTP Status (Read Single Resource)</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-single-resource" target="specification">Update Single Resource</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#delete-single-resource" target="specification">Delete Single Resource</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-422">422 Unprocessable Entity</a></h3>
+            <p><p>The request was well-formed but was unable to be followed due to semantic errors.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-single-resource" target="specification">Update Single Resource</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-400">400 Bad Request</a></h3>
+            <p><p>The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, too large size, invalid request message framing, or deceptive request routing).</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status" target="specification">HTTP Status (Collections)</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Hypermedia</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/hypermedia">Hypermedia</a></h3>
+            <p><p>How to use hypermedia</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#hypermedia-links" target="specification">Paging Hypermedia Links</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#create-new-resource" target="specification">Create New Resource</a>
+              
+                <blockquote>
+                Hypermedia links provide an easy way to get the URL of the newly created resource
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/hypermedia-read">Hypermedia (read)</a></h3>
+            <p><p>How to use hypermedia to read data</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#hypermedia-links" target="specification">Paging Hypermedia Links</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#create-new-resource" target="specification">Create New Resource</a>
+              
+                <blockquote>
+                Hypermedia links provide an easy way to get the URL of the newly created resource
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Miscellaneous</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/query-parameter">Query parameters</a></h3>
+            <p><p>How to use query parameters</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#filtering" target="specification">Filtering</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/performance">Performance and bandwidth</a></h3>
+            <p><p>How to deal with high traffic or consumers with low bandwith</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="" target="specification"></a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="" target="specification"></a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Naming</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/naming">Naming</a></h3>
+            <p><p>How to name things</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources" target="specification">Collection Resources</a>
+              
+                <blockquote>
+                Collection resource names should be plural nouns
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Resources</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-creation-with-id">Create resource with a specific ID</a></h3>
+            <p><p>How to create resource with a provided id</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#create-new-resource---consumer-supplied-identifier" target="specification">Create New Resource - Consumer Supplied Identifier</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-creation">Create resource</a></h3>
+            <p><p>How to create resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#create-new-resource" target="specification">Create New Resource</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-deletion">Delete resource</a></h3>
+            <p><p>How to delete resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#delete-single-resource" target="specification">Delete Single Resource</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-multiple">Batch Bulk</a></h3>
+            <p><p>How to handle batch/bulk processing/creation/update/… (e.g. handle multiple resources at conce)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#complex-operation---composite" target="specification">Complex Operation - Composite</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-action">Action resource</a></h3>
+            <p><p>How to use action resource (e.g. resources like /cancel or /approve)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#complex-operation" target="specification">Complex Operation</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-retrieve">Retrieve resource</a></h3>
+            <p><p>How to retrieve a resource</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#read-single-resource" target="specification">Read Single Resource</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-state">Resource&#39;s state</a></h3>
+            <p><p>How to change a resource’s state/status (like processed/sent/paid/…)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#complex-operation---transient" target="specification">Complex Operation - Transient</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-update-partial">Update resource partially</a></h3>
+            <p><p>How to udate partially a resource</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-partial-single-resource" target="specification">Update Partial Single Resource</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-update">Update resource</a></h3>
+            <p><p>How to update a resource</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-single-resource" target="specification">Update Single Resource</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-url-format">URL format</a></h3>
+            <p><p>How to design URLs</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#uri-components" target="specification">URL Components</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-partial-single-resource" target="specification">Update Partial Single Resource</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource">Resource</a></h3>
+            <p><p>General informations about resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#read-single-resource" target="specification">Read Single Resource</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#sub-resource-singleton" target="specification">Sub-Resource Singleton</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-replacement">Replace resource</a></h3>
+            <p><p>How to replace (or update fully) a resource</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-single-resource" target="specification">Update Single Resource</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    var bottom = $("#company-logo").offset().top + $("#company-logo").outerHeight(true);
+    $('#toc').affix({offset: {top: bottom }});
+});
+</script>
+
+    </div>
+
+    <footer class="footer">
+  <div class="col-sm-12 social">
+    <a href="/">API Stylebook</a> - Collections of resources for API Designers
+
+    <a href="https://twitter.com/apistylebook"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a>
+  </div>
+</footer>
+    
+    <script src="/js/anchor.min.js" ></script>
+    <script language="javascript"> 
+      anchors.options = {
+        placement: 'right'
+      };
+      anchors.add('.anchored');
+    </script>
+    
+    
+  </body>
+
+</html>

@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Microsoft REST API Guidelines</title>
+  <meta name="description" content="Collections of resources for API Designers">  
+  
+  <link rel="apple-touch-icon" href="/images/favicons/favicon.png">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon.png">
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-toc.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/design/guidelines/microsoft-rest-api-guidelines">
+  <link rel="alternate" type="application/rss+xml" title="API Stylebook" href="/feed.xml">
+  <script src="/js/jquery.min.js" ></script>
+  <script src="/js/bootstrap.min.js" ></script>
+  <script src="/js/bootstrap-toc.min.js" ></script>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83952820-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+</head>
+
+
+  <body  class="full" data-spy="scroll" data-target="#toc">
+
+    <header>
+  <!-- Static navbar -->
+  <nav class="navbar navbar-fixed-top full">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </button>
+        <a class="navbar-brand" href="/">API Stylebook</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/design/guidelines/">Design Guidelines</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/design/topics/">Design Topics</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/blog/">Blog</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/about/">About</a>
+            </li>
+          
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+</header>
+    <div class="container main-container">
+      <div class="container main-container full-jumbotron">
+    <div class="jumbotron">
+        <h1>Microsoft REST API Guidelines</h1>
+        <p>Microsoft</p>
+    </div>
+</div>
+<div class="container body-container">
+  <div class="col-sm-3">
+    <div class="row" id="company-logo">
+      <a href="https://opensource.microsoft.com/" target="company"><img class="company-logo" src="/media/logos/microsoft.png"></a>
+    </div>
+    <div class="row">
+      <nav id="toc" data-toggle="toc" class="affix"></nav>
+    </div>
+  </div>
+  <div class="col-sm-9">
+    <div class="row">
+      
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">API Design</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/global-design">Global design</a></h3>
+            <p><p>General considerations on API design</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#3-introduction" target="specification">Introduction</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">API Lifecycle</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/versioning">Versionning</a></h3>
+            <p><p>How to handle API versionning</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#42-guidelines-for-existing-services-and-versioning-of-services" target="specification">Guidelines for existing services and versioning of services</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning" target="specification">Versioning</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/governance">Governance</a></h3>
+            <p><p>How to ensure API governance (advertise, consistency, …)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#4-interpreting-the-guidelines" target="specification">Interpreting The Guidelines</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#122-when-to-version" target="specification">When to version</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#123-definition-of-a-breaking-change" target="specification">Definition of a breaking change</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Asynchronicity</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/notifications-server-events">Notifying API consumers</a></h3>
+            <p><p>How to send events or notifications to API consumers</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1328-the-typical-flow-push-notifications" target="specification">The typical flow, push notifications</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#14-push-notifications-via-webhooks" target="specification">Push notifications via webhooks</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/asynchronicity">Asynchronicity</a></h3>
+            <p><p>How to handle long operations</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#55-long-running-api-faults" target="specification">Long running API faults</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#13-long-running-operations" target="specification">Long running operations</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1324-operations-resource" target="specification">Operations resource</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1325----operation-resource" target="specification">Operation resource</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1326-operation-tombstones" target="specification">Operation tombstones</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1327-the-typical-flow-polling" target="specification">The typical flow, polling</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1328-the-typical-flow-push-notifications" target="specification">The typical flow, push notifications</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1329-retry-after" target="specification">Retry-After</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Collection Resources</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection-sorting">Sorting a collection</a></h3>
+            <p><p>How to sort a collection of resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#62-variable-order-rule" target="specification">Variable order rule</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#96-sorting-collections" target="specification">Sorting collections</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection">Collection</a></h3>
+            <p><p>What is a collection (set) of resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#9-collections" target="specification">Collections</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection-filtering">Filtering</a></h3>
+            <p><p>How to select some resources in a collection</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#97-filtering" target="specification">Filtering</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection-pagination">Pagination</a></h3>
+            <p><p>How to retrieve a range of resources in a collection</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#94-big-collections" target="specification">Big collections</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#98-pagination" target="specification">Pagination</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Data</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/data-format">Data format</a></h3>
+            <p><p>which data format use</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#710-response-formats" target="specification">Response Formats</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#11-json-standardizations" target="specification">JSON standardizations</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/data-format-date-time">Date and Time</a></h3>
+            <p><p>How to deal with date and time data</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#112-guidelines-for-dates-and-times" target="specification">Guidelines for dates and times</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#113-json-serialization-of-dates-and-times" target="specification">JSON serialization of dates and times</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#114-durations" target="specification">Durations</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#115-intervals" target="specification">Intervals</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#116-repeating-intervals" target="specification">Repeating intervals</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Error handling</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/errors">Errors</a></h3>
+            <p><p>How to handle errors</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#51-errors" target="specification">Errors</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#52-faults" target="specification">Faults</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#55-long-running-api-faults" target="specification">Long running API faults</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#63-silent-fail-rule" target="specification">Silent Fail Rule</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#15-unsupported-requests" target="specification">Unsupported requests</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-standard-error">Error format</a></h3>
+            <p><p>How to provide information about errors</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#7102-error-condition-responses" target="specification">Error condition responses</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">HTTP Methods</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-options">OPTIONS</a></h3>
+            <p><p>The OPTIONS method returns the HTTP methods that the server supports for the specified URL. This can be used to check the functionality of a web server by requesting ‘*’ instead of a specific resource.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods" target="specification">Supported Methods</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#744-options-and-link-headers" target="specification">Options and link headers</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-post">POST</a></h3>
+            <p><p>The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods" target="specification">Supported Methods</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#741-post" target="specification">POST</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#95-changing-collections" target="specification">Changing collections</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1322-post" target="specification">POST (Long running operations)</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1323-post-hybrid-model" target="specification">POST, hybrid model (Long running operations)</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-patch">PATCH</a></h3>
+            <p><p>The PATCH method applies partial modifications to a resource.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods" target="specification">Supported Methods</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#742-patch" target="specification">PATCH</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#743-creating-resources-via-patch-upsert-semantics" target="specification">Creating resources via PATCH (UPSERT semantics)</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-head">HEAD</a></h3>
+            <p><p>The HEAD method asks for a response identical to that of a GET request, but without the response body. This is useful for retrieving meta-information written in response headers, without having to transport the entire content.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods" target="specification">Supported Methods</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods">HTTP methods</a></h3>
+            <p><p>General information about HTTP methods usage</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods" target="specification">Supported Methods</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-delete">DELETE</a></h3>
+            <p><p>The DELETE method deletes the specified resource.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods" target="specification">Supported Methods</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-get">GET</a></h3>
+            <p><p>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods" target="specification">Supported Methods</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-put">PUT</a></h3>
+            <p><p>The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods" target="specification">Supported Methods</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#95-changing-collections" target="specification">Changing collections</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1321-put" target="specification">PUT (Long running operations)</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">HTTP Protocol</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status">HTTP Statuses</a></h3>
+            <p><p>General information about HTTP statuses usage</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#51-errors" target="specification">Errors</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#52-faults" target="specification">Faults</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#711-http-status-codes" target="specification">HTTP Status Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-headers">HTTP Headers</a></h3>
+            <p><p>How to use standard or custom HTTP headers</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#741-post" target="specification">POST</a>
+              
+                <blockquote>
+                POST operations SHOULD support the Location response header
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#744-options-and-link-headers" target="specification">Options and link headers</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#75-standard-request-headers" target="specification">Standard request headers</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#76-standard-response-headers" target="specification">Standard response headers</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#77-custom-headers" target="specification">Custom Headers</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#78-specifying-headers-as-query-parameters" target="specification">Specifying headers as query parameters</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-content-negotiation">Content negociation and media types</a></h3>
+            <p><p>How to describe your API data format and/or propose different formats (like json, yaml, xml atom, …)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#75-standard-request-headers" target="specification">Standard request headers</a>
+              
+                <blockquote>
+                Accept Content Type
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#76-standard-response-headers" target="specification">Standard response headers</a>
+              
+                <blockquote>
+                Content Type
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#7101-clients-specified-response-format" target="specification">Clients-specified response format</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http">HTTP protocol</a></h3>
+            <p><p>General informations about HTTP protocol</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="" target="specification"></a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="" target="specification"></a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-caching">Caching</a></h3>
+            <p><p>How to use and provide relevant caching informations</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#75-standard-request-headers" target="specification">Standard request headers</a>
+              
+                <blockquote>
+                If-Match, If-None-Match, If-Range
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#76-standard-response-headers" target="specification">Standard response headers</a>
+              
+                <blockquote>
+                ETag
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#133-retention-policy-for-operation-results" target="specification">Retention policy for operation results</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Hypermedia</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/hypermedia-read">Hypermedia (read)</a></h3>
+            <p><p>How to use hypermedia to read data</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#744-options-and-link-headers" target="specification">Options and link headers</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#94-big-collections" target="specification">Big collections</a>
+              
+                <blockquote>
+                the serialization payload MUST contain the opaque URL for the next page
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Miscellaneous</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/documentation">Documentation</a></h3>
+            <p><p>How to produce and/or propose API documentation</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#744-options-and-link-headers" target="specification">Options and link headers</a>
+              
+                <blockquote>
+                In addition, services SHOULD include a Link header (see RFC 5988) to point to documentation for the resource
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/developer-experience">Developer experience</a></h3>
+            <p><p>How to take care of developer experience (DX)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#6-client-guidance" target="specification">Client Guidance</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#712-client-library-optional" target="specification">Client library optional</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/cors">CORS</a></h3>
+            <p><p>How to deal with CORS</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#8-cors" target="specification">CORS</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Resources</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-change-tracking">Track change</a></h3>
+            <p><p>How to track change on resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#10-delta-queries" target="specification">Delta queries</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-creation-with-id">Create resource with a specific ID</a></h3>
+            <p><p>How to create resource with a provided id</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#743-creating-resources-via-patch-upsert-semantics" target="specification">Creating resources via PATCH (UPSERT semantics)</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-action">Action resource</a></h3>
+            <p><p>How to use action resource (e.g. resources like /cancel or /approve)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1324-operations-resource" target="specification">Operations resource</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1325----operation-resource" target="specification">Operation resource</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1326-operation-tombstones" target="specification">Operation tombstones</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1327-the-typical-flow-polling" target="specification">The typical flow, polling</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1328-the-typical-flow-push-notifications" target="specification">The typical flow, push notifications</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1329-retry-after" target="specification">Retry-After</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-id-semantic">ID with semantic</a></h3>
+            <p><p>Using meaningful ids (like <code class="highlighter-rouge">me</code>)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#73-canonical-identifier" target="specification">Canonical identifier</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-id">Resource ID</a></h3>
+            <p><p>What is a resource ID and/or how it’s built</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#73-canonical-identifier" target="specification">Canonical identifier</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-multiple">Batch Bulk</a></h3>
+            <p><p>How to handle batch/bulk processing/creation/update/… (e.g. handle multiple resources at conce)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="" target="specification"></a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="" target="specification"></a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-creation">Create resource</a></h3>
+            <p><p>How to create resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#741-post" target="specification">POST</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#95-changing-collections" target="specification">Changing collections</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-update-partial">Update resource partially</a></h3>
+            <p><p>How to udate partially a resource</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#742-patch" target="specification">PATCH</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#743-creating-resources-via-patch-upsert-semantics" target="specification">Creating resources via PATCH (UPSERT semantics)</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-update">Update resource</a></h3>
+            <p><p>How to update a resource</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#742-patch" target="specification">PATCH</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#743-creating-resources-via-patch-upsert-semantics" target="specification">Creating resources via PATCH (UPSERT semantics)</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-url-format">URL format</a></h3>
+            <p><p>How to design URLs</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#71-url-structure" target="specification">URL Structure</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#72-url-length" target="specification">URL Length</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#93-collection-url-patterns" target="specification">Collection URL patterns</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-retrieve-partial">Retrieve resource partially</a></h3>
+            <p><p>How to retrieve partially a resource</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#75-standard-request-headers" target="specification">Standard request headers</a>
+              
+                <blockquote>
+                Prefer return=minimal, return=representation
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#76-standard-response-headers" target="specification">Standard response headers</a>
+              
+                <blockquote>
+                Preference-Applied
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Security</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/security-data">Data privacy</a></h3>
+            <p><p>Data privacy concerns</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#79-pii-parameters" target="specification">PII parameters</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/security">Security</a></h3>
+            <p><p>Security concerns</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#148-security" target="specification">Security</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    var bottom = $("#company-logo").offset().top + $("#company-logo").outerHeight(true);
+    $('#toc').affix({offset: {top: bottom }});
+});
+</script>
+
+    </div>
+
+    <footer class="footer">
+  <div class="col-sm-12 social">
+    <a href="/">API Stylebook</a> - Collections of resources for API Designers
+
+    <a href="https://twitter.com/apistylebook"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a>
+  </div>
+</footer>
+    
+    <script src="/js/anchor.min.js" ></script>
+    <script language="javascript"> 
+      anchors.options = {
+        placement: 'right'
+      };
+      anchors.add('.anchored');
+    </script>
+    
+    
+  </body>
+
+</html>

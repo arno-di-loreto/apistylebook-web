@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Design Topics</title>
+  <meta name="description" content="Collections of resources for API Designers">  
+  
+  <link rel="apple-touch-icon" href="/images/favicons/favicon.png">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon.png">
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-toc.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/design/topics/">
+  <link rel="alternate" type="application/rss+xml" title="API Stylebook" href="/feed.xml">
+  <script src="/js/jquery.min.js" ></script>
+  <script src="/js/bootstrap.min.js" ></script>
+  <script src="/js/bootstrap-toc.min.js" ></script>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83952820-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+</head>
+
+
+  <body  class="full" data-spy="scroll" data-target="#toc">
+
+    <header>
+  <!-- Static navbar -->
+  <nav class="navbar navbar-fixed-top full">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </button>
+        <a class="navbar-brand" href="/">API Stylebook</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/design/guidelines/">Design Guidelines</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item active"
+              
+            >
+              <a class="page-link" href="/design/topics/">Design Topics</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/blog/">Blog</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/about/">About</a>
+            </li>
+          
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+</header>
+    <div class="container main-container">
+      <div class="container main-container full-jumbotron">
+  <div id="page-title" class="jumbotron">
+      <h1>Design Topics</h1>
+      <p>All topics covered by analyzed Design Guidelines are listed here.</p>
+      <p>Each topic page lists all references to a specific topic throughout all analyzed guidelines.</p>
+  </div>
+</div>
+<div class="container body-container">
+  <div class="row">
+    <div class="col-sm-3">
+      <nav id="toc" data-toggle="toc" class="affix"></nav>
+    </div>
+    <div class="col-sm-9">
+      
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">API Design</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/api-counts">API counts</a></h3>
+              <p><p>How many endpoints/resources in an API?</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/global-design">Global design</a></h3>
+              <p><p>General considerations on API design</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">API Lifecycle</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/governance">Governance</a></h3>
+              <p><p>How to ensure API governance (advertise, consistency, …)</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/versioning">Versionning</a></h3>
+              <p><p>How to handle API versionning</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">Asynchronicity</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/asynchronicity">Asynchronicity</a></h3>
+              <p><p>How to handle long operations</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/notifications-server-events">Notifying API consumers</a></h3>
+              <p><p>How to send events or notifications to API consumers</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">Collection Resources</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/collection">Collection</a></h3>
+              <p><p>What is a collection (set) of resources</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/collection-filtering">Filtering</a></h3>
+              <p><p>How to select some resources in a collection</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/collection-pagination">Pagination</a></h3>
+              <p><p>How to retrieve a range of resources in a collection</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/collection-retrieve">Retrieve a collection</a></h3>
+              <p><p>How to get a collection or resources</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/collection-sorting">Sorting a collection</a></h3>
+              <p><p>How to sort a collection of resources</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">Data</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/data-format">Data format</a></h3>
+              <p><p>which data format use</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/data-format-date-time">Date and Time</a></h3>
+              <p><p>How to deal with date and time data</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/data-format-null">Null data</a></h3>
+              <p><p>How to deal with null data</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/data-standards">Standards data</a></h3>
+              <p><p>Which standard use for values like languages, countries, currencies, …</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">Error handling</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-standard-error">Error format</a></h3>
+              <p><p>How to provide information about errors</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/errors">Errors</a></h3>
+              <p><p>How to handle errors</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">HTTP Methods</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-methods-delete">DELETE</a></h3>
+              <p><p>The DELETE method deletes the specified resource.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-methods-alternative">Forbidden methods alternatives</a></h3>
+              <p><p>What to do when only possible HTTP methods are POST and GET</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-methods-get">GET</a></h3>
+              <p><p>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-methods-head">HEAD</a></h3>
+              <p><p>The HEAD method asks for a response identical to that of a GET request, but without the response body. This is useful for retrieving meta-information written in response headers, without having to transport the entire content.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-methods">HTTP methods</a></h3>
+              <p><p>General information about HTTP methods usage</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-methods-options">OPTIONS</a></h3>
+              <p><p>The OPTIONS method returns the HTTP methods that the server supports for the specified URL. This can be used to check the functionality of a web server by requesting ‘*’ instead of a specific resource.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-methods-patch">PATCH</a></h3>
+              <p><p>The PATCH method applies partial modifications to a resource.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-methods-post">POST</a></h3>
+              <p><p>The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-methods-put">PUT</a></h3>
+              <p><p>The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">HTTP Protocol</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-caching">Caching</a></h3>
+              <p><p>How to use and provide relevant caching informations</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-content-negotiation">Content negociation and media types</a></h3>
+              <p><p>How to describe your API data format and/or propose different formats (like json, yaml, xml atom, …)</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-headers">HTTP Headers</a></h3>
+              <p><p>How to use standard or custom HTTP headers</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status">HTTP Statuses</a></h3>
+              <p><p>General information about HTTP statuses usage</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http">HTTP protocol</a></h3>
+              <p><p>General informations about HTTP protocol</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">HTTP Status Redirection</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-301">301 Moved Permanently</a></h3>
+              <p><p>This and all future requests should be directed to the given URI.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-302">302 Found</a></h3>
+              <p><p>Common way of performing URL redirection. An HTTP response with this status code will additionally provide a URL in the location header field. The user agent (e.g. a web browser) is invited by a response with this code to make a second, otherwise identical, request to the new URL specified in the location field.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-303">303 See Other</a></h3>
+              <p><p>The response to the request can be found under another URI using a GET method. When received in response to a POST (or PUT/DELETE), the client should presume that the server has received the data and should issue a redirect with a separate GET message.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-304">304 Not Modified</a></h3>
+              <p><p>Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">HTTP Status Server Error</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-500">500 Internal Server Error</a></h3>
+              <p><p>A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-501">501 Not Implemented</a></h3>
+              <p><p>The server either does not recognize the request method, or it lacks the ability to fulfill the request. Usually this implies future availability (e.g., a new feature of a web-service API).</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-503">503 Service Unavailable</a></h3>
+              <p><p>The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">HTTP Status Success</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-200">200 OK</a></h3>
+              <p><p>Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-201">201 Created</a></h3>
+              <p><p>The request has been fulfilled, resulting in the creation of a new resource.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-202">202 Accepted</a></h3>
+              <p><p>The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-204">204 No Content</a></h3>
+              <p><p>The server successfully processed the request and is not returning any content.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-206">206 Partial Content</a></h3>
+              <p><p>The server is delivering only part of the resource (byte serving) due to a range header sent by the client. The range header is used by HTTP clients to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams.</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">HTTP Status User Error</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-400">400 Bad Request</a></h3>
+              <p><p>The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, too large size, invalid request message framing, or deceptive request routing).</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-401">401 Unauthorized</a></h3>
+              <p><p>Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-403">403 Forbidden</a></h3>
+              <p><p>The request was a valid request, but the server is refusing to respond to it. The user might be logged in but does not have the necessary permissions for the resource.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-404">404 Not Found</a></h3>
+              <p><p>The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-405">405 Method Not Allowed</a></h3>
+              <p><p>A request method is not supported for the requested resource; for example, a GET request on a form which requires data to be presented via POST, or a PUT request on a read-only resource.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-406">406 Not Acceptable</a></h3>
+              <p><p>The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-408">408 Request Timeout</a></h3>
+              <p><p>The server timed out waiting for the request. According to HTTP specifications: The client did not produce a request within the time that the server was prepared to wait. The client MAY repeat the request without modifications at any later time.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-409">409 Conflict</a></h3>
+              <p><p>Indicates that the request could not be processed because of conflict in the request, such as an edit conflict between multiple simultaneous updates.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-410">410 Gone</a></h3>
+              <p><p>Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a <em>404 Not Found</em> may be used instead.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-411">411 Length Required</a></h3>
+              <p><p>The request did not specify the length of its content, which is required by the requested resource.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-412">412 Precondition Failed</a></h3>
+              <p><p>The server does not meet one of the preconditions that the requester put on the request.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-415">415 Unsupported Media Type</a></h3>
+              <p><p>The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-422">422 Unprocessable Entity</a></h3>
+              <p><p>The request was well-formed but was unable to be followed due to semantic errors.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-423">423 Locked</a></h3>
+              <p><p>The resource that is being accessed is locked.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-428">428 Precondition Required</a></h3>
+              <p><p>The origin server requires the request to be conditional. 
+Intended to prevent the <em>lost update</em> problem, where a client GETs a resource’s state, modifies it, 
+and PUTs it back to the server, when meanwhile a third party has modified the state on the server, 
+leading to a conflict.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-429">429 Too Many Requests</a></h3>
+              <p><p>The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes.</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">Hypermedia</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/hypermedia">Hypermedia</a></h3>
+              <p><p>How to use hypermedia</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/hypermedia-read">Hypermedia (read)</a></h3>
+              <p><p>How to use hypermedia to read data</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/hypermedia-write">Hypermedia (write)</a></h3>
+              <p><p>How to use hypermedia to write data</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">Miscellaneous</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/api-chaining">API chaining</a></h3>
+              <p><p>How to chain API call in internal systems</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/cors">CORS</a></h3>
+              <p><p>How to deal with CORS</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/debug-diagnose">Debug and diagnose</a></h3>
+              <p><p>How to provide informations to debug and diagnose</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/developer-experience">Developer experience</a></h3>
+              <p><p>How to take care of developer experience (DX)</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/documentation">Documentation</a></h3>
+              <p><p>How to produce and/or propose API documentation</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/guiding-input">Guiding inputs</a></h3>
+              <p><p>How to help consumers or end user to input relevant data</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/performance">Performance and bandwidth</a></h3>
+              <p><p>How to deal with high traffic or consumers with low bandwith</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/query-parameter">Query parameters</a></h3>
+              <p><p>How to use query parameters</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/rate-limiting">Rate limiting</a></h3>
+              <p><p>How to provide information about how many calls a consumer can do</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/undo">Undo</a></h3>
+              <p><p>How to undo things</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">Naming</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/naming-case">Case</a></h3>
+              <p><p>Which case (lowercase, camelCase, …) to use and when</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/naming-language">Language</a></h3>
+              <p><p>Which language(s) use when designing an API</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/naming">Naming</a></h3>
+              <p><p>How to name things</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">Resources</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-action">Action resource</a></h3>
+              <p><p>How to use action resource (e.g. resources like /cancel or /approve)</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-multiple">Batch Bulk</a></h3>
+              <p><p>How to handle batch/bulk processing/creation/update/… (e.g. handle multiple resources at conce)</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-creation">Create resource</a></h3>
+              <p><p>How to create resources</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-creation-with-id">Create resource with a specific ID</a></h3>
+              <p><p>How to create resource with a provided id</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-deletion">Delete resource</a></h3>
+              <p><p>How to delete resources</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-retrieve-dereference">Dereference Relationships</a></h3>
+              <p><p>How to load a resource and its linked resources in one call</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-id-semantic">ID with semantic</a></h3>
+              <p><p>Using meaningful ids (like <code class="highlighter-rouge">me</code>)</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-relationships">Relationships</a></h3>
+              <p><p>How to define and use relations between resources</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-replacement">Replace resource</a></h3>
+              <p><p>How to replace (or update fully) a resource</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource">Resource</a></h3>
+              <p><p>General informations about resources</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-id">Resource ID</a></h3>
+              <p><p>What is a resource ID and/or how it’s built</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-state">Resource&#39;s state</a></h3>
+              <p><p>How to change a resource’s state/status (like processed/sent/paid/…)</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-retrieve">Retrieve resource</a></h3>
+              <p><p>How to retrieve a resource</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-retrieve-partial">Retrieve resource partially</a></h3>
+              <p><p>How to retrieve partially a resource</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-change-tracking">Track change</a></h3>
+              <p><p>How to track change on resources</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-url-format">URL format</a></h3>
+              <p><p>How to design URLs</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-update">Update resource</a></h3>
+              <p><p>How to update a resource</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/resource-update-partial">Update resource partially</a></h3>
+              <p><p>How to udate partially a resource</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored">Security</h2>
+        </div>
+        <table class="table">
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/security-data">Data privacy</a></h3>
+              <p><p>Data privacy concerns</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/security">Security</a></h3>
+              <p><p>Security concerns</p>
+</p>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    var bottom = $("#page-title").offset().top + $("#page-title").outerHeight(true);
+    console.log(bottom);
+    $('#toc').affix({offset: {top: bottom }});
+});
+</script>
+
+
+    </div>
+
+    <footer class="footer">
+  <div class="col-sm-12 social">
+    <a href="/">API Stylebook</a> - Collections of resources for API Designers
+
+    <a href="https://twitter.com/apistylebook"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a>
+  </div>
+</footer>
+    
+    <script src="/js/anchor.min.js" ></script>
+    <script language="javascript"> 
+      anchors.options = {
+        placement: 'right'
+      };
+      anchors.add('.anchored');
+    </script>
+    
+    
+  </body>
+
+</html>

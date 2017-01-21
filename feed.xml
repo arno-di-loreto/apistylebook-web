@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>API Stylebook</title>
+    <description>Collections of resources for API Designers
+</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 21 Jan 2017 09:57:39 +0100</pubDate>
+    <lastBuildDate>Sat, 21 Jan 2017 09:57:39 +0100</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>The API Stylebook</title>
+        <description>&lt;p&gt;Designing and providing APIs, even a single one, is not an easy task. Beyond purely functionnal matters, e.g. what does an API, there are many other non functionnal requirements to take care of: What is a resource? What is a collection? How to name them? How to handle errors? How to deal with pagination? How to handle asynchronous operations? Which case use to name properties? How to handle versioning? How to …&lt;/p&gt;
+
+&lt;p&gt;To ensure consistency, to ensure maintainability, and above all to ensure good developer experience, these questions must be answered and these answers must be applied consistently.&lt;/p&gt;
+
+&lt;p&gt;All these questions may not come to mind from the outset. They may even come to mind far too late.
+All these questions may not be answered easily. Some will reinvent a square wheel, some will lose themselves searching answers for days.&lt;/p&gt;
+
+&lt;p&gt;But some people already have been through this, some people already have shared all this. What we need is to find this information easily.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;/&quot;&gt;API Stylebook&lt;/a&gt; aims to help API Designers to solve API design matters and build their API design guidelines by providing quick and easy access to selected and categorized resources.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;&lt;a href=&quot;/&quot;&gt;API Stylebook&lt;/a&gt;&lt;/em&gt; name has been inspired by the &lt;em&gt;AP Stylebook&lt;/em&gt; which is a writing style guide for journalists published by the Associated Press.&lt;/p&gt;
+
+&lt;p&gt;In this first version the &lt;a href=&quot;/&quot;&gt;API Stylebook&lt;/a&gt; provides direct links to specific topics within publicly available API Design Guidelines. Instead of reinventing the wheel or searching google for hours, API Designers quickly can find solutions and inspiration from these existing guidelines.&lt;/p&gt;
+
+&lt;p&gt;Stay tuned for updates, follow the API Stylebook on &lt;a href=&quot;https://twitter.com/apistylebook&quot;&gt;Twitter &lt;i class=&quot;fa fa-twitter fa-1x&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 10 Sep 2016 16:13:00 +0200</pubDate>
+        <link>/blog/the-api-stylebook</link>
+        <guid isPermaLink="true">/blog/the-api-stylebook</guid>
+        
+        
+        <category>Update</category>
+        
+      </item>
+    
+  </channel>
+</rss>

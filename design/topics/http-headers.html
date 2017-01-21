@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTTP Headers</title>
+  <meta name="description" content="Collections of resources for API Designers">  
+  
+  <link rel="apple-touch-icon" href="/images/favicons/favicon.png">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon.png">
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-toc.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/design/topics/http-headers">
+  <link rel="alternate" type="application/rss+xml" title="API Stylebook" href="/feed.xml">
+  <script src="/js/jquery.min.js" ></script>
+  <script src="/js/bootstrap.min.js" ></script>
+  <script src="/js/bootstrap-toc.min.js" ></script>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83952820-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+</head>
+
+
+  <body  class="full" data-spy="scroll" data-target="#toc">
+
+    <header>
+  <!-- Static navbar -->
+  <nav class="navbar navbar-fixed-top full">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </button>
+        <a class="navbar-brand" href="/">API Stylebook</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/design/guidelines/">Design Guidelines</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/design/topics/">Design Topics</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/blog/">Blog</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/about/">About</a>
+            </li>
+          
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+</header>
+    <div class="container main-container">
+      <div class="container main-container full-jumbotron">
+  <div class="jumbotron">
+    <h1>HTTP Headers</h1>
+    <p><p>How to use standard or custom HTTP headers</p>
+</p>
+  </div>
+</div>
+
+<div class="container body-container">
+    
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/atlassian-rest-api-design-guidelines-version-1">Atlassian - Atlassian REST API Design Guidelines version 1</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources">REST Resources</a>
+              
+                <blockquote>
+                Entities SHOULD be served with an ETag header.
+                </blockquote>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Caching">Caching</a>
+              
+                <blockquote>
+                ETag, If-None-Match
+                </blockquote>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/atlassian-rest-api-policy">Atlassian - Atlassian REST API Policy</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Detectability">Detectability (Deprecation Policy)</a>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/cisco-api-design-guide">Cisco - API Design Guide</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="https://github.com/CiscoDevNet/api-design-guide#351-standard-headers">3.5 HTTP Headers</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://github.com/CiscoDevNet/api-design-guide#361-post">3.6.1 POST</a>
+              
+                <blockquote>
+                Location header
+                </blockquote>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/haufe-api-styleguide">Haufe - Haufe API style guide</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="https://github.com/Haufe-Lexware/api-style-guide/blob/master/caching/caching.md#expires-http-header">Expires HTTP Header</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://github.com/Haufe-Lexware/api-style-guide/blob/master/caching/caching.md#cache-control-header">https://github.com/Haufe-Lexware/api-style-guide/blob/master/caching/caching.md#cache-control-header</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://github.com/Haufe-Lexware/api-style-guide/blob/master/caching/caching.md#etag">ETag</a>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/heroku-http-api-design-guide">Heroku - HTTP API Design Guide</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="https://geemus.gitbooks.io/http-api-design/content/en/foundations/require-versioning-in-the-accepts-header.html">Require Versioning in the Accepts Header</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://geemus.gitbooks.io/http-api-design/content/en/foundations/support-etags-for-caching.html">Support ETags for Caching</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://geemus.gitbooks.io/http-api-design/content/en/foundations/provide-request-ids-for-introspection.html">Provide Request-Ids for Introspection</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="">Divide Large Responses Across Requests with Ranges</a>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/microsoft-rest-api-guidelines">Microsoft - Microsoft REST API Guidelines</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#741-post">POST</a>
+              
+                <blockquote>
+                POST operations SHOULD support the Location response header
+                </blockquote>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#744-options-and-link-headers">Options and link headers</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#75-standard-request-headers">Standard request headers</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#76-standard-response-headers">Standard response headers</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#77-custom-headers">Custom Headers</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#78-specifying-headers-as-query-parameters">Specifying headers as query parameters</a>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/redhat-thoughts-on-restful-api-design">Red Hat - Thoughts on RESTful API Design</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="http://restful-api-design.readthedocs.io/en/latest/methods.html#link-headers">Link Headers</a>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/white-house-web-api-standards">White House - White House Web API Standards</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls">General guidelines for RESTful URLs</a>
+              
+                <blockquote>
+                URL v. header
+                </blockquote>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/zalando-restful-api-guidelines">Zalando - RESTFul API Guidelines</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="http://zalando.github.io/restful-api-guidelines/naming/Naming.html#must-you-must-hyphenate-http-headers">You Must Hyphenate HTTP Headers</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://zalando.github.io/restful-api-guidelines/naming/Naming.html#should-prefer-hyphenatedpascalcase-for-http-header-fields">Prefer Hyphenated-Pascal-Case for HTTP header Fields</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://zalando.github.io/restful-api-guidelines/naming/Naming.html#could-use-standardized-headers">Use Standardized Headers</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://zalando.github.io/restful-api-guidelines/http/Http.html#must-use-429-with-headers-for-rate-limits">Use 429 with Headers for Rate Limits</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-do-not-use-link-headers-with-json-entities">Do Not Use Link Headers with JSON entities</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://zalando.github.io/restful-api-guidelines/data-formats/DataFormats.html#http-headers">HTTP headers</a>
+              
+                <blockquote>
+                Use the HTTP date format defined in RFC 7231
+                </blockquote>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://zalando.github.io/restful-api-guidelines/headers/CommonHeaders.html">Common Headers</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://zalando.github.io/restful-api-guidelines/headers/ProprietaryHeaders.html">Proprietary Headers</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://zalando.github.io/restful-api-guidelines/deprecation/Deprecation.html#should-add-a-warning-header-to-responses">Add a Warning Header to Responses</a>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+</div>
+    </div>
+
+    <footer class="footer">
+  <div class="col-sm-12 social">
+    <a href="/">API Stylebook</a> - Collections of resources for API Designers
+
+    <a href="https://twitter.com/apistylebook"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a>
+  </div>
+</footer>
+    
+    <script src="/js/anchor.min.js" ></script>
+    <script language="javascript"> 
+      anchors.options = {
+        placement: 'right'
+      };
+      anchors.add('.anchored');
+    </script>
+    
+    
+  </body>
+
+</html>

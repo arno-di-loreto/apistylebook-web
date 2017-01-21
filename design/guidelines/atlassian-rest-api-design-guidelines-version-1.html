@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Atlassian REST API Design Guidelines version 1</title>
+  <meta name="description" content="Collections of resources for API Designers">  
+  
+  <link rel="apple-touch-icon" href="/images/favicons/favicon.png">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon.png">
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-toc.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/design/guidelines/atlassian-rest-api-design-guidelines-version-1">
+  <link rel="alternate" type="application/rss+xml" title="API Stylebook" href="/feed.xml">
+  <script src="/js/jquery.min.js" ></script>
+  <script src="/js/bootstrap.min.js" ></script>
+  <script src="/js/bootstrap-toc.min.js" ></script>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83952820-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+</head>
+
+
+  <body  class="full" data-spy="scroll" data-target="#toc">
+
+    <header>
+  <!-- Static navbar -->
+  <nav class="navbar navbar-fixed-top full">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </button>
+        <a class="navbar-brand" href="/">API Stylebook</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/design/guidelines/">Design Guidelines</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/design/topics/">Design Topics</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/blog/">Blog</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/about/">About</a>
+            </li>
+          
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+</header>
+    <div class="container main-container">
+      <div class="container main-container full-jumbotron">
+    <div class="jumbotron">
+        <h1>Atlassian REST API Design Guidelines version 1</h1>
+        <p>Atlassian</p>
+    </div>
+</div>
+<div class="container body-container">
+  <div class="col-sm-3">
+    <div class="row" id="company-logo">
+      <a href="https://developer.atlassian.com/" target="company"><img class="company-logo" src="/media/logos/atlassian.png"></a>
+    </div>
+    <div class="row">
+      <nav id="toc" data-toggle="toc" class="affix"></nav>
+    </div>
+  </div>
+  <div class="col-sm-9">
+    <div class="row">
+      
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">API Lifecycle</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/versioning">Versionning</a></h3>
+            <p><p>How to handle API versionning</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-VersionControlforAPIs" target="specification">Version Control for APIs</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/governance">Governance</a></h3>
+            <p><p>How to ensure API governance (advertise, consistency, …)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-UsingtheseGuidelines" target="specification">Using these Guidelines</a>
+              
+                <blockquote>
+                We strongly recommend that someone who is familiar with these guidelines should review your REST API code
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-VersionControlforAPIs" target="specification">Version Control for APIs</a>
+              
+                <blockquote>
+                When to Change the Version
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Collection Resources</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection">Collection</a></h3>
+            <p><p>What is a collection (set) of resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
+              
+                <blockquote>
+                URI Structure
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
+              
+                <blockquote>
+                Collections of Entities
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection-pagination">Pagination</a></h3>
+            <p><p>How to retrieve a range of resources in a collection</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
+              
+                <blockquote>
+                Standard Query Parameters in URIs (start-index, max-results)
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Data</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/data-format">Data format</a></h3>
+            <p><p>which data format use</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
+              
+                <blockquote>
+                Representations (Content Types) of Entities
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixB:BasicDataTypes" target="specification">Appendix B: Basic Data Types</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">HTTP Methods</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-put">PUT</a></h3>
+            <p><p>The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Concurrency" target="specification">Concurrency</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-delete">DELETE</a></h3>
+            <p><p>The DELETE method deletes the specified resource.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Concurrency" target="specification">Concurrency</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">HTTP Protocol</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-caching">Caching</a></h3>
+            <p><p>How to use and provide relevant caching informations</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
+              
+                <blockquote>
+                Version Control for Entities
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Caching" target="specification">Caching</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-headers">HTTP Headers</a></h3>
+            <p><p>How to use standard or custom HTTP headers</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
+              
+                <blockquote>
+                Entities SHOULD be served with an ETag header.
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Caching" target="specification">Caching</a>
+              
+                <blockquote>
+                ETag, If-None-Match
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status">HTTP Statuses</a></h3>
+            <p><p>General information about HTTP statuses usage</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes" target="specification">Appendix A: Response Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">HTTP Status Redirection</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-301">301 Moved Permanently</a></h3>
+            <p><p>This and all future requests should be directed to the given URI.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes" target="specification">Appendix A: Response Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-304">304 Not Modified</a></h3>
+            <p><p>Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes" target="specification">Appendix A: Response Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">HTTP Status Success</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-201">201 Created</a></h3>
+            <p><p>The request has been fulfilled, resulting in the creation of a new resource.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes" target="specification">Appendix A: Response Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-204">204 No Content</a></h3>
+            <p><p>The server successfully processed the request and is not returning any content.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes" target="specification">Appendix A: Response Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-200">200 OK</a></h3>
+            <p><p>Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes" target="specification">Appendix A: Response Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-202">202 Accepted</a></h3>
+            <p><p>The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes" target="specification">Appendix A: Response Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">HTTP Status User Error</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-401">401 Unauthorized</a></h3>
+            <p><p>Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes" target="specification">Appendix A: Response Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-404">404 Not Found</a></h3>
+            <p><p>The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes" target="specification">Appendix A: Response Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-412">412 Precondition Failed</a></h3>
+            <p><p>The server does not meet one of the preconditions that the requester put on the request.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Concurrency" target="specification">Concurrency</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes" target="specification">Appendix A: Response Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Hypermedia</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/hypermedia-write">Hypermedia (write)</a></h3>
+            <p><p>How to use hypermedia to write data</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
+              
+                <blockquote>
+                Hypertext Linking within an Entity
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/hypermedia">Hypermedia</a></h3>
+            <p><p>How to use hypermedia</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
+              
+                <blockquote>
+                Hypertext Linking within an Entity
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/hypermedia-read">Hypermedia (read)</a></h3>
+            <p><p>How to use hypermedia to read data</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
+              
+                <blockquote>
+                Hypertext Linking within an Entity
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Resources</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-retrieve-dereference">Dereference Relationships</a></h3>
+            <p><p>How to load a resource and its linked resources in one call</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
+              
+                <blockquote>
+                Standard Query Parameters in URIs (expand)
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
+              
+                <blockquote>
+                Title Expansion for Entities
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-deletion">Delete resource</a></h3>
+            <p><p>How to delete resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Concurrency" target="specification">Concurrency</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-url-format">URL format</a></h3>
+            <p><p>How to design URLs</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
+              
+                <blockquote>
+                URI Structure
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-update">Update resource</a></h3>
+            <p><p>How to update a resource</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Concurrency" target="specification">Concurrency</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource">Resource</a></h3>
+            <p><p>General informations about resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Security</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/security">Security</a></h3>
+            <p><p>Security concerns</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Security" target="specification">Security</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    var bottom = $("#company-logo").offset().top + $("#company-logo").outerHeight(true);
+    $('#toc').affix({offset: {top: bottom }});
+});
+</script>
+
+    </div>
+
+    <footer class="footer">
+  <div class="col-sm-12 social">
+    <a href="/">API Stylebook</a> - Collections of resources for API Designers
+
+    <a href="https://twitter.com/apistylebook"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a>
+  </div>
+</footer>
+    
+    <script src="/js/anchor.min.js" ></script>
+    <script language="javascript"> 
+      anchors.options = {
+        placement: 'right'
+      };
+      anchors.add('.anchored');
+    </script>
+    
+    
+  </body>
+
+</html>

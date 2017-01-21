@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Atlassian REST API Policy</title>
+  <meta name="description" content="Collections of resources for API Designers">  
+  
+  <link rel="apple-touch-icon" href="/images/favicons/favicon.png">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon.png">
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-toc.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/design/guidelines/atlassian-rest-api-policy">
+  <link rel="alternate" type="application/rss+xml" title="API Stylebook" href="/feed.xml">
+  <script src="/js/jquery.min.js" ></script>
+  <script src="/js/bootstrap.min.js" ></script>
+  <script src="/js/bootstrap-toc.min.js" ></script>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83952820-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+</head>
+
+
+  <body  class="full" data-spy="scroll" data-target="#toc">
+
+    <header>
+  <!-- Static navbar -->
+  <nav class="navbar navbar-fixed-top full">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </button>
+        <a class="navbar-brand" href="/">API Stylebook</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/design/guidelines/">Design Guidelines</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/design/topics/">Design Topics</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/blog/">Blog</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/about/">About</a>
+            </li>
+          
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+</header>
+    <div class="container main-container">
+      <div class="container main-container full-jumbotron">
+    <div class="jumbotron">
+        <h1>Atlassian REST API Policy</h1>
+        <p>Atlassian</p>
+    </div>
+</div>
+<div class="container body-container">
+  <div class="col-sm-3">
+    <div class="row" id="company-logo">
+      <a href="https://developer.atlassian.com/" target="company"><img class="company-logo" src="/media/logos/atlassian.png"></a>
+    </div>
+    <div class="row">
+      <nav id="toc" data-toggle="toc" class="affix"></nav>
+    </div>
+  </div>
+  <div class="col-sm-9">
+    <div class="row">
+      
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">API Lifecycle</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/versioning">Versionning</a></h3>
+            <p><p>How to handle API versionning</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Compatibilitypolicy" target="specification">Compatibility policy</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Backwardscompatibility" target="specification">Backwards compatibility</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Structuredrepresentations(application/json)" target="specification">Structured representations (application/json)</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-APIversioning" target="specification">API versioning</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/governance">Governance</a></h3>
+            <p><p>How to ensure API governance (advertise, consistency, …)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Compatibilitypolicy" target="specification">Compatibility policy</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Deprecationpolicy" target="specification">Deprecation policy</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Collection Resources</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection-pagination">Pagination</a></h3>
+            <p><p>How to retrieve a range of resources in a collection</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Resource/ratelimitsandpaging" target="specification">Resource/rate limits and paging</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Data</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/data-format">Data format</a></h3>
+            <p><p>which data format use</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Compatibilitypolicy" target="specification">Compatibility policy</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Structuredrepresentations(application/json)" target="specification">Structured representations (application/json)</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Forwardcompatibility" target="specification">Forward compatibility</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">HTTP Protocol</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-headers">HTTP Headers</a></h3>
+            <p><p>How to use standard or custom HTTP headers</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Detectability" target="specification">Detectability (Deprecation Policy)</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Miscellaneous</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/rate-limiting">Rate limiting</a></h3>
+            <p><p>How to provide information about how many calls a consumer can do</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Resource/ratelimitsandpaging" target="specification">Resource/rate limits and paging</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/developer-experience">Developer experience</a></h3>
+            <p><p>How to take care of developer experience (DX)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Deprecationpolicy" target="specification">Deprecation policy</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">Resources</h2>
+          </div>
+          <table class="table">
+            
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-url-format">URL format</a></h3>
+            <p><p>How to design URLs</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-StableURIs" target="specification">Stable URIs</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+          </table>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    var bottom = $("#company-logo").offset().top + $("#company-logo").outerHeight(true);
+    $('#toc').affix({offset: {top: bottom }});
+});
+</script>
+
+    </div>
+
+    <footer class="footer">
+  <div class="col-sm-12 social">
+    <a href="/">API Stylebook</a> - Collections of resources for API Designers
+
+    <a href="https://twitter.com/apistylebook"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a>
+  </div>
+</footer>
+    
+    <script src="/js/anchor.min.js" ></script>
+    <script language="javascript"> 
+      anchors.options = {
+        placement: 'right'
+      };
+      anchors.add('.anchored');
+    </script>
+    
+    
+  </body>
+
+</html>
