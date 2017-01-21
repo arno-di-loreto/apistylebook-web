@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 21 Jan 2017 10:30:18 +0100</pubDate>
-    <lastBuildDate>Sat, 21 Jan 2017 10:30:18 +0100</lastBuildDate>
+    <pubDate>Sat, 21 Jan 2017 11:18:31 +0000</pubDate>
+    <lastBuildDate>Sat, 21 Jan 2017 11:18:31 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -29,7 +29,7 @@ All these questions may not be answered easily. Some will reinvent a square whee
 
 &lt;p&gt;Stay tuned for updates, follow the API Stylebook on &lt;a href=&quot;https://twitter.com/apistylebook&quot;&gt;Twitter &lt;i class=&quot;fa fa-twitter fa-1x&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sat, 10 Sep 2016 16:13:00 +0200</pubDate>
+        <pubDate>Sat, 10 Sep 2016 14:13:00 +0000</pubDate>
         <link>/blog/the-api-stylebook</link>
         <guid isPermaLink="true">/blog/the-api-stylebook</guid>
         
