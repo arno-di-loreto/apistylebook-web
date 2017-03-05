@@ -6,9 +6,46 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 05 Mar 2017 12:38:09 +0000</pubDate>
-    <lastBuildDate>Sun, 05 Mar 2017 12:38:09 +0000</lastBuildDate>
+    <pubDate>Sun, 05 Mar 2017 15:01:58 +0000</pubDate>
+    <lastBuildDate>Sun, 05 Mar 2017 15:01:58 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Google API Design Guide added on the API Stylebook</title>
+        <description>&lt;p&gt;Google shared its API Design Guide with the community and it has been added to the &lt;a href=&quot;/design/guidelines/google-api-design-guide&quot;&gt;API Stylebook&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/design/guidelines/google-api-design-guide&quot;&gt;&lt;img src=&quot;/media/screenshots/google-api-design-guide.png&quot; alt=&quot;alt text&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a general design guide for networked APIs. It has been used inside Google since 2014 and is the guide we follow when designing Cloud APIs and other Google APIs. It is shared here to inform outside developers and to make it easier for us all to work together.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This guide is slightly different from the &lt;a href=&quot;/design/guidelines/&quot;&gt;other ones&lt;/a&gt; because it deals with REST &lt;strong&gt;and RPC&lt;/strong&gt; API design focusing on &lt;a href=&quot;http://www.grpc.io/&quot;&gt;gRPC APIs&lt;/a&gt; using &lt;a href=&quot;https://cloud.google.com/apis/design/proto3&quot;&gt;Protocol Buffers v3&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This guide applies to both REST APIs and RPC APIs, with specific focus on gRPC APIs. gRPC APIs use Protocol Buffers to define their API surface and API Service Configuration to configure their API services, including HTTP mapping, logging, and monitoring.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;People who are not familiar with &lt;a href=&quot;http://www.grpc.io/&quot;&gt;gRPC&lt;/a&gt; and &lt;a href=&quot;https://cloud.google.com/apis/design/proto3&quot;&gt;proto3&lt;/a&gt; may be taken aback by this guide, but it’s really worth reading for any API designers or anyone wishing to use &lt;a href=&quot;https://cloud.google.com/endpoints/docs/grpc&quot;&gt;Google Cloud Endpoints&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;/design/guidelines/google-api-design-guide#documentation&quot;&gt;documentation section&lt;/a&gt; is really interesting giving guidelines on how to write your API (technical) documentation. If you remember only one thing concerning documentation, let it be this quote:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In most cases, there’s more to say than just restating the obvious&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Versioning and how to determine if a change is a breaking one or not are very well explained (see &lt;a href=&quot;http://localhost:4000/design/guidelines/google-api-design-guide#versioning&quot;&gt;Versionning&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;To have a quick look at all the topics covered by the &lt;a href=&quot;/design/guidelines/google-api-design-guide&quot;&gt;Google API Design Guide, click here.&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
+        <link>/blog/google-api-design-guide-added-on-the-api-stylebook</link>
+        <guid isPermaLink="true">/blog/google-api-design-guide-added-on-the-api-stylebook</guid>
+        
+        
+        <category>Update</category>
+        
+      </item>
     
       <item>
         <title>The API Stylebook</title>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Google API Design Guide added on the API Stylebook</title>
+  <meta name="description" content="Google shared its API Design Guide with the community and it has been added to the API Stylebook.">  
+  
+  <link rel="apple-touch-icon" href="/images/favicons/favicon.png">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon.png">
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-toc.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/blog/google-api-design-guide-added-on-the-api-stylebook">
+  <link rel="alternate" type="application/rss+xml" title="API Stylebook" href="/feed.xml">
+  <script src="/js/jquery.min.js" ></script>
+  <script src="/js/bootstrap.min.js" ></script>
+  <script src="/js/bootstrap-toc.min.js" ></script>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83952820-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+</head>
+
+
+  <body  class="full" data-spy="scroll" data-target="#toc">
+
+    <header>
+  <!-- Static navbar -->
+  <nav class="navbar navbar-fixed-top full">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </button>
+        <a class="navbar-brand" href="/">API Stylebook</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/design/guidelines/">Design Guidelines</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/design/topics/">Design Topics</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/blog/">Blog</a>
+            </li>
+          
+            <li 
+              
+              class="nav-item"
+              
+            >
+              <a class="page-link" href="/about/">About</a>
+            </li>
+          
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+</header>
+    <div class="container main-container">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <div class="container main-container full-jumbotron">
+        <div class="jumbotron">
+            <h1 itemprop="name headline">Google API Design Guide added on the API Stylebook</h1>
+            
+            <p><time datetime="2017-03-05T00:00:00+00:00" itemprop="datePublished">Mar 5, 2017</time></p>
+            <p>
+              
+                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                  <span itemprop="name">Arnaud Lauret</span>
+                </span>
+              
+            </p>
+        </div>
+    </div>
+  </header>
+
+  <div class="container blog-container"  itemprop="articleBody">
+  <p>Google shared its API Design Guide with the community and it has been added to the <a href="/design/guidelines/google-api-design-guide">API Stylebook</a>.</p>
+
+<p><a href="/design/guidelines/google-api-design-guide"><img src="/media/screenshots/google-api-design-guide.png" alt="alt text" /></a></p>
+
+<blockquote>
+  <p>This is a general design guide for networked APIs. It has been used inside Google since 2014 and is the guide we follow when designing Cloud APIs and other Google APIs. It is shared here to inform outside developers and to make it easier for us all to work together.</p>
+</blockquote>
+
+<p>This guide is slightly different from the <a href="/design/guidelines/">other ones</a> because it deals with REST <strong>and RPC</strong> API design focusing on <a href="http://www.grpc.io/">gRPC APIs</a> using <a href="https://cloud.google.com/apis/design/proto3">Protocol Buffers v3</a>.</p>
+
+<blockquote>
+  <p>This guide applies to both REST APIs and RPC APIs, with specific focus on gRPC APIs. gRPC APIs use Protocol Buffers to define their API surface and API Service Configuration to configure their API services, including HTTP mapping, logging, and monitoring.</p>
+</blockquote>
+
+<p>People who are not familiar with <a href="http://www.grpc.io/">gRPC</a> and <a href="https://cloud.google.com/apis/design/proto3">proto3</a> may be taken aback by this guide, but it’s really worth reading for any API designers or anyone wishing to use <a href="https://cloud.google.com/endpoints/docs/grpc">Google Cloud Endpoints</a>.</p>
+
+<p>The <a href="/design/guidelines/google-api-design-guide#documentation">documentation section</a> is really interesting giving guidelines on how to write your API (technical) documentation. If you remember only one thing concerning documentation, let it be this quote:</p>
+
+<blockquote>
+  <p>In most cases, there’s more to say than just restating the obvious</p>
+</blockquote>
+
+<p>Versioning and how to determine if a change is a breaking one or not are very well explained (see <a href="http://localhost:4000/design/guidelines/google-api-design-guide#versioning">Versionning</a>).</p>
+
+<p>To have a quick look at all the topics covered by the <a href="/design/guidelines/google-api-design-guide">Google API Design Guide, click here.</a>.</p>
+
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <footer class="footer">
+  <div class="col-sm-12 social">
+    <a href="/">API Stylebook</a> - Collections of resources for API Designers
+
+    <a href="https://twitter.com/apistylebook"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a>
+  </div>
+</footer>
+    
+    
+  </body>
+
+</html>

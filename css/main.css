@@ -14,7 +14,16 @@ body {
   /* For nav bar */
   padding-top: 50px;
   /* Margin bottom by footer height */
-  color: #124266; }
+  color: #021E33; }
+
+blockquote {
+  color: #3B698D; }
+
+a {
+  color: #052F4F; }
+
+a:hover {
+  color: #3B698D; }
 
 .footer {
   width: 100%;
@@ -44,6 +53,9 @@ body {
   padding-bottom: 15px;
   line-height: 1.5;
   font-size: medium; }
+  .blog-container img {
+    width: auto;
+    max-width: 720px; }
 
 .container .text-muted {
   margin: 20px 0; }

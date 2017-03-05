@@ -105,6 +105,47 @@
     
       <div class="panel panel-default">
         <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/google-api-design-guide">Google - Google API Design Guide</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="https://cloud.google.com/apis/design/design_patterns#request_validation">Request Validation</a>
+              
+                <blockquote>
+                If this field is set to true, the server must not execute any side effects and only perform implementation-specific validation consistent with the full request.
+                </blockquote>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://cloud.google.com/apis/design/design_patterns#request_duplication">Request Duplication</a>
+              
+                <blockquote>
+                some API methods cannot easily be idempotent, such as creating a resource, and there is a need to avoid unnecessary duplication
+                </blockquote>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://cloud.google.com/apis/design/design_patterns#grammar_syntax">Grammar Syntax</a>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="https://cloud.google.com/apis/design/design_patterns#output_fields">Output Fields</a>
+              
+                <blockquote>
+                This means that the server must ignore the presence of output only fields and any indication of it.
+                </blockquote>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
           <h2 class="panel-title anchored"><a href="/design/guidelines/redhat-thoughts-on-restful-api-design">Red Hat - Thoughts on RESTful API Design</a></h2>
         </div>
         <table class="table">
