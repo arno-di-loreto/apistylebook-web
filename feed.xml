@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 05 Mar 2017 15:01:58 +0000</pubDate>
-    <lastBuildDate>Sun, 05 Mar 2017 15:01:58 +0000</lastBuildDate>
+    <pubDate>Sun, 23 Apr 2017 12:50:28 +0000</pubDate>
+    <lastBuildDate>Sun, 23 Apr 2017 12:50:28 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -34,7 +34,7 @@
   &lt;p&gt;In most cases, there’s more to say than just restating the obvious&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Versioning and how to determine if a change is a breaking one or not are very well explained (see &lt;a href=&quot;http://localhost:4000/design/guidelines/google-api-design-guide#versioning&quot;&gt;Versionning&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Versioning and how to determine if a change is a breaking one or not are very well explained (see &lt;a href=&quot;/design/guidelines/google-api-design-guide#versioning&quot;&gt;Versionning&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;To have a quick look at all the topics covered by the &lt;a href=&quot;/design/guidelines/google-api-design-guide&quot;&gt;Google API Design Guide, click here.&lt;/a&gt;.&lt;/p&gt;
 </description>
