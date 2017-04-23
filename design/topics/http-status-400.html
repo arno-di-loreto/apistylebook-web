@@ -119,6 +119,51 @@
     
       <div class="panel panel-default">
         <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/deliveroo-api-design-guidelines">Deliveroo - API Design</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="http://deliveroo.engineering/guidelines/api-design/#post-creating-entities">POST, creating entities</a>
+              
+                <blockquote>
+                400 Bad Request if the entity cannot be created with the information in the request body
+                </blockquote>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://deliveroo.engineering/guidelines/api-design/#patch-mutating-entities">PATCH, mutating entities</a>
+              
+                <blockquote>
+                400 Bad Request, if the modification failed.
+                </blockquote>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://deliveroo.engineering/guidelines/api-design/#return-codes-and-errors">Return codes and errors</a>
+              
+                <blockquote>
+                400 Bad Request: bad syntax (unknown route, missing required fields or parameters, unknown extra parameters, bad field or parameter values).
+                </blockquote>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://deliveroo.engineering/guidelines/api-design/#parameters">Parameters</a>
+              
+                <blockquote>
+                Those endpoints may return 400 Bad Request if parameters are specified.
+                </blockquote>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
           <h2 class="panel-title anchored"><a href="/design/guidelines/haufe-api-styleguide">Haufe - Haufe API style guide</a></h2>
         </div>
         <table class="table">

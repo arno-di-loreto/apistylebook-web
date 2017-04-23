@@ -255,6 +255,14 @@
         
           <tr>
             <td>
+              <h3 class="anchored"><a href="/design/topics/data-internationalization">Internationalization</a></h3>
+              <p><p>Providing internationalized data representation (e.g. adapted to the user’s country)</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
               <h3 class="anchored"><a href="/design/topics/data-format-null">Null data</a></h3>
               <p><p>How to deal with null data</p>
 </p>
@@ -435,6 +443,14 @@
         
           <tr>
             <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-300">300 Multiple Choices</a></h3>
+              <p><p>The 300 (Multiple Choices) status code indicates that the target resource has more than one representation, each with its own more specific identifier, and information about the alternatives is being provided so that the user (or user agent) can select a preferred representation by redirecting its request to one or more of those identifiers. In other words, the server desires that the user agent engage in reactive negotiation to select the most appropriate representation(s) for its needs.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
               <h3 class="anchored"><a href="/design/topics/http-status-301">301 Moved Permanently</a></h3>
               <p><p>This and all future requests should be directed to the given URI.</p>
 </p>
@@ -461,6 +477,22 @@
             <td>
               <h3 class="anchored"><a href="/design/topics/http-status-304">304 Not Modified</a></h3>
               <p><p>Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-307">307 Temporary Redirect</a></h3>
+              <p><p>The 307 (Temporary Redirect) status code indicates that the target resource resides temporarily under a different URI and the user agent MUST NOT change the request method if it performs an automatic redirection to that URI. Since the redirection can change over time, the client ought to continue using the original effective request URI for future requests.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-308">308 Permanent Redirect</a></h3>
+              <p><p>The 308 (Permanent Redirect) status code indicates that the target resource has been assigned a new permanent URI and any future references to this resource ought to use one of the enclosed URIs.</p>
 </p>
             </td>
           </tr>
@@ -527,6 +559,14 @@
             <td>
               <h3 class="anchored"><a href="/design/topics/http-status-202">202 Accepted</a></h3>
               <p><p>The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.</p>
+</p>
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <h3 class="anchored"><a href="/design/topics/http-status-203">203 Non-Authoritative Information</a></h3>
+              <p><p>The 203 (Non-Authoritative Information) status code indicates that the request was successful but the enclosed payload has been modified from that of the origin server’s 200 (OK) response by a transforming proxy.</p>
 </p>
             </td>
           </tr>

@@ -169,6 +169,69 @@
     
       <div class="panel panel-default">
         <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="/design/guidelines/deliveroo-api-design-guidelines">Deliveroo - API Design</a></h2>
+        </div>
+        <table class="table">
+          
+            <tr><td>
+              <a target="document" href="http://deliveroo.engineering/guidelines/api-design/#resource-lifecycle">Resource lifecycle</a>
+              
+                <blockquote>
+                either If-Unmodified-Since or If-Match
+                </blockquote>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://deliveroo.engineering/guidelines/api-design/#versioning">Versioning</a>
+              
+                <blockquote>
+                Clients may specify a desired version as the v parameter of the Accept header
+                </blockquote>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://deliveroo.engineering/guidelines/api-design/#versioning">Versioning</a>
+              
+                <blockquote>
+                If the version was unspecified, the server should use the latest available version, and specify the Vary header
+                </blockquote>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://deliveroo.engineering/guidelines/api-design/#internationalisation-i18n">Internationalisation (i18n)</a>
+              
+                <blockquote>
+                Localisation is inherently a representation concern, and HTTP mandates such concerns to be addressed using protocol headers.
+                </blockquote>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://deliveroo.engineering/guidelines/api-design/#single-entity-get-endpoints">Single-entity GET endpoints</a>
+              
+                <blockquote>
+                Responses should include a Last-Modified or ETag header, and may include both
+                </blockquote>
+              
+            </td></tr>
+          
+            <tr><td>
+              <a target="document" href="http://deliveroo.engineering/guidelines/api-design/#compression">Compression</a>
+              
+                <blockquote>
+                Servers may support the Accept-Encoding header for compression purposes, but this is not mandatory.
+                </blockquote>
+              
+            </td></tr>
+          
+        </table>
+      </div>
+    
+      <div class="panel panel-default">
+        <div class="panel-heading">
           <h2 class="panel-title anchored"><a href="/design/guidelines/haufe-api-styleguide">Haufe - Haufe API style guide</a></h2>
         </div>
         <table class="table">

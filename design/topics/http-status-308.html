@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>412 Precondition Failed</title>
+  <title>308 Permanent Redirect</title>
   <meta name="description" content="Collections of resources for API Designers">  
   
   <link rel="apple-touch-icon" href="/images/favicons/favicon.png">
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="/css/bootstrap-toc.min.css">
   <link rel="stylesheet" href="/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/design/topics/http-status-412">
+  <link rel="canonical" href="/design/topics/http-status-308">
   <link rel="alternate" type="application/rss+xml" title="API Stylebook" href="/feed.xml">
   <script src="/js/jquery.min.js" ></script>
   <script src="/js/bootstrap.min.js" ></script>
@@ -94,8 +94,8 @@
     <div class="container main-container">
       <div class="container main-container full-jumbotron">
   <div class="jumbotron">
-    <h1>412 Precondition Failed</h1>
-    <p><p>The server does not meet one of the preconditions that the requester put on the request.</p>
+    <h1>308 Permanent Redirect</h1>
+    <p><p>The 308 (Permanent Redirect) status code indicates that the target resource has been assigned a new permanent URI and any future references to this resource ought to use one of the enclosed URIs.</p>
 </p>
   </div>
 </div>
@@ -105,90 +105,16 @@
     
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h2 class="panel-title anchored"><a href="/design/guidelines/atlassian-rest-api-design-guidelines-version-1">Atlassian - Atlassian REST API Design Guidelines version 1</a></h2>
-        </div>
-        <table class="table">
-          
-            <tr><td>
-              <a target="document" href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Concurrency">Concurrency</a>
-              
-            </td></tr>
-          
-            <tr><td>
-              <a target="document" href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes">Appendix A: Response Codes</a>
-              
-            </td></tr>
-          
-        </table>
-      </div>
-    
-      <div class="panel panel-default">
-        <div class="panel-heading">
           <h2 class="panel-title anchored"><a href="/design/guidelines/deliveroo-api-design-guidelines">Deliveroo - API Design</a></h2>
         </div>
         <table class="table">
           
             <tr><td>
-              <a target="document" href="http://deliveroo.engineering/guidelines/api-design/#post-creating-entities">POST, creating entities</a>
+              <a target="document" href="http://deliveroo.engineering/guidelines/api-design/#caching">Caching</a>
               
                 <blockquote>
-                412 Precondition Failed if e.g. the resource wouldn’t statisfy some uniqueness criterion
+                Responses with the following status codes should specify a Cache-Control header
                 </blockquote>
-              
-            </td></tr>
-          
-            <tr><td>
-              <a target="document" href="http://deliveroo.engineering/guidelines/api-design/#patch-mutating-entities">PATCH, mutating entities</a>
-              
-                <blockquote>
-                412 Precondition failed, when failing to honour If-Match or If-Unmodified-Since headers.
-                </blockquote>
-              
-            </td></tr>
-          
-            <tr><td>
-              <a target="document" href="http://deliveroo.engineering/guidelines/api-design/#delete-destroying-entities">DELETE, destroying entities</a>
-              
-                <blockquote>
-                412 Precondition Failed
-                </blockquote>
-              
-            </td></tr>
-          
-            <tr><td>
-              <a target="document" href="http://deliveroo.engineering/guidelines/api-design/#return-codes-and-errors">Return codes and errors</a>
-              
-                <blockquote>
-                412 Precondition failed: resource versioning issues.
-                </blockquote>
-              
-            </td></tr>
-          
-        </table>
-      </div>
-    
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h2 class="panel-title anchored"><a href="/design/guidelines/haufe-api-styleguide">Haufe - Haufe API style guide</a></h2>
-        </div>
-        <table class="table">
-          
-            <tr><td>
-              <a target="document" href="https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md">HTTP Status Codes</a>
-              
-            </td></tr>
-          
-        </table>
-      </div>
-    
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h2 class="panel-title anchored"><a href="/design/guidelines/zalando-restful-api-guidelines">Zalando - RESTFul API Guidelines</a></h2>
-        </div>
-        <table class="table">
-          
-            <tr><td>
-              <a target="document" href="http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes">Client Side Error Codes</a>
               
             </td></tr>
           
