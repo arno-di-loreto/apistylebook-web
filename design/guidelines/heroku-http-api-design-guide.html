@@ -200,6 +200,25 @@
           <table class="table">
             
             <tr><td>
+            <h3 class="anchored"><a href="/design/topics/data-format-date-time">Date and Time</a></h3>
+            <p><p>How to deal with date and time data</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/provide-standard-timestamps.html" target="specification">Provide standard timestamps</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/use-utc-times-formatted-in-iso8601.html" target="specification">Use UTC times formatted in ISO8601</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
             <h3 class="anchored"><a href="/design/topics/data-format">Data format</a></h3>
             <p><p>which data format use</p>
 </p>
@@ -222,25 +241,6 @@
             
               <li class="list-group-item">
               <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/keep-json-minified-in-all-responses.html" target="specification">Keep JSON minified in all responses</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/data-format-date-time">Date and Time</a></h3>
-            <p><p>How to deal with date and time data</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/provide-standard-timestamps.html" target="specification">Provide standard timestamps</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/use-utc-times-formatted-in-iso8601.html" target="specification">Use UTC times formatted in ISO8601</a>
               
               </li>
             
@@ -369,22 +369,8 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-206">206 Partial Content</a></h3>
-            <p><p>The server is delivering only part of the resource (byte serving) due to a range header sent by the client. The range header is used by HTTP clients to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html" target="specification">Return appropriate status codes</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-202">202 Accepted</a></h3>
-            <p><p>The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.</p>
+            <h3 class="anchored"><a href="/design/topics/http-status-200">200 OK</a></h3>
+            <p><p>Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.</p>
 </p>
             <ul class="list-group">
             
@@ -411,8 +397,22 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-200">200 OK</a></h3>
-            <p><p>Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.</p>
+            <h3 class="anchored"><a href="/design/topics/http-status-202">202 Accepted</a></h3>
+            <p><p>The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html" target="specification">Return appropriate status codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-206">206 Partial Content</a></h3>
+            <p><p>The server is delivering only part of the resource (byte serving) due to a range header sent by the client. The range header is used by HTTP clients to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams.</p>
 </p>
             <ul class="list-group">
             
@@ -433,34 +433,6 @@
           </div>
           <table class="table">
             
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-422">422 Unprocessable Entity</a></h3>
-            <p><p>The request was well-formed but was unable to be followed due to semantic errors.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html" target="specification">Return appropriate status codes</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-429">429 Too Many Requests</a></h3>
-            <p><p>The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html" target="specification">Return appropriate status codes</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-status-401">401 Unauthorized</a></h3>
             <p><p>Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource.</p>
@@ -494,6 +466,34 @@
             </ul>
             </td></tr>
           
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-422">422 Unprocessable Entity</a></h3>
+            <p><p>The request was well-formed but was unable to be followed due to semantic errors.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html" target="specification">Return appropriate status codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-429">429 Too Many Requests</a></h3>
+            <p><p>The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html" target="specification">Return appropriate status codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
           </table>
         </div>
       
@@ -504,20 +504,6 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/performance">Performance and bandwidth</a></h3>
-            <p><p>How to deal with high traffic or consumers with low bandwith</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/keep-json-minified-in-all-responses.html" target="specification">Keep JSON minified in all responses</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
             <h3 class="anchored"><a href="/design/topics/debug-diagnose">Debug and diagnose</a></h3>
             <p><p>How to provide informations to debug and diagnose</p>
 </p>
@@ -525,20 +511,6 @@
             
               <li class="list-group-item">
               <a href="https://geemus.gitbooks.io/http-api-design/content/en/foundations/provide-request-ids-for-introspection.html" target="specification">Provide Request-Ids for Introspection</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/rate-limiting">Rate limiting</a></h3>
-            <p><p>How to provide information about how many calls a consumer can do</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/show-rate-limit-status.html" target="specification">Show rate limit status</a>
               
               </li>
             
@@ -569,6 +541,34 @@
             </ul>
             </td></tr>
           
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/performance">Performance and bandwidth</a></h3>
+            <p><p>How to deal with high traffic or consumers with low bandwith</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/keep-json-minified-in-all-responses.html" target="specification">Keep JSON minified in all responses</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/rate-limiting">Rate limiting</a></h3>
+            <p><p>How to provide information about how many calls a consumer can do</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/show-rate-limit-status.html" target="specification">Show rate limit status</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
           </table>
         </div>
       
@@ -579,20 +579,6 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/naming">Naming</a></h3>
-            <p><p>How to name things</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://geemus.gitbooks.io/http-api-design/content/en/requests/resource-names.html" target="specification">Resource names</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
             <h3 class="anchored"><a href="/design/topics/naming-case">Case</a></h3>
             <p><p>Which case (lowercase, camelCase, …) to use and when</p>
 </p>
@@ -600,6 +586,20 @@
             
               <li class="list-group-item">
               <a href="https://geemus.gitbooks.io/http-api-design/content/en/requests/downcase-paths-and-attributes.html" target="specification">Downcase paths and attributes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/naming">Naming</a></h3>
+            <p><p>How to name things</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://geemus.gitbooks.io/http-api-design/content/en/requests/resource-names.html" target="specification">Resource names</a>
               
               </li>
             
@@ -615,6 +615,20 @@
           </div>
           <table class="table">
             
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-action">Action resource</a></h3>
+            <p><p>How to use action resource (e.g. resources like /cancel or /approve)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://geemus.gitbooks.io/http-api-design/content/en/requests/actions.html" target="specification">Actions</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/resource-creation">Create resource</a></h3>
             <p><p>How to create resources</p>
@@ -644,13 +658,13 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-action">Action resource</a></h3>
-            <p><p>How to use action resource (e.g. resources like /cancel or /approve)</p>
+            <h3 class="anchored"><a href="/design/topics/resource-id-semantic">ID with semantic</a></h3>
+            <p><p>Using meaningful ids (like <code class="highlighter-rouge">me</code>)</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="https://geemus.gitbooks.io/http-api-design/content/en/requests/actions.html" target="specification">Actions</a>
+              <a href="https://geemus.gitbooks.io/http-api-design/content/en/requests/support-non-id-dereferencing-for-convenience.html" target="specification">Support non-id dereferencing for convenience</a>
               
               </li>
             
@@ -691,13 +705,13 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-id-semantic">ID with semantic</a></h3>
-            <p><p>Using meaningful ids (like <code class="highlighter-rouge">me</code>)</p>
+            <h3 class="anchored"><a href="/design/topics/resource-retrieve">Retrieve resource</a></h3>
+            <p><p>How to retrieve a resource</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="https://geemus.gitbooks.io/http-api-design/content/en/requests/support-non-id-dereferencing-for-convenience.html" target="specification">Support non-id dereferencing for convenience</a>
+              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/provide-full-resources-where-available.html" target="specification">Provide full resources where available</a>
               
               </li>
             
@@ -736,20 +750,6 @@
             
               <li class="list-group-item">
               <a href="https://geemus.gitbooks.io/http-api-design/content/en/requests/minimize-path-nesting.html" target="specification">Minimize path nesting</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-retrieve">Retrieve resource</a></h3>
-            <p><p>How to retrieve a resource</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://geemus.gitbooks.io/http-api-design/content/en/responses/provide-full-resources-where-available.html" target="specification">Provide full resources where available</a>
               
               </li>
             

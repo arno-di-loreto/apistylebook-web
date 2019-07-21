@@ -149,13 +149,27 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/collection-filtering">Filtering</a></h3>
-            <p><p>How to select some resources in a collection</p>
+            <h3 class="anchored"><a href="/design/topics/collection">Collection</a></h3>
+            <p><p>What is a collection (set) of resources</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#filtering" target="specification">Filtering</a>
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#collections" target="specification">Collections</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection-retrieve">Retrieve a collection</a></h3>
+            <p><p>How to get a collection or resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#get" target="specification">GET</a>
               
               </li>
             
@@ -182,27 +196,13 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/collection">Collection</a></h3>
-            <p><p>What is a collection (set) of resources</p>
+            <h3 class="anchored"><a href="/design/topics/collection-filtering">Filtering</a></h3>
+            <p><p>How to select some resources in a collection</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#collections" target="specification">Collections</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/collection-retrieve">Retrieve a collection</a></h3>
-            <p><p>How to get a collection or resources</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#get" target="specification">GET</a>
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#filtering" target="specification">Filtering</a>
               
               </li>
             
@@ -256,34 +256,6 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-delete">DELETE</a></h3>
-            <p><p>The DELETE method deletes the specified resource.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#delete" target="specification">DELETE</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-put">PUT</a></h3>
-            <p><p>The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#put" target="specification">PUT</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-methods-get">GET</a></h3>
             <p><p>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.</p>
 </p>
@@ -305,6 +277,34 @@
             
               <li class="list-group-item">
               <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#post" target="specification">POST</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-put">PUT</a></h3>
+            <p><p>The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#put" target="specification">PUT</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-delete">DELETE</a></h3>
+            <p><p>The DELETE method deletes the specified resource.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#delete" target="specification">DELETE</a>
               
               </li>
             
@@ -462,8 +462,8 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-201">201 Created</a></h3>
-            <p><p>The request has been fulfilled, resulting in the creation of a new resource.</p>
+            <h3 class="anchored"><a href="/design/topics/http-status-200">200 OK</a></h3>
+            <p><p>Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.</p>
 </p>
             <ul class="list-group">
             
@@ -476,8 +476,8 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-200">200 OK</a></h3>
-            <p><p>Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.</p>
+            <h3 class="anchored"><a href="/design/topics/http-status-201">201 Created</a></h3>
+            <p><p>The request has been fulfilled, resulting in the creation of a new resource.</p>
 </p>
             <ul class="list-group">
             
@@ -541,22 +541,8 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-422">422 Unprocessable Entity</a></h3>
-            <p><p>The request was well-formed but was unable to be followed due to semantic errors.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#client-errors" target="specification">Client Errors</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-404">404 Not Found</a></h3>
-            <p><p>The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.</p>
+            <h3 class="anchored"><a href="/design/topics/http-status-401">401 Unauthorized</a></h3>
+            <p><p>Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource.</p>
 </p>
             <ul class="list-group">
             
@@ -583,8 +569,22 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-401">401 Unauthorized</a></h3>
-            <p><p>Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource.</p>
+            <h3 class="anchored"><a href="/design/topics/http-status-404">404 Not Found</a></h3>
+            <p><p>The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#client-errors" target="specification">Client Errors</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-422">422 Unprocessable Entity</a></h3>
+            <p><p>The request was well-formed but was unable to be followed due to semantic errors.</p>
 </p>
             <ul class="list-group">
             
@@ -606,13 +606,23 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/hypermedia-write">Hypermedia (write)</a></h3>
-            <p><p>How to use hypermedia to write data</p>
+            <h3 class="anchored"><a href="/design/topics/hypermedia">Hypermedia</a></h3>
+            <p><p>How to use hypermedia</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#resources" target="specification">Resources</a>
+              
+              </li>
+            
+              <li class="list-group-item">
               <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#links" target="specification">Links</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#including-related-resources" target="specification">Includind Related Resources</a>
               
               </li>
             
@@ -639,23 +649,13 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/hypermedia">Hypermedia</a></h3>
-            <p><p>How to use hypermedia</p>
+            <h3 class="anchored"><a href="/design/topics/hypermedia-write">Hypermedia (write)</a></h3>
+            <p><p>How to use hypermedia to write data</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#resources" target="specification">Resources</a>
-              
-              </li>
-            
-              <li class="list-group-item">
               <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#links" target="specification">Links</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#including-related-resources" target="specification">Includind Related Resources</a>
               
               </li>
             
@@ -747,6 +747,48 @@
           <table class="table">
             
             <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource">Resource</a></h3>
+            <p><p>General informations about resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#resources" target="specification">Resources</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-id">Resource ID</a></h3>
+            <p><p>What is a resource ID and/or how it’s built</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#resources" target="specification">Resources</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-url-format">URL format</a></h3>
+            <p><p>How to design URLs</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#url-structure" target="specification">URL Structure</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
             <h3 class="anchored"><a href="/design/topics/resource-retrieve">Retrieve resource</a></h3>
             <p><p>How to retrieve a resource</p>
 </p>
@@ -754,6 +796,81 @@
             
               <li class="list-group-item">
               <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#get" target="specification">GET</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-retrieve-partial">Retrieve resource partially</a></h3>
+            <p><p>How to retrieve partially a resource</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#requesting-partial-resources" target="specification">Requesting Partiel Resources</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#nested-resources" target="specification">Nested Resources</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-retrieve-dereference">Dereference Relationships</a></h3>
+            <p><p>How to load a resource and its linked resources in one call</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#including-related-resources" target="specification">Includind Related Resources</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-creation">Create resource</a></h3>
+            <p><p>How to create resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#post" target="specification">POST</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-update">Update resource</a></h3>
+            <p><p>How to update a resource</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#patch" target="specification">PATCH</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-update-partial">Update resource partially</a></h3>
+            <p><p>How to udate partially a resource</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#patch" target="specification">PATCH</a>
               
               </li>
             
@@ -806,123 +923,6 @@
             
               <li class="list-group-item">
               <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#links" target="specification">Links</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-update-partial">Update resource partially</a></h3>
-            <p><p>How to udate partially a resource</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#patch" target="specification">PATCH</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-url-format">URL format</a></h3>
-            <p><p>How to design URLs</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#url-structure" target="specification">URL Structure</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-id">Resource ID</a></h3>
-            <p><p>What is a resource ID and/or how it’s built</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#resources" target="specification">Resources</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource">Resource</a></h3>
-            <p><p>General informations about resources</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#resources" target="specification">Resources</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-retrieve-dereference">Dereference Relationships</a></h3>
-            <p><p>How to load a resource and its linked resources in one call</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#including-related-resources" target="specification">Includind Related Resources</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-update">Update resource</a></h3>
-            <p><p>How to update a resource</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#patch" target="specification">PATCH</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-retrieve-partial">Retrieve resource partially</a></h3>
-            <p><p>How to retrieve partially a resource</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#requesting-partial-resources" target="specification">Requesting Partiel Resources</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#nested-resources" target="specification">Nested Resources</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-creation">Create resource</a></h3>
-            <p><p>How to create resources</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/cloudfoundry/cc-api-v3-style-guide#post" target="specification">POST</a>
               
               </li>
             

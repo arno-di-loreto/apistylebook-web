@@ -200,8 +200,50 @@
           <table class="table">
             
             <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-delete">DELETE</a></h3>
+            <p><p>The DELETE method deletes the specified resource.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls" target="specification">General guidelines for RESTful URLs</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-get">GET</a></h3>
+            <p><p>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls" target="specification">General guidelines for RESTful URLs</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-methods-post">POST</a></h3>
             <p><p>The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls" target="specification">General guidelines for RESTful URLs</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-put">PUT</a></h3>
+            <p><p>The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.</p>
 </p>
             <ul class="list-group">
             
@@ -232,48 +274,6 @@
             </ul>
             </td></tr>
           
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-get">GET</a></h3>
-            <p><p>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls" target="specification">General guidelines for RESTful URLs</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-delete">DELETE</a></h3>
-            <p><p>The DELETE method deletes the specified resource.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls" target="specification">General guidelines for RESTful URLs</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-put">PUT</a></h3>
-            <p><p>The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls" target="specification">General guidelines for RESTful URLs</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
           </table>
         </div>
       
@@ -284,13 +284,17 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status">HTTP Statuses</a></h3>
-            <p><p>General information about HTTP statuses usage</p>
+            <h3 class="anchored"><a href="/design/topics/http-content-negotiation">Content negociation and media types</a></h3>
+            <p><p>How to describe your API data format and/or propose different formats (like json, yaml, xml atom, …)</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="https://github.com/WhiteHouse/api-standards/blob/master/README.md#error-handling" target="specification">Error handling</a>
+              <a href="https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls" target="specification">General guidelines for RESTful URLs</a>
+              
+                <blockquote>
+                Formats should be in the form of api/v2/resource/{id}.json
+                </blockquote>
               
               </li>
             
@@ -316,17 +320,13 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-content-negotiation">Content negociation and media types</a></h3>
-            <p><p>How to describe your API data format and/or propose different formats (like json, yaml, xml atom, …)</p>
+            <h3 class="anchored"><a href="/design/topics/http-status">HTTP Statuses</a></h3>
+            <p><p>General information about HTTP statuses usage</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls" target="specification">General guidelines for RESTful URLs</a>
-              
-                <blockquote>
-                Formats should be in the form of api/v2/resource/{id}.json
-                </blockquote>
+              <a href="https://github.com/WhiteHouse/api-standards/blob/master/README.md#error-handling" target="specification">Error handling</a>
               
               </li>
             
@@ -458,6 +458,20 @@
           <table class="table">
             
             <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-creation">Create resource</a></h3>
+            <p><p>How to create resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/WhiteHouse/api-standards/blob/master/README.md#http-verbs" target="specification">HTTP verbs</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
             <h3 class="anchored"><a href="/design/topics/resource-deletion">Delete resource</a></h3>
             <p><p>How to delete resources</p>
 </p>
@@ -525,20 +539,6 @@
             
               <li class="list-group-item">
               <a href="https://github.com/WhiteHouse/api-standards/blob/master/README.md#restful-urls" target="specification">RESTful URLs</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-creation">Create resource</a></h3>
-            <p><p>How to create resources</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/WhiteHouse/api-standards/blob/master/README.md#http-verbs" target="specification">HTTP verbs</a>
               
               </li>
             

@@ -230,13 +230,22 @@ RESTful, Hypermedia, Fine-grained
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/collection">Collection</a></h3>
-            <p><p>What is a collection (set) of resources</p>
+            <h3 class="anchored"><a href="/design/topics/collection-pagination">Pagination</a></h3>
+            <p><p>How to retrieve a range of resources in a collection</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
               <a href="http://deliveroo.engineering/guidelines/api-design/#collection-get-endpoints" target="specification">Collection GET endpoints</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#query-parameters" target="specification">Query parameters</a>
+              
+                <blockquote>
+                Those should accept the page and per_page parameters
+                </blockquote>
               
               </li>
             
@@ -258,22 +267,13 @@ RESTful, Hypermedia, Fine-grained
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/collection-pagination">Pagination</a></h3>
-            <p><p>How to retrieve a range of resources in a collection</p>
+            <h3 class="anchored"><a href="/design/topics/collection">Collection</a></h3>
+            <p><p>What is a collection (set) of resources</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
               <a href="http://deliveroo.engineering/guidelines/api-design/#collection-get-endpoints" target="specification">Collection GET endpoints</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#query-parameters" target="specification">Query parameters</a>
-              
-                <blockquote>
-                Those should accept the page and per_page parameters
-                </blockquote>
               
               </li>
             
@@ -369,13 +369,23 @@ RESTful, Hypermedia, Fine-grained
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods">HTTP methods</a></h3>
-            <p><p>General information about HTTP methods usage</p>
+            <h3 class="anchored"><a href="/design/topics/http-methods-get">GET</a></h3>
+            <p><p>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
               <a href="http://deliveroo.engineering/guidelines/api-design/#restful" target="specification">RESTful</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#single-entity-get-endpoints" target="specification">Single-entity GET endpoints</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#collection-get-endpoints" target="specification">Collection GET endpoints</a>
               
               </li>
             
@@ -383,27 +393,13 @@ RESTful, Hypermedia, Fine-grained
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-post">POST</a></h3>
-            <p><p>The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.</p>
+            <h3 class="anchored"><a href="/design/topics/http-methods-head">HEAD</a></h3>
+            <p><p>The HEAD method asks for a response identical to that of a GET request, but without the response body. This is useful for retrieving meta-information written in response headers, without having to transport the entire content.</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
               <a href="http://deliveroo.engineering/guidelines/api-design/#restful" target="specification">RESTful</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#post-creating-entities" target="specification">POST, creating entities</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#return-codes-and-errors" target="specification">Return codes and errors</a>
-              
-                <blockquote>
-                POST and PATCH should never result in a 200 (generally 201, occasionally 202).
-                </blockquote>
               
               </li>
             
@@ -448,8 +444,8 @@ RESTful, Hypermedia, Fine-grained
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-get">GET</a></h3>
-            <p><p>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.</p>
+            <h3 class="anchored"><a href="/design/topics/http-methods-post">POST</a></h3>
+            <p><p>The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.</p>
 </p>
             <ul class="list-group">
             
@@ -459,12 +455,16 @@ RESTful, Hypermedia, Fine-grained
               </li>
             
               <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#single-entity-get-endpoints" target="specification">Single-entity GET endpoints</a>
+              <a href="http://deliveroo.engineering/guidelines/api-design/#post-creating-entities" target="specification">POST, creating entities</a>
               
               </li>
             
               <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#collection-get-endpoints" target="specification">Collection GET endpoints</a>
+              <a href="http://deliveroo.engineering/guidelines/api-design/#return-codes-and-errors" target="specification">Return codes and errors</a>
+              
+                <blockquote>
+                POST and PATCH should never result in a 200 (generally 201, occasionally 202).
+                </blockquote>
               
               </li>
             
@@ -472,8 +472,8 @@ RESTful, Hypermedia, Fine-grained
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-head">HEAD</a></h3>
-            <p><p>The HEAD method asks for a response identical to that of a GET request, but without the response body. This is useful for retrieving meta-information written in response headers, without having to transport the entire content.</p>
+            <h3 class="anchored"><a href="/design/topics/http-methods">HTTP methods</a></h3>
+            <p><p>General information about HTTP methods usage</p>
 </p>
             <ul class="list-group">
             
@@ -494,25 +494,6 @@ RESTful, Hypermedia, Fine-grained
           </div>
           <table class="table">
             
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-content-negotiation">Content negociation and media types</a></h3>
-            <p><p>How to describe your API data format and/or propose different formats (like json, yaml, xml atom, …)</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#content-type-negotiation" target="specification">Content type negotiation</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#versioning" target="specification">Versioning</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-caching">Caching</a></h3>
             <p><p>How to use and provide relevant caching informations</p>
@@ -538,17 +519,18 @@ RESTful, Hypermedia, Fine-grained
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http">HTTP protocol</a></h3>
-            <p><p>General informations about HTTP protocol</p>
+            <h3 class="anchored"><a href="/design/topics/http-content-negotiation">Content negociation and media types</a></h3>
+            <p><p>How to describe your API data format and/or propose different formats (like json, yaml, xml atom, …)</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#compression" target="specification">Compression</a>
+              <a href="http://deliveroo.engineering/guidelines/api-design/#content-type-negotiation" target="specification">Content type negotiation</a>
               
-                <blockquote>
-                Servers may support the Accept-Encoding header for compression purposes, but this is not mandatory.
-                </blockquote>
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#versioning" target="specification">Versioning</a>
               
               </li>
             
@@ -618,6 +600,24 @@ RESTful, Hypermedia, Fine-grained
             </ul>
             </td></tr>
           
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http">HTTP protocol</a></h3>
+            <p><p>General informations about HTTP protocol</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#compression" target="specification">Compression</a>
+              
+                <blockquote>
+                Servers may support the Accept-Encoding header for compression purposes, but this is not mandatory.
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
           </table>
         </div>
       
@@ -628,8 +628,44 @@ RESTful, Hypermedia, Fine-grained
           <table class="table">
             
             <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-300">300 Multiple Choices</a></h3>
+            <p><p>The 300 (Multiple Choices) status code indicates that the target resource has more than one representation, each with its own more specific identifier, and information about the alternatives is being provided so that the user (or user agent) can select a preferred representation by redirecting its request to one or more of those identifiers. In other words, the server desires that the user agent engage in reactive negotiation to select the most appropriate representation(s) for its needs.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#caching" target="specification">Caching</a>
+              
+                <blockquote>
+                Responses with the following status codes should specify a Cache-Control header
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-status-301">301 Moved Permanently</a></h3>
             <p><p>This and all future requests should be directed to the given URI.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#caching" target="specification">Caching</a>
+              
+                <blockquote>
+                Responses with the following status codes should specify a Cache-Control header
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-302">302 Found</a></h3>
+            <p><p>Common way of performing URL redirection. An HTTP response with this status code will additionally provide a URL in the location header field. The user agent (e.g. a web browser) is invited by a response with this code to make a second, otherwise identical, request to the new URL specified in the location field.</p>
 </p>
             <ul class="list-group">
             
@@ -695,42 +731,6 @@ RESTful, Hypermedia, Fine-grained
             </ul>
             </td></tr>
           
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-302">302 Found</a></h3>
-            <p><p>Common way of performing URL redirection. An HTTP response with this status code will additionally provide a URL in the location header field. The user agent (e.g. a web browser) is invited by a response with this code to make a second, otherwise identical, request to the new URL specified in the location field.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#caching" target="specification">Caching</a>
-              
-                <blockquote>
-                Responses with the following status codes should specify a Cache-Control header
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-300">300 Multiple Choices</a></h3>
-            <p><p>The 300 (Multiple Choices) status code indicates that the target resource has more than one representation, each with its own more specific identifier, and information about the alternatives is being provided so that the user (or user agent) can select a preferred representation by redirecting its request to one or more of those identifiers. In other words, the server desires that the user agent engage in reactive negotiation to select the most appropriate representation(s) for its needs.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#caching" target="specification">Caching</a>
-              
-                <blockquote>
-                Responses with the following status codes should specify a Cache-Control header
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
           </table>
         </div>
       
@@ -740,87 +740,6 @@ RESTful, Hypermedia, Fine-grained
           </div>
           <table class="table">
             
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-206">206 Partial Content</a></h3>
-            <p><p>The server is delivering only part of the resource (byte serving) due to a range header sent by the client. The range header is used by HTTP clients to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#caching" target="specification">Caching</a>
-              
-                <blockquote>
-                Responses with the following status codes should specify a Cache-Control header
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-203">203 Non-Authoritative Information</a></h3>
-            <p><p>The 203 (Non-Authoritative Information) status code indicates that the request was successful but the enclosed payload has been modified from that of the origin server’s 200 (OK) response by a transforming proxy.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#caching" target="specification">Caching</a>
-              
-                <blockquote>
-                Responses with the following status codes should specify a Cache-Control header
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-202">202 Accepted</a></h3>
-            <p><p>The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#return-codes-and-errors" target="specification">Return codes and errors</a>
-              
-                <blockquote>
-                POST and PATCH should never result in a 200 (generally 201, occasionally 202).
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-201">201 Created</a></h3>
-            <p><p>The request has been fulfilled, resulting in the creation of a new resource.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#post-creating-entities" target="specification">POST, creating entities</a>
-              
-                <blockquote>
-                201 Created if the entity was successfully created
-                </blockquote>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#return-codes-and-errors" target="specification">Return codes and errors</a>
-              
-                <blockquote>
-                POST and PATCH should never result in a 200 (generally 201, occasionally 202).
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-status-200">200 OK</a></h3>
             <p><p>Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.</p>
@@ -858,6 +777,69 @@ RESTful, Hypermedia, Fine-grained
             </td></tr>
           
             <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-201">201 Created</a></h3>
+            <p><p>The request has been fulfilled, resulting in the creation of a new resource.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#post-creating-entities" target="specification">POST, creating entities</a>
+              
+                <blockquote>
+                201 Created if the entity was successfully created
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#return-codes-and-errors" target="specification">Return codes and errors</a>
+              
+                <blockquote>
+                POST and PATCH should never result in a 200 (generally 201, occasionally 202).
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-202">202 Accepted</a></h3>
+            <p><p>The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#return-codes-and-errors" target="specification">Return codes and errors</a>
+              
+                <blockquote>
+                POST and PATCH should never result in a 200 (generally 201, occasionally 202).
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-203">203 Non-Authoritative Information</a></h3>
+            <p><p>The 203 (Non-Authoritative Information) status code indicates that the request was successful but the enclosed payload has been modified from that of the origin server’s 200 (OK) response by a transforming proxy.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#caching" target="specification">Caching</a>
+              
+                <blockquote>
+                Responses with the following status codes should specify a Cache-Control header
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-status-204">204 No Content</a></h3>
             <p><p>The server successfully processed the request and is not returning any content.</p>
 </p>
@@ -875,6 +857,24 @@ RESTful, Hypermedia, Fine-grained
             </ul>
             </td></tr>
           
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-206">206 Partial Content</a></h3>
+            <p><p>The server is delivering only part of the resource (byte serving) due to a range header sent by the client. The range header is used by HTTP clients to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#caching" target="specification">Caching</a>
+              
+                <blockquote>
+                Responses with the following status codes should specify a Cache-Control header
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
           </table>
         </div>
       
@@ -885,8 +885,8 @@ RESTful, Hypermedia, Fine-grained
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-429">429 Too Many Requests</a></h3>
-            <p><p>The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes.</p>
+            <h3 class="anchored"><a href="/design/topics/http-status-400">400 Bad Request</a></h3>
+            <p><p>The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, too large size, invalid request message framing, or deceptive request routing).</p>
 </p>
             <ul class="list-group">
             
@@ -894,7 +894,34 @@ RESTful, Hypermedia, Fine-grained
               <a href="http://deliveroo.engineering/guidelines/api-design/#post-creating-entities" target="specification">POST, creating entities</a>
               
                 <blockquote>
-                429 Too Many Requests if the service throttles requests from an aggressive client
+                400 Bad Request if the entity cannot be created with the information in the request body
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#patch-mutating-entities" target="specification">PATCH, mutating entities</a>
+              
+                <blockquote>
+                400 Bad Request, if the modification failed.
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#return-codes-and-errors" target="specification">Return codes and errors</a>
+              
+                <blockquote>
+                400 Bad Request: bad syntax (unknown route, missing required fields or parameters, unknown extra parameters, bad field or parameter values).
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#parameters" target="specification">Parameters</a>
+              
+                <blockquote>
+                Those endpoints may return 400 Bad Request if parameters are specified.
                 </blockquote>
               
               </li>
@@ -903,26 +930,13 @@ RESTful, Hypermedia, Fine-grained
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-415">415 Unsupported Media Type</a></h3>
-            <p><p>The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format.</p>
+            <h3 class="anchored"><a href="/design/topics/http-status-404">404 Not Found</a></h3>
+            <p><p>The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#post-creating-entities" target="specification">POST, creating entities</a>
-              
-                <blockquote>
-                415 Unsupported if using versioning and the server doesn’t support the specified version
-                </blockquote>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#post-creating-entities" target="specification">POST, creating entities</a>
-              
-                <blockquote>
-                415 Unsupported if using versioning and the server doesn’t support the specified version.
-                </blockquote>
+              <a href="http://deliveroo.engineering/guidelines/api-design/#restful" target="specification">RESTful</a>
               
               </li>
             
@@ -930,7 +944,93 @@ RESTful, Hypermedia, Fine-grained
               <a href="http://deliveroo.engineering/guidelines/api-design/#delete-destroying-entities" target="specification">DELETE, destroying entities</a>
               
                 <blockquote>
-                415 Unsupported if using versioning and the server doesn’t support the specified version.
+                404 Not Found if the entity does not exist
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#return-codes-and-errors" target="specification">Return codes and errors</a>
+              
+                <blockquote>
+                404 Not Found: the specified entity does not exist (unknown routes should not 404).
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#caching" target="specification">Caching</a>
+              
+                <blockquote>
+                Responses with the following status codes should specify a Cache-Control header
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-406">406 Not Acceptable</a></h3>
+            <p><p>The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#versioning" target="specification">Versioning</a>
+              
+                <blockquote>
+                The service should respond with status 406, Not Acceptable if the version is unavailable.
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-409">409 Conflict</a></h3>
+            <p><p>Indicates that the request could not be processed because of conflict in the request, such as an edit conflict between multiple simultaneous updates.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#return-codes-and-errors" target="specification">Return codes and errors</a>
+              
+                <blockquote>
+                409 Conflict: PATCH and PUT failures with unique fields
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-410">410 Gone</a></h3>
+            <p><p>Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a <em>404 Not Found</em> may be used instead.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#restful" target="specification">RESTful</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#delete-destroying-entities" target="specification">DELETE, destroying entities</a>
+              
+                <blockquote>
+                410 Gone if the entity is known to have existed but no longer does.
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#caching" target="specification">Caching</a>
+              
+                <blockquote>
+                Responses with the following status codes should specify a Cache-Control header
                 </blockquote>
               
               </li>
@@ -984,117 +1084,8 @@ RESTful, Hypermedia, Fine-grained
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-410">410 Gone</a></h3>
-            <p><p>Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a <em>404 Not Found</em> may be used instead.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#restful" target="specification">RESTful</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#delete-destroying-entities" target="specification">DELETE, destroying entities</a>
-              
-                <blockquote>
-                410 Gone if the entity is known to have existed but no longer does.
-                </blockquote>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#caching" target="specification">Caching</a>
-              
-                <blockquote>
-                Responses with the following status codes should specify a Cache-Control header
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-409">409 Conflict</a></h3>
-            <p><p>Indicates that the request could not be processed because of conflict in the request, such as an edit conflict between multiple simultaneous updates.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#return-codes-and-errors" target="specification">Return codes and errors</a>
-              
-                <blockquote>
-                409 Conflict: PATCH and PUT failures with unique fields
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-406">406 Not Acceptable</a></h3>
-            <p><p>The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#versioning" target="specification">Versioning</a>
-              
-                <blockquote>
-                The service should respond with status 406, Not Acceptable if the version is unavailable.
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-404">404 Not Found</a></h3>
-            <p><p>The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#restful" target="specification">RESTful</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#delete-destroying-entities" target="specification">DELETE, destroying entities</a>
-              
-                <blockquote>
-                404 Not Found if the entity does not exist
-                </blockquote>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#return-codes-and-errors" target="specification">Return codes and errors</a>
-              
-                <blockquote>
-                404 Not Found: the specified entity does not exist (unknown routes should not 404).
-                </blockquote>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#caching" target="specification">Caching</a>
-              
-                <blockquote>
-                Responses with the following status codes should specify a Cache-Control header
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-400">400 Bad Request</a></h3>
-            <p><p>The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, too large size, invalid request message framing, or deceptive request routing).</p>
+            <h3 class="anchored"><a href="/design/topics/http-status-415">415 Unsupported Media Type</a></h3>
+            <p><p>The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format.</p>
 </p>
             <ul class="list-group">
             
@@ -1102,34 +1093,25 @@ RESTful, Hypermedia, Fine-grained
               <a href="http://deliveroo.engineering/guidelines/api-design/#post-creating-entities" target="specification">POST, creating entities</a>
               
                 <blockquote>
-                400 Bad Request if the entity cannot be created with the information in the request body
+                415 Unsupported if using versioning and the server doesn’t support the specified version
                 </blockquote>
               
               </li>
             
               <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#patch-mutating-entities" target="specification">PATCH, mutating entities</a>
+              <a href="http://deliveroo.engineering/guidelines/api-design/#post-creating-entities" target="specification">POST, creating entities</a>
               
                 <blockquote>
-                400 Bad Request, if the modification failed.
+                415 Unsupported if using versioning and the server doesn’t support the specified version.
                 </blockquote>
               
               </li>
             
               <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#return-codes-and-errors" target="specification">Return codes and errors</a>
+              <a href="http://deliveroo.engineering/guidelines/api-design/#delete-destroying-entities" target="specification">DELETE, destroying entities</a>
               
                 <blockquote>
-                400 Bad Request: bad syntax (unknown route, missing required fields or parameters, unknown extra parameters, bad field or parameter values).
-                </blockquote>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#parameters" target="specification">Parameters</a>
-              
-                <blockquote>
-                Those endpoints may return 400 Bad Request if parameters are specified.
+                415 Unsupported if using versioning and the server doesn’t support the specified version.
                 </blockquote>
               
               </li>
@@ -1151,6 +1133,24 @@ leading to a conflict.</p>
               
                 <blockquote>
                 428 Precondition Required, when the request lack a If-* header.
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-429">429 Too Many Requests</a></h3>
+            <p><p>The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#post-creating-entities" target="specification">POST, creating entities</a>
+              
+                <blockquote>
+                429 Too Many Requests if the service throttles requests from an aggressive client
                 </blockquote>
               
               </li>
@@ -1241,20 +1241,6 @@ leading to a conflict.</p>
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/query-parameter">Query parameters</a></h3>
-            <p><p>How to use query parameters</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#parameters" target="specification">Parameters</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
             <h3 class="anchored"><a href="/design/topics/documentation">Documentation</a></h3>
             <p><p>How to produce and/or propose API documentation</p>
 </p>
@@ -1262,6 +1248,20 @@ leading to a conflict.</p>
             
               <li class="list-group-item">
               <a href="http://deliveroo.engineering/guidelines/api-design/#documenting-apis" target="specification">Documenting APIs</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/query-parameter">Query parameters</a></h3>
+            <p><p>How to use query parameters</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#parameters" target="specification">Parameters</a>
               
               </li>
             
@@ -1338,13 +1338,31 @@ leading to a conflict.</p>
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-relationships">Relationships</a></h3>
-            <p><p>How to define and use relations between resources</p>
+            <h3 class="anchored"><a href="/design/topics/resource-change-tracking">Track change</a></h3>
+            <p><p>How to track change on resources</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#listing-relations" target="specification"></a>
+              <a href="http://deliveroo.engineering/guidelines/api-design/#single-entity-get-endpoints" target="specification">Single-entity GET endpoints</a>
+              
+                <blockquote>
+                Responses should include a Last-Modified or ETag header, and may include both
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-creation">Create resource</a></h3>
+            <p><p>How to create resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#post-creating-entities" target="specification">POST, creating entities</a>
               
               </li>
             
@@ -1384,13 +1402,13 @@ leading to a conflict.</p>
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-creation">Create resource</a></h3>
-            <p><p>How to create resources</p>
+            <h3 class="anchored"><a href="/design/topics/resource-relationships">Relationships</a></h3>
+            <p><p>How to define and use relations between resources</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#post-creating-entities" target="specification">POST, creating entities</a>
+              <a href="http://deliveroo.engineering/guidelines/api-design/#listing-relations" target="specification"></a>
               
               </li>
             
@@ -1466,17 +1484,18 @@ leading to a conflict.</p>
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-change-tracking">Track change</a></h3>
-            <p><p>How to track change on resources</p>
+            <h3 class="anchored"><a href="/design/topics/resource-update-partial">Update resource partially</a></h3>
+            <p><p>How to udate partially a resource</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#single-entity-get-endpoints" target="specification">Single-entity GET endpoints</a>
+              <a href="http://deliveroo.engineering/guidelines/api-design/#patch-mutating-entities" target="specification">PATCH, mutating entities</a>
               
-                <blockquote>
-                Responses should include a Last-Modified or ETag header, and may include both
-                </blockquote>
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://deliveroo.engineering/guidelines/api-design/#mutable-resources" target="specification">Mutable resources</a>
               
               </li>
             
@@ -1544,25 +1563,6 @@ leading to a conflict.</p>
             
               <li class="list-group-item">
               <a href="http://deliveroo.engineering/guidelines/api-design/#single-resource-representation" target="specification">Single-resource representation</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-update-partial">Update resource partially</a></h3>
-            <p><p>How to udate partially a resource</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#patch-mutating-entities" target="specification">PATCH, mutating entities</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://deliveroo.engineering/guidelines/api-design/#mutable-resources" target="specification">Mutable resources</a>
               
               </li>
             

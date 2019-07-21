@@ -149,20 +149,6 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/collection-filtering">Filtering</a></h3>
-            <p><p>How to select some resources in a collection</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#363-get" target="specification">3.6.3 GET</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
             <h3 class="anchored"><a href="/design/topics/collection">Collection</a></h3>
             <p><p>What is a collection (set) of resources</p>
 </p>
@@ -190,6 +176,20 @@
             </ul>
             </td></tr>
           
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection-filtering">Filtering</a></h3>
+            <p><p>How to select some resources in a collection</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#363-get" target="specification">3.6.3 GET</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
           </table>
         </div>
       
@@ -199,24 +199,6 @@
           </div>
           <table class="table">
             
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/data-format-date-time">Date and Time</a></h3>
-            <p><p>How to deal with date and time data</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#33-representations" target="specification">3.3 Representations</a>
-              
-                <blockquote>
-                3.3.8 Date and time fields MUST be represented as strings and formatted according to RFC-3339
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/data-format">Data format</a></h3>
             <p><p>which data format use</p>
@@ -228,6 +210,24 @@
               
                 <blockquote>
                 ... prefer the native JSON boolean type ...
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/data-format-date-time">Date and Time</a></h3>
+            <p><p>How to deal with date and time data</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#33-representations" target="specification">3.3 Representations</a>
+              
+                <blockquote>
+                3.3.8 Date and time fields MUST be represented as strings and formatted according to RFC-3339
                 </blockquote>
               
               </li>
@@ -294,6 +294,20 @@
             
               <li class="list-group-item">
               <a href="https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md#rest-methods" target="specification">REST Methods</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-get">GET</a></h3>
+            <p><p>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#363-get" target="specification">3.6.3 GET</a>
               
               </li>
             
@@ -371,13 +385,13 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-get">GET</a></h3>
-            <p><p>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.</p>
+            <h3 class="anchored"><a href="/design/topics/http-methods-options">OPTIONS</a></h3>
+            <p><p>The OPTIONS method returns the HTTP methods that the server supports for the specified URL. This can be used to check the functionality of a web server by requesting ‘*’ instead of a specific resource.</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#363-get" target="specification">3.6.3 GET</a>
+              <a href="https://github.com/CiscoDevNet/api-design-guide#36-http-verbs" target="specification">3.6.7 OPTIONS</a>
               
               </li>
             
@@ -398,20 +412,6 @@
             </ul>
             </td></tr>
           
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-options">OPTIONS</a></h3>
-            <p><p>The OPTIONS method returns the HTTP methods that the server supports for the specified URL. This can be used to check the functionality of a web server by requesting ‘*’ instead of a specific resource.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#36-http-verbs" target="specification">3.6.7 OPTIONS</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
           </table>
         </div>
       
@@ -421,43 +421,6 @@
           </div>
           <table class="table">
             
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status">HTTP Statuses</a></h3>
-            <p><p>General information about HTTP statuses usage</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#39-status-codes" target="specification">3.9 Status Codes</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-headers">HTTP Headers</a></h3>
-            <p><p>How to use standard or custom HTTP headers</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#351-standard-headers" target="specification">3.5 HTTP Headers</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#361-post" target="specification">3.6.1 POST</a>
-              
-                <blockquote>
-                Location header
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-caching">Caching</a></h3>
             <p><p>How to use and provide relevant caching informations</p>
@@ -493,6 +456,43 @@
                 <blockquote>
                 Accept header, Content-Type header
                 </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-headers">HTTP Headers</a></h3>
+            <p><p>How to use standard or custom HTTP headers</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#351-standard-headers" target="specification">3.5 HTTP Headers</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#361-post" target="specification">3.6.1 POST</a>
+              
+                <blockquote>
+                Location header
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status">HTTP Statuses</a></h3>
+            <p><p>General information about HTTP statuses usage</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#39-status-codes" target="specification">3.9 Status Codes</a>
               
               </li>
             
@@ -554,24 +554,6 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/undo">Undo</a></h3>
-            <p><p>How to undo things</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#36-http-verbs" target="specification">3.6 HTTP Verbs</a>
-              
-                <blockquote>
-                *3.6.4.3 *The POST verb MAY be used to reverse the soft-delete of a resource, using an undelete parameter
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
             <h3 class="anchored"><a href="/design/topics/api-chaining">API chaining</a></h3>
             <p><p>How to chain API call in internal systems</p>
 </p>
@@ -608,6 +590,24 @@
             </ul>
             </td></tr>
           
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/undo">Undo</a></h3>
+            <p><p>How to undo things</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#36-http-verbs" target="specification">3.6 HTTP Verbs</a>
+              
+                <blockquote>
+                *3.6.4.3 *The POST verb MAY be used to reverse the soft-delete of a resource, using an undelete parameter
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
           </table>
         </div>
       
@@ -617,6 +617,24 @@
           </div>
           <table class="table">
             
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/naming">Naming</a></h3>
+            <p><p>How to name things</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#33-representations" target="specification">3.3 Representations</a>
+              
+                <blockquote>
+                3.3.11 With regard to JSON representation property names, and URL query parameters, services SHOULD...
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/naming-case">Case</a></h3>
             <p><p>Which case (lowercase, camelCase, …) to use and when</p>
@@ -636,24 +654,6 @@
             </ul>
             </td></tr>
           
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/naming">Naming</a></h3>
-            <p><p>How to name things</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#33-representations" target="specification">3.3 Representations</a>
-              
-                <blockquote>
-                3.3.11 With regard to JSON representation property names, and URL query parameters, services SHOULD...
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
           </table>
         </div>
       
@@ -663,6 +663,94 @@
           </div>
           <table class="table">
             
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource">Resource</a></h3>
+            <p><p>General informations about resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#3-guidelines" target="specification">3 Guidelines</a>
+              
+                <blockquote>
+                Reference Representation, Narrow Representation, Wide Representation
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#33-representations" target="specification">3.3 Representations</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-url-format">URL format</a></h3>
+            <p><p>How to design URLs</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#34-url-format" target="specification">3.4 URL Format</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md#url-paths" target="specification">URL Paths</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-id-semantic">ID with semantic</a></h3>
+            <p><p>Using meaningful ids (like <code class="highlighter-rouge">me</code>)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#342-user-scoped-endpoints" target="specification">3.4.2 User Scoped Endpoints</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-retrieve">Retrieve resource</a></h3>
+            <p><p>How to retrieve a resource</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#363-get" target="specification">3.6.3 GET</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-retrieve-partial">Retrieve resource partially</a></h3>
+            <p><p>How to retrieve partially a resource</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#363-get" target="specification">3.6.3.6 Services MAY support partial retrieval of resource state</a>
+              
+                <blockquote>
+                RFC-3986
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/resource-retrieve-dereference">Dereference Relationships</a></h3>
             <p><p>How to load a resource and its linked resources in one call</p>
@@ -675,6 +763,67 @@
                 <blockquote>
                 If a service supports the fields parameter, then a value of @reference, @narrow, or @wide SHOULD...
                 </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-creation">Create resource</a></h3>
+            <p><p>How to create resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#361-post" target="specification">3.6.1 POST</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-creation-with-id">Create resource with a specific ID</a></h3>
+            <p><p>How to create resource with a provided id</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#362-put" target="specification">3.6.2 PUT</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-replacement">Replace resource</a></h3>
+            <p><p>How to replace (or update fully) a resource</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#362-put" target="specification">3.6.2 PUT</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-update">Update resource</a></h3>
+            <p><p>How to update a resource</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#362-put" target="specification">3.6.2 PUT</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://github.com/CiscoDevNet/api-design-guide#36-http-verbs" target="specification">3.6.5 PATCH</a>
               
               </li>
             
@@ -736,155 +885,6 @@
             
               <li class="list-group-item">
               <a href="https://github.com/CiscoDevNet/api-design-guide#361-post" target="specification">3.6.1 POST</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-replacement">Replace resource</a></h3>
-            <p><p>How to replace (or update fully) a resource</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#362-put" target="specification">3.6.2 PUT</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-creation-with-id">Create resource with a specific ID</a></h3>
-            <p><p>How to create resource with a provided id</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#362-put" target="specification">3.6.2 PUT</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-creation">Create resource</a></h3>
-            <p><p>How to create resources</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#361-post" target="specification">3.6.1 POST</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-update">Update resource</a></h3>
-            <p><p>How to update a resource</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#362-put" target="specification">3.6.2 PUT</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#36-http-verbs" target="specification">3.6.5 PATCH</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-retrieve-partial">Retrieve resource partially</a></h3>
-            <p><p>How to retrieve partially a resource</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#363-get" target="specification">3.6.3.6 Services MAY support partial retrieval of resource state</a>
-              
-                <blockquote>
-                RFC-3986
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-retrieve">Retrieve resource</a></h3>
-            <p><p>How to retrieve a resource</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#363-get" target="specification">3.6.3 GET</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource">Resource</a></h3>
-            <p><p>General informations about resources</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#3-guidelines" target="specification">3 Guidelines</a>
-              
-                <blockquote>
-                Reference Representation, Narrow Representation, Wide Representation
-                </blockquote>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#33-representations" target="specification">3.3 Representations</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-url-format">URL format</a></h3>
-            <p><p>How to design URLs</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#34-url-format" target="specification">3.4 URL Format</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md#url-paths" target="specification">URL Paths</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-id-semantic">ID with semantic</a></h3>
-            <p><p>Using meaningful ids (like <code class="highlighter-rouge">me</code>)</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://github.com/CiscoDevNet/api-design-guide#342-user-scoped-endpoints" target="specification">3.4.2 User Scoped Endpoints</a>
               
               </li>
             

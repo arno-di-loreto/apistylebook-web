@@ -126,20 +126,6 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/versioning">Updates and Versioning</a></h3>
-            <p><p>How to handle API updates and versioning</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-VersionControlforAPIs" target="specification">Version Control for APIs</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
             <h3 class="anchored"><a href="/design/topics/governance">Governance</a></h3>
             <p><p>How to ensure API governance (advertise, consistency, …)</p>
 </p>
@@ -166,6 +152,20 @@
             </ul>
             </td></tr>
           
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/versioning">Updates and Versioning</a></h3>
+            <p><p>How to handle API updates and versioning</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-VersionControlforAPIs" target="specification">Version Control for APIs</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
           </table>
         </div>
       
@@ -175,6 +175,24 @@
           </div>
           <table class="table">
             
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection-pagination">Pagination</a></h3>
+            <p><p>How to retrieve a range of resources in a collection</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
+              
+                <blockquote>
+                Standard Query Parameters in URIs (start-index, max-results)
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/collection">Collection</a></h3>
             <p><p>What is a collection (set) of resources</p>
@@ -195,24 +213,6 @@
               
                 <blockquote>
                 Collections of Entities
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/collection-pagination">Pagination</a></h3>
-            <p><p>How to retrieve a range of resources in a collection</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
-              
-                <blockquote>
-                Standard Query Parameters in URIs (start-index, max-results)
                 </blockquote>
               
               </li>
@@ -262,8 +262,8 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-put">PUT</a></h3>
-            <p><p>The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.</p>
+            <h3 class="anchored"><a href="/design/topics/http-methods-delete">DELETE</a></h3>
+            <p><p>The DELETE method deletes the specified resource.</p>
 </p>
             <ul class="list-group">
             
@@ -276,8 +276,8 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-delete">DELETE</a></h3>
-            <p><p>The DELETE method deletes the specified resource.</p>
+            <h3 class="anchored"><a href="/design/topics/http-methods-put">PUT</a></h3>
+            <p><p>The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.</p>
 </p>
             <ul class="list-group">
             
@@ -409,34 +409,6 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-201">201 Created</a></h3>
-            <p><p>The request has been fulfilled, resulting in the creation of a new resource.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes" target="specification">Appendix A: Response Codes</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-204">204 No Content</a></h3>
-            <p><p>The server successfully processed the request and is not returning any content.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes" target="specification">Appendix A: Response Codes</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-status-200">200 OK</a></h3>
             <p><p>Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.</p>
 </p>
@@ -451,8 +423,36 @@
             </td></tr>
           
             <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-201">201 Created</a></h3>
+            <p><p>The request has been fulfilled, resulting in the creation of a new resource.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes" target="specification">Appendix A: Response Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-status-202">202 Accepted</a></h3>
             <p><p>The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes" target="specification">Appendix A: Response Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-204">204 No Content</a></h3>
+            <p><p>The server successfully processed the request and is not returning any content.</p>
 </p>
             <ul class="list-group">
             
@@ -530,6 +530,24 @@
           <table class="table">
             
             <tr><td>
+            <h3 class="anchored"><a href="/design/topics/hypermedia-read">Hypermedia (read)</a></h3>
+            <p><p>How to use hypermedia to read data</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
+              
+                <blockquote>
+                Hypertext Linking within an Entity
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
             <h3 class="anchored"><a href="/design/topics/hypermedia-write">Hypermedia (write)</a></h3>
             <p><p>How to use hypermedia to write data</p>
 </p>
@@ -565,24 +583,6 @@
             </ul>
             </td></tr>
           
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/hypermedia-read">Hypermedia (read)</a></h3>
-            <p><p>How to use hypermedia to read data</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources" target="specification">REST Resources</a>
-              
-                <blockquote>
-                Hypertext Linking within an Entity
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
           </table>
         </div>
       
@@ -592,6 +592,20 @@
           </div>
           <table class="table">
             
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-deletion">Delete resource</a></h3>
+            <p><p>How to delete resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Concurrency" target="specification">Concurrency</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/resource-retrieve-dereference">Dereference Relationships</a></h3>
             <p><p>How to load a resource and its linked resources in one call</p>
@@ -620,8 +634,8 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-deletion">Delete resource</a></h3>
-            <p><p>How to delete resources</p>
+            <h3 class="anchored"><a href="/design/topics/resource-update">Update resource</a></h3>
+            <p><p>How to update a resource</p>
 </p>
             <ul class="list-group">
             
@@ -645,20 +659,6 @@
                 <blockquote>
                 URI Structure
                 </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-update">Update resource</a></h3>
-            <p><p>How to update a resource</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Concurrency" target="specification">Concurrency</a>
               
               </li>
             

@@ -266,40 +266,8 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/collection-retrieve">Retrieve a collection</a></h3>
-            <p><p>How to get a collection or resources</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#get" target="specification">GET</a>
-              
-                <blockquote>
-                reads a resource or set of resource instances
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/collection">Collection</a></h3>
-            <p><p>What is a collection (set) of resources</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/resources/Resources.html" target="specification">Resources</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/collection-sorting">Sorting a collection</a></h3>
-            <p><p>How to sort a collection of resources</p>
+            <h3 class="anchored"><a href="/design/topics/collection-filtering">Filtering</a></h3>
+            <p><p>How to select some resources in a collection</p>
 </p>
             <ul class="list-group">
             
@@ -307,7 +275,7 @@
               <a href="http://zalando.github.io/restful-api-guidelines/naming/Naming.html#could-use-conventional-query-strings" target="specification">Use Conventional Query Strings</a>
               
                 <blockquote>
-                sort — comma-separated list of fields to sort
+                q — default query parameter
                 </blockquote>
               
               </li>
@@ -339,8 +307,26 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/collection-filtering">Filtering</a></h3>
-            <p><p>How to select some resources in a collection</p>
+            <h3 class="anchored"><a href="/design/topics/collection-retrieve">Retrieve a collection</a></h3>
+            <p><p>How to get a collection or resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#get" target="specification">GET</a>
+              
+                <blockquote>
+                reads a resource or set of resource instances
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection-sorting">Sorting a collection</a></h3>
+            <p><p>How to sort a collection of resources</p>
 </p>
             <ul class="list-group">
             
@@ -348,8 +334,22 @@
               <a href="http://zalando.github.io/restful-api-guidelines/naming/Naming.html#could-use-conventional-query-strings" target="specification">Use Conventional Query Strings</a>
               
                 <blockquote>
-                q — default query parameter
+                sort — comma-separated list of fields to sort
                 </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection">Collection</a></h3>
+            <p><p>What is a collection (set) of resources</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/resources/Resources.html" target="specification">Resources</a>
               
               </li>
             
@@ -365,69 +365,6 @@
           </div>
           <table class="table">
             
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/data-format">Data format</a></h3>
-            <p><p>which data format use</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#property-values" target="specification">Property Values</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#should-date-property-values-should-conform-to-rfc-3399" target="specification">Date property values should conform to RFC 3399</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#could-time-durations-and-intervals-could-conform-to-iso-8601" target="specification">Time durations and intervals could conform to ISO 8601</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/data-formats/DataFormats.html" target="specification">Data Formats</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/common-data-objects/CommonDataObjects.html" target="specification">Common Data Objects</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/data-format-null">Null data</a></h3>
-            <p><p>How to deal with null data</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#property-values" target="specification">Property values</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#should-null-values-should-have-their-fields-removed" target="specification">Null values should have their fields removed</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#must-boolean-property-values-must-not-be-null" target="specification">Boolean property values must not be null</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#should-empty-array-values-should-not-be-null" target="specification">Empty array values should not be null</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/data-standards">Standards data</a></h3>
             <p><p>Which standard use for values like languages, countries, currencies, …</p>
@@ -480,6 +417,69 @@
             </ul>
             </td></tr>
           
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/data-format-null">Null data</a></h3>
+            <p><p>How to deal with null data</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#property-values" target="specification">Property values</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#should-null-values-should-have-their-fields-removed" target="specification">Null values should have their fields removed</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#must-boolean-property-values-must-not-be-null" target="specification">Boolean property values must not be null</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#should-empty-array-values-should-not-be-null" target="specification">Empty array values should not be null</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/data-format">Data format</a></h3>
+            <p><p>which data format use</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#property-values" target="specification">Property Values</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#should-date-property-values-should-conform-to-rfc-3399" target="specification">Date property values should conform to RFC 3399</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#could-time-durations-and-intervals-could-conform-to-iso-8601" target="specification">Time durations and intervals could conform to ISO 8601</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/data-formats/DataFormats.html" target="specification">Data Formats</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/common-data-objects/CommonDataObjects.html" target="specification">Common Data Objects</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
           </table>
         </div>
       
@@ -518,20 +518,6 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-get">GET</a></h3>
-            <p><p>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#get" target="specification">GET</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-methods-delete">DELETE</a></h3>
             <p><p>The DELETE method deletes the specified resource.</p>
 </p>
@@ -546,46 +532,13 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods">HTTP methods</a></h3>
-            <p><p>General information about HTTP methods usage</p>
+            <h3 class="anchored"><a href="/design/topics/http-methods-get">GET</a></h3>
+            <p><p>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#must-use-http-methods-correctly" target="specification">Use HTTP Methods Correctly</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#must--http-methods-must-fulfill-safeness-and-idempotency-properties" target="specification">HTTP Methods must Fulfill Safeness and Idempotency Properties</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-patch">PATCH</a></h3>
-            <p><p>The PATCH method applies partial modifications to a resource.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#patch" target="specification">PATCH</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-post">POST</a></h3>
-            <p><p>The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#post" target="specification">POST</a>
+              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#get" target="specification">GET</a>
               
               </li>
             
@@ -621,6 +574,34 @@
             </td></tr>
           
             <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-patch">PATCH</a></h3>
+            <p><p>The PATCH method applies partial modifications to a resource.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#patch" target="specification">PATCH</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-post">POST</a></h3>
+            <p><p>The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#post" target="specification">POST</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-methods-put">PUT</a></h3>
             <p><p>The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.</p>
 </p>
@@ -628,6 +609,25 @@
             
               <li class="list-group-item">
               <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#put" target="specification">PUT</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods">HTTP methods</a></h3>
+            <p><p>General information about HTTP methods usage</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#must-use-http-methods-correctly" target="specification">Use HTTP Methods Correctly</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#must--http-methods-must-fulfill-safeness-and-idempotency-properties" target="specification">HTTP Methods must Fulfill Safeness and Idempotency Properties</a>
               
               </li>
             
@@ -643,6 +643,44 @@
           </div>
           <table class="table">
             
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-caching">Caching</a></h3>
+            <p><p>How to use and provide relevant caching informations</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/performance/Performance.html#could-support-the-etag-header" target="specification">Support the ETag Header</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-content-negotiation">Content negociation and media types</a></h3>
+            <p><p>How to describe your API data format and/or propose different formats (like json, yaml, xml atom, …)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/compatibility/Compatibility.html#must-use-media-type-versioning" target="specification">Use Media Type Versioning</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-modify-the-contenttype-for-embedded-resources" target="specification">Modify the Content-Type for Embedded Resources</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/data-formats/DataFormats.html#could-use-applicationspecific-content-types" target="specification">Use Application-Specific Content Types</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-headers">HTTP Headers</a></h3>
             <p><p>How to use standard or custom HTTP headers</p>
@@ -702,44 +740,6 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-caching">Caching</a></h3>
-            <p><p>How to use and provide relevant caching informations</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/performance/Performance.html#could-support-the-etag-header" target="specification">Support the ETag Header</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-content-negotiation">Content negociation and media types</a></h3>
-            <p><p>How to describe your API data format and/or propose different formats (like json, yaml, xml atom, …)</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/compatibility/Compatibility.html#must-use-media-type-versioning" target="specification">Use Media Type Versioning</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-modify-the-contenttype-for-embedded-resources" target="specification">Modify the Content-Type for Embedded Resources</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/data-formats/DataFormats.html#could-use-applicationspecific-content-types" target="specification">Use Application-Specific Content Types</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-status">HTTP Statuses</a></h3>
             <p><p>General information about HTTP statuses usage</p>
 </p>
@@ -776,20 +776,6 @@
           </div>
           <table class="table">
             
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-304">304 Not Modified</a></h3>
-            <p><p>Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#redirection-codes" target="specification">Redirection Codes</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-status-301">301 Moved Permanently</a></h3>
             <p><p>This and all future requests should be directed to the given URI.</p>
@@ -837,6 +823,20 @@
             </ul>
             </td></tr>
           
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-304">304 Not Modified</a></h3>
+            <p><p>Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#redirection-codes" target="specification">Redirection Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
           </table>
         </div>
       
@@ -846,20 +846,6 @@
           </div>
           <table class="table">
             
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-503">503 Service Unavailable</a></h3>
-            <p><p>The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#server-side-error-codes" target="specification">Server Side Error Codes</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-status-500">500 Internal Server Error</a></h3>
             <p><p>A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.</p>
@@ -877,6 +863,20 @@
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-status-501">501 Not Implemented</a></h3>
             <p><p>The server either does not recognize the request method, or it lacks the ability to fulfill the request. Usually this implies future availability (e.g., a new feature of a web-service API).</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#server-side-error-codes" target="specification">Server Side Error Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-503">503 Service Unavailable</a></h3>
+            <p><p>The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.</p>
 </p>
             <ul class="list-group">
             
@@ -963,78 +963,8 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-404">404 Not Found</a></h3>
-            <p><p>The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes" target="specification">Client Side Error Codes</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-408">408 Request Timeout</a></h3>
-            <p><p>The server timed out waiting for the request. According to HTTP specifications: The client did not produce a request within the time that the server was prepared to wait. The client MAY repeat the request without modifications at any later time.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes" target="specification">Client Side Error Codes</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-406">406 Not Acceptable</a></h3>
-            <p><p>The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes" target="specification">Client Side Error Codes</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-405">405 Method Not Allowed</a></h3>
-            <p><p>A request method is not supported for the requested resource; for example, a GET request on a form which requires data to be presented via POST, or a PUT request on a read-only resource.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes" target="specification">Client Side Error Codes</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-409">409 Conflict</a></h3>
-            <p><p>Indicates that the request could not be processed because of conflict in the request, such as an edit conflict between multiple simultaneous updates.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes" target="specification">Client Side Error Codes</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-403">403 Forbidden</a></h3>
-            <p><p>The request was a valid request, but the server is refusing to respond to it. The user might be logged in but does not have the necessary permissions for the resource.</p>
+            <h3 class="anchored"><a href="/design/topics/http-status-400">400 Bad Request</a></h3>
+            <p><p>The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, too large size, invalid request message framing, or deceptive request routing).</p>
 </p>
             <ul class="list-group">
             
@@ -1061,8 +991,78 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-status-400">400 Bad Request</a></h3>
-            <p><p>The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, too large size, invalid request message framing, or deceptive request routing).</p>
+            <h3 class="anchored"><a href="/design/topics/http-status-403">403 Forbidden</a></h3>
+            <p><p>The request was a valid request, but the server is refusing to respond to it. The user might be logged in but does not have the necessary permissions for the resource.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes" target="specification">Client Side Error Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-404">404 Not Found</a></h3>
+            <p><p>The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes" target="specification">Client Side Error Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-405">405 Method Not Allowed</a></h3>
+            <p><p>A request method is not supported for the requested resource; for example, a GET request on a form which requires data to be presented via POST, or a PUT request on a read-only resource.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes" target="specification">Client Side Error Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-406">406 Not Acceptable</a></h3>
+            <p><p>The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes" target="specification">Client Side Error Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-408">408 Request Timeout</a></h3>
+            <p><p>The server timed out waiting for the request. According to HTTP specifications: The client did not produce a request within the time that the server was prepared to wait. The client MAY repeat the request without modifications at any later time.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes" target="specification">Client Side Error Codes</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-status-409">409 Conflict</a></h3>
+            <p><p>Indicates that the request could not be processed because of conflict in the request, such as an edit conflict between multiple simultaneous updates.</p>
 </p>
             <ul class="list-group">
             
@@ -1162,35 +1162,6 @@ leading to a conflict.</p>
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/hypermedia">Hypermedia</a></h3>
-            <p><p>How to use hypermedia</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/pagination/Pagination.html#could-use-pagination-links-where-applicable" target="specification">Use Pagination Links Where Applicable</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html" target="specification">Hypermedia</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-use-a-welldefined-subset-of-hal" target="specification">Use a well-defined subset of HAL</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-do-not-use-link-headers-with-json-entities" target="specification">Do Not Use Link Headers with JSON entities</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
             <h3 class="anchored"><a href="/design/topics/hypermedia-read">Hypermedia (read)</a></h3>
             <p><p>How to use hypermedia to read data</p>
 </p>
@@ -1219,6 +1190,35 @@ leading to a conflict.</p>
             </ul>
             </td></tr>
           
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/hypermedia">Hypermedia</a></h3>
+            <p><p>How to use hypermedia</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/pagination/Pagination.html#could-use-pagination-links-where-applicable" target="specification">Use Pagination Links Where Applicable</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html" target="specification">Hypermedia</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-use-a-welldefined-subset-of-hal" target="specification">Use a well-defined subset of HAL</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-do-not-use-link-headers-with-json-entities" target="specification">Do Not Use Link Headers with JSON entities</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
           </table>
         </div>
       
@@ -1228,25 +1228,6 @@ leading to a conflict.</p>
           </div>
           <table class="table">
             
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/performance">Performance and bandwidth</a></h3>
-            <p><p>How to deal with high traffic or consumers with low bandwith</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="" target="specification"></a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="" target="specification"></a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/documentation">Documentation</a></h3>
             <p><p>How to produce and/or propose API documentation</p>
@@ -1260,6 +1241,25 @@ leading to a conflict.</p>
             
               <li class="list-group-item">
               <a href="http://zalando.github.io/restful-api-guidelines/deprecation/Deprecation.html#must-reflect-deprecation-in-api-definition" target="specification">Reflect Deprecation in API Definition</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/performance">Performance and bandwidth</a></h3>
+            <p><p>How to deal with high traffic or consumers with low bandwith</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="" target="specification"></a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="" target="specification"></a>
               
               </li>
             
@@ -1309,6 +1309,20 @@ leading to a conflict.</p>
             </td></tr>
           
             <tr><td>
+            <h3 class="anchored"><a href="/design/topics/naming-case">Case</a></h3>
+            <p><p>Which case (lowercase, camelCase, …) to use and when</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#must-property-names-must-be-snakecase-and-never-camelcase" target="specification">Property names must be snake_case</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
             <h3 class="anchored"><a href="/design/topics/naming">Naming</a></h3>
             <p><p>How to name things</p>
 </p>
@@ -1332,20 +1346,6 @@ leading to a conflict.</p>
             </ul>
             </td></tr>
           
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/naming-case">Case</a></h3>
-            <p><p>Which case (lowercase, camelCase, …) to use and when</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#must-property-names-must-be-snakecase-and-never-camelcase" target="specification">Property names must be snake_case</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
           </table>
         </div>
       
@@ -1355,6 +1355,20 @@ leading to a conflict.</p>
           </div>
           <table class="table">
             
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-action">Action resource</a></h3>
+            <p><p>How to use action resource (e.g. resources like /cancel or /approve)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/resources/Resources.html#must-avoid-actions-—-think-about-resources" target="specification">Avoid Actions — Think About Resources</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/resource-creation">Create resource</a></h3>
             <p><p>How to create resources</p>
@@ -1392,13 +1406,23 @@ leading to a conflict.</p>
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-action">Action resource</a></h3>
-            <p><p>How to use action resource (e.g. resources like /cancel or /approve)</p>
+            <h3 class="anchored"><a href="/design/topics/resource-relationships">Relationships</a></h3>
+            <p><p>How to define and use relations between resources</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/resources/Resources.html#must-avoid-actions-—-think-about-resources" target="specification">Avoid Actions — Think About Resources</a>
+              <a href="http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-use-a-welldefined-subset-of-hal" target="specification">Use a well-defined subset of HAL</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#could-use-custom-link-relations" target="specification">Use Custom Link Relations</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-do-not-use-link-headers-with-json-entities" target="specification">Do Not Use Link Headers with JSON entities</a>
               
               </li>
             
@@ -1485,23 +1509,17 @@ leading to a conflict.</p>
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-relationships">Relationships</a></h3>
-            <p><p>How to define and use relations between resources</p>
+            <h3 class="anchored"><a href="/design/topics/resource-retrieve">Retrieve resource</a></h3>
+            <p><p>How to retrieve a resource</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-use-a-welldefined-subset-of-hal" target="specification">Use a well-defined subset of HAL</a>
+              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#get" target="specification">GET</a>
               
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#could-use-custom-link-relations" target="specification">Use Custom Link Relations</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-do-not-use-link-headers-with-json-entities" target="specification">Do Not Use Link Headers with JSON entities</a>
+                <blockquote>
+                reads a resource or set of resource instances
+                </blockquote>
               
               </li>
             
@@ -1587,24 +1605,6 @@ leading to a conflict.</p>
             
               <li class="list-group-item">
               <a href="http://zalando.github.io/restful-api-guidelines/resources/Resources.html" target="specification">resources</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-retrieve">Retrieve resource</a></h3>
-            <p><p>How to retrieve a resource</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="http://zalando.github.io/restful-api-guidelines/http/Http.html#get" target="specification">GET</a>
-              
-                <blockquote>
-                reads a resource or set of resource instances
-                </blockquote>
               
               </li>
             

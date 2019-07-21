@@ -6,9 +6,9 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 May 2018 09:07:27 +0000</pubDate>
-    <lastBuildDate>Sun, 27 May 2018 09:07:27 +0000</lastBuildDate>
-    <generator>Jekyll v3.3.1</generator>
+    <pubDate>Sun, 21 Jul 2019 15:55:52 +0000</pubDate>
+    <lastBuildDate>Sun, 21 Jul 2019 15:55:52 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>Deliveroo API Design Styleguide added on the API Stylebook</title>

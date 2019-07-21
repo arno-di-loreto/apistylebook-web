@@ -264,6 +264,61 @@
           <table class="table">
             
             <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection-filtering">Filtering</a></h3>
+            <p><p>How to select some resources in a collection</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/naming_convention#list_filter_field" target="specification">List filter field</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/custom_methods#common_custom_methods" target="specification">Common Custom Methods</a>
+              
+                <blockquote>
+                (:search) Alternative to List for fetching data that does not adhere to List semantics.
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/design_patterns#list_sub-collections" target="specification">List Sub-Collections</a>
+              
+                <blockquote>
+                Sometimes, an API needs to let a client List/Search across sub- collections.
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/design_patterns#get_unique_resource_from_sub-collection" target="specification">Get Unique Resource From Sub-Collection</a>
+              
+                <blockquote>
+                it may be useful to allow a Get to retrieve that resource without knowing which parent collection contains it
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/collection-pagination">Pagination</a></h3>
+            <p><p>How to retrieve a range of resources in a collection</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/design_patterns#list_pagination" target="specification">List Pagination</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
             <h3 class="anchored"><a href="/design/topics/collection-retrieve">Retrieve a collection</a></h3>
             <p><p>How to get a collection or resources</p>
 </p>
@@ -337,61 +392,6 @@
             </ul>
             </td></tr>
           
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/collection-pagination">Pagination</a></h3>
-            <p><p>How to retrieve a range of resources in a collection</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/design_patterns#list_pagination" target="specification">List Pagination</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/collection-filtering">Filtering</a></h3>
-            <p><p>How to select some resources in a collection</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/naming_convention#list_filter_field" target="specification">List filter field</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/custom_methods#common_custom_methods" target="specification">Common Custom Methods</a>
-              
-                <blockquote>
-                (:search) Alternative to List for fetching data that does not adhere to List semantics.
-                </blockquote>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/design_patterns#list_sub-collections" target="specification">List Sub-Collections</a>
-              
-                <blockquote>
-                Sometimes, an API needs to let a client List/Search across sub- collections.
-                </blockquote>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/design_patterns#get_unique_resource_from_sub-collection" target="specification">Get Unique Resource From Sub-Collection</a>
-              
-                <blockquote>
-                it may be useful to allow a Get to retrieve that resource without knowing which parent collection contains it
-                </blockquote>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
           </table>
         </div>
       
@@ -401,25 +401,6 @@
           </div>
           <table class="table">
             
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/data-format">Data format</a></h3>
-            <p><p>which data format use</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/design_patterns#grammar_syntax" target="specification">Grammar Syntax</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/design_patterns#integer_types" target="specification">Integer Types</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/data-format-date-time">Date and Time</a></h3>
             <p><p>How to deal with date and time data</p>
@@ -439,6 +420,25 @@
             </ul>
             </td></tr>
           
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/data-format">Data format</a></h3>
+            <p><p>which data format use</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/design_patterns#grammar_syntax" target="specification">Grammar Syntax</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/design_patterns#integer_types" target="specification">Integer Types</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
           </table>
         </div>
       
@@ -449,8 +449,8 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-put">PUT</a></h3>
-            <p><p>The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.</p>
+            <h3 class="anchored"><a href="/design/topics/http-methods-delete">DELETE</a></h3>
+            <p><p>The DELETE method deletes the specified resource.</p>
 </p>
             <ul class="list-group">
             
@@ -460,11 +460,7 @@
               </li>
             
               <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/standard_methods#update" target="specification">Update</a>
-              
-                <blockquote>
-                If the Update method only supports full resource update, it must use HTTP verb PUT
-                </blockquote>
+              <a href="https://cloud.google.com/apis/design/standard_methods#delete" target="specification">Delete</a>
               
               </li>
             
@@ -500,25 +496,6 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-post">POST</a></h3>
-            <p><p>The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/standard_methods" target="specification">Standard Methods</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/standard_methods#create" target="specification">Create</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-methods-patch">PATCH</a></h3>
             <p><p>The PATCH method applies partial modifications to a resource.</p>
 </p>
@@ -542,8 +519,8 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-methods-delete">DELETE</a></h3>
-            <p><p>The DELETE method deletes the specified resource.</p>
+            <h3 class="anchored"><a href="/design/topics/http-methods-post">POST</a></h3>
+            <p><p>The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.</p>
 </p>
             <ul class="list-group">
             
@@ -553,7 +530,30 @@
               </li>
             
               <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/standard_methods#delete" target="specification">Delete</a>
+              <a href="https://cloud.google.com/apis/design/standard_methods#create" target="specification">Create</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-methods-put">PUT</a></h3>
+            <p><p>The PUT method requests that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/standard_methods" target="specification">Standard Methods</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/standard_methods#update" target="specification">Update</a>
+              
+                <blockquote>
+                If the Update method only supports full resource update, it must use HTTP verb PUT
+                </blockquote>
               
               </li>
             
@@ -598,6 +598,20 @@
           <table class="table">
             
             <tr><td>
+            <h3 class="anchored"><a href="/design/topics/http-caching">Caching</a></h3>
+            <p><p>How to use and provide relevant caching informations</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/design_patterns#etags" target="specification">ETags</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
             <h3 class="anchored"><a href="/design/topics/http-content-negotiation">Content negociation and media types</a></h3>
             <p><p>How to describe your API data format and/or propose different formats (like json, yaml, xml atom, …)</p>
 </p>
@@ -615,20 +629,6 @@
             </ul>
             </td></tr>
           
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/http-caching">Caching</a></h3>
-            <p><p>How to use and provide relevant caching informations</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/design_patterns#etags" target="specification">ETags</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
           </table>
         </div>
       
@@ -639,39 +639,16 @@
           <table class="table">
             
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/guiding-input">Guiding inputs</a></h3>
-            <p><p>How to help consumers or end user to input relevant data</p>
+            <h3 class="anchored"><a href="/design/topics/developer-experience">Developer experience</a></h3>
+            <p><p>How to take care of developer experience (DX)</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/design_patterns#request_validation" target="specification">Request Validation</a>
-              
-                <blockquote>
-                If this field is set to true, the server must not execute any side effects and only perform implementation-specific validation consistent with the full request.
-                </blockquote>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/design_patterns#request_duplication" target="specification">Request Duplication</a>
-              
-                <blockquote>
-                some API methods cannot easily be idempotent, such as creating a resource, and there is a need to avoid unnecessary duplication
-                </blockquote>
-              
-              </li>
-            
-              <li class="list-group-item">
               <a href="https://cloud.google.com/apis/design/design_patterns#grammar_syntax" target="specification">Grammar Syntax</a>
               
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/design_patterns#output_fields" target="specification">Output Fields</a>
-              
                 <blockquote>
-                This means that the server must ignore the presence of output only fields and any indication of it.
+                To provide a consistent developer experience across APIs and reduce learning curve, API designers must use the ISO 14977 Extended Backus-Naur Form (EBNF) syntax to define such grammars
                 </blockquote>
               
               </li>
@@ -725,16 +702,39 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/developer-experience">Developer experience</a></h3>
-            <p><p>How to take care of developer experience (DX)</p>
+            <h3 class="anchored"><a href="/design/topics/guiding-input">Guiding inputs</a></h3>
+            <p><p>How to help consumers or end user to input relevant data</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/design_patterns#grammar_syntax" target="specification">Grammar Syntax</a>
+              <a href="https://cloud.google.com/apis/design/design_patterns#request_validation" target="specification">Request Validation</a>
               
                 <blockquote>
-                To provide a consistent developer experience across APIs and reduce learning curve, API designers must use the ISO 14977 Extended Backus-Naur Form (EBNF) syntax to define such grammars
+                If this field is set to true, the server must not execute any side effects and only perform implementation-specific validation consistent with the full request.
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/design_patterns#request_duplication" target="specification">Request Duplication</a>
+              
+                <blockquote>
+                some API methods cannot easily be idempotent, such as creating a resource, and there is a need to avoid unnecessary duplication
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/design_patterns#grammar_syntax" target="specification">Grammar Syntax</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/design_patterns#output_fields" target="specification">Output Fields</a>
+              
+                <blockquote>
+                This means that the server must ignore the presence of output only fields and any indication of it.
                 </blockquote>
               
               </li>
@@ -778,48 +778,6 @@
           </div>
           <table class="table">
             
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/naming">Naming</a></h3>
-            <p><p>How to name things</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/resource_names#collection_id" target="specification">Collection ID</a>
-              
-                <blockquote>
-                Must be in plural form
-                </blockquote>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/standard_fields" target="specification">Standard Fields</a>
-              
-                <blockquote>
-                This section describes a set of standard message field definitions that should be used when similar concepts are needed. This will ensure the same concept has the same name and semantics across different APIs.
-                </blockquote>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/naming_convention" target="specification">Naming Conventions</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/design_patterns#representing_ranges" target="specification">Representing Ranges</a>
-              
-              </li>
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/design_patterns#list_pagination" target="specification">List Paginations</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/naming-language">Language</a></h3>
             <p><p>Which language(s) use when designing an API</p>
@@ -870,6 +828,48 @@
             </ul>
             </td></tr>
           
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/naming">Naming</a></h3>
+            <p><p>How to name things</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/resource_names#collection_id" target="specification">Collection ID</a>
+              
+                <blockquote>
+                Must be in plural form
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/standard_fields" target="specification">Standard Fields</a>
+              
+                <blockquote>
+                This section describes a set of standard message field definitions that should be used when similar concepts are needed. This will ensure the same concept has the same name and semantics across different APIs.
+                </blockquote>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/naming_convention" target="specification">Naming Conventions</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/design_patterns#representing_ranges" target="specification">Representing Ranges</a>
+              
+              </li>
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/design_patterns#list_pagination" target="specification">List Paginations</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
           </table>
         </div>
       
@@ -879,6 +879,38 @@
           </div>
           <table class="table">
             
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-action">Action resource</a></h3>
+            <p><p>How to use action resource (e.g. resources like /cancel or /approve)</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/custom_methods" target="specification">Custom Methods</a>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
+            <tr><td>
+            <h3 class="anchored"><a href="/design/topics/resource-creation-with-id">Create resource with a specific ID</a></h3>
+            <p><p>How to create resource with a provided id</p>
+</p>
+            <ul class="list-group">
+            
+              <li class="list-group-item">
+              <a href="https://cloud.google.com/apis/design/standard_methods#update" target="specification">Update</a>
+              
+                <blockquote>
+                If the API accepts client-assigned resource names, the server may allow the client to specify a non-existent resource name and create a new resource.
+                </blockquote>
+              
+              </li>
+            
+            </ul>
+            </td></tr>
+          
             <tr><td>
             <h3 class="anchored"><a href="/design/topics/resource-creation">Create resource</a></h3>
             <p><p>How to create resources</p>
@@ -918,17 +950,13 @@
             </td></tr>
           
             <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-creation-with-id">Create resource with a specific ID</a></h3>
-            <p><p>How to create resource with a provided id</p>
+            <h3 class="anchored"><a href="/design/topics/resource-id">Resource ID</a></h3>
+            <p><p>What is a resource ID and/or how it’s built</p>
 </p>
             <ul class="list-group">
             
               <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/standard_methods#update" target="specification">Update</a>
-              
-                <blockquote>
-                If the API accepts client-assigned resource names, the server may allow the client to specify a non-existent resource name and create a new resource.
-                </blockquote>
+              <a href="https://cloud.google.com/apis/design/resource_names#resource_id" target="specification">Resource ID</a>
               
               </li>
             
@@ -1153,34 +1181,6 @@
             
               <li class="list-group-item">
               <a href="https://cloud.google.com/apis/design/design_patterns#resource_labels" target="specification">Resource Labels</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-action">Action resource</a></h3>
-            <p><p>How to use action resource (e.g. resources like /cancel or /approve)</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/custom_methods" target="specification">Custom Methods</a>
-              
-              </li>
-            
-            </ul>
-            </td></tr>
-          
-            <tr><td>
-            <h3 class="anchored"><a href="/design/topics/resource-id">Resource ID</a></h3>
-            <p><p>What is a resource ID and/or how it’s built</p>
-</p>
-            <ul class="list-group">
-            
-              <li class="list-group-item">
-              <a href="https://cloud.google.com/apis/design/resource_names#resource_id" target="specification">Resource ID</a>
               
               </li>
             
